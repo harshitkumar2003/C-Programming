@@ -59,6 +59,22 @@ int main() {
 
 
 // ---------------------------------------------------------------------------
+puts() // This function is used to print a string to the console. It takes a string as an argument and prints it to the console.
+// ---------------------------------------------------------------------------
+// Here is an example of how to use this function:
+// ---------------------------------------------------------------------------
+#include <stdio.h>
+int main() {
+    char str[] = "Hello, World!";
+    puts(str);
+    return 0;
+    }
+// ---------------------------------------------------------------------------
+// Note: The puts() function automatically appends a newline character to the end of the string
+// ---------------------------------------------------------------------------
+
+
+// ---------------------------------------------------------------------------
 gets() // This function is used to read a line of input from the user. It takes a string as an argument and stores the input in that string.
 // ---------------------------------------------------------------------------
 // Warning: The gets() function is not safe to use because it does not check for buffer overflows. It is generally recommended to use fgets() instead of gets() for reading input from the user.
