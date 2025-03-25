@@ -89,11 +89,11 @@ int main()
 // }
 // ------------------------------------------------------------------------------------------------
 // example of switch case
-// int a = 5;
-// switch (a) {
-//     case 1:
-//         printf("a is 1");
-//         break;
+ int a = 5;
+ switch (a) {
+     case 1:
+         printf("a is 1");
+         break;
      case 2:
          printf("a is 2");
          break;
