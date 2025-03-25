@@ -121,12 +121,11 @@ int main()
 // label: statement;
 // ------------------------------------------------------------------------------------------------
 // example of goto statement
-#include <stdio.h>
-int main() {
+ #include <stdio.h>
+ int main() {
     int num = 0;
 
-    // This is the label
-    start:
+    start: // This is the label
         printf("Enter a number greater than 0: ");
         scanf("%d", &num);
 
