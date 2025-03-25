@@ -10,6 +10,17 @@ int main()
     printf("Enter the third number: ");
     scanf("%d",&c);// taking value from the user
 
+    // condition 
+    // if conditions allow you to execute certain blocks of code based on whether a specified condition is true or false
+    for example 
+    int a = 5;
+    if (a > 0) {
+        printf("a is positive\n");
+    }
+
+
+    // if else if else
+
     // checking largest values using if else condition
     if(a>b && a>c)  // if a greater than b and greater than c
     {
