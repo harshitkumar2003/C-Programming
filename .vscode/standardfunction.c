@@ -1,7 +1,6 @@
-// Standard input output function
-
 // ---------------------------------------------------------------------------
 // In C, standard input/output functions are used to interact with the user or perform basic operations like reading input from the user or printing output to the screen. These functions are defined in the stdio.h (Standard Input Output) header file.
+// ---------------------------------------------------------------------------
 
 
 // ---------------------------------------------------------------------------
@@ -82,9 +81,9 @@ int main() {
 // ---------------------------------------------------------------------------
 // scanf() vs fgets() vs gets() // These functions are used to read input from the user
 // ---------------------------------------------------------------------------
-// scanf() is used to read a single value from the user. It takes a format string and the address of a variable as arguments. It returns the number of successful assignments.
-// fgets() is used to read a line of input from the user. It takes a string as
-// gets() is used to read a line of input from the user. It takes a string as
+ scanf() //is used to read a single value from the user.
+ fgets() //is used to read a line of input from the user. It takes a string as
+ gets() //is used to read a line of input from the user. It takes a string as
 // ---------------------------------------------------------------------------
 // Here is an example of how to use these functions:
 // ---------------------------------------------------------------------------
@@ -103,10 +102,9 @@ int main() {
     printf("You entered: %s", str);
     return 0;
     }
-    // ---------------------------------------------------------------------------
-    // Note: The scanf() function does not include the newline character in the input string.
-    // ---------------------------------------------------------------------------
-    // Note: The fgets() function includes the newline character in the input string.
-    // ---------------------------------------------------------------------------
-    // Note: The gets() function includes the newline character in the input string.
-    
+// ---------------------------------------------------------------------------
+// Note: The scanf() function does not include the newline character in the input string.
+// ---------------------------------------------------------------------------
+// Note: The fgets() function includes the newline character in the input string.
+// ---------------------------------------------------------------------------
+// Note: The gets() function includes the newline character in the input string.
