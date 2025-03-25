@@ -53,11 +53,8 @@ int main()
     //   }
     //}
 
-
 // ------------------------------------------------------------------------------------------------
-
-
-    // checking largest values using if else condition
+// checking largest values using if else condition
     if(a>b && a>c)  // if a greater than b and greater than c
     {
         printf("%d is the largest number",a);
@@ -72,3 +69,44 @@ int main()
                 }
                 return 0;
 }
+// ------------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------
+// ==============
+// switch case
+// ==============
+// switch (expression) {
+//     case value1:
+//         // code to be executed if expression equals value1
+//         break;
+//     case value2:
+//         // code to be executed if expression equals value2
+//         break;
+//     default:
+//         // code to be executed if expression does not match any case value
+//         break;
+// }
+// ------------------------------------------------------------------------------------------------
+// example of switch case
+// int a = 5;
+// switch (a) {
+//     case 1:
+//         printf("a is 1");
+//         break;
+//     case 2:
+//         printf("a is 2");
+//         break;
+//     case 3:
+//         printf("a is 3");
+//         break;
+//     case 4:
+//         printf("a is 4");
+//         break;
+//     case 5:
+//         printf("a is 5");
+//         break;
+//     default:
+//         printf("a is not 1,2,3,4,5");
+//         break;
+// }
