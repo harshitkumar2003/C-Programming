@@ -139,5 +139,13 @@ int main()
     
     return 0;
 }
+// ------------------------------------------------------------------------------------------------
+// Important Notes:
+// Label Definition: A label is just a name followed by a colon (:). You can place labels anywhere in your program, but they must be placed before the point where you want to jump.
 
-    
+// Program Flow: The goto statement immediately transfers control to the specified label, skipping over any code in between.
+
+// Avoid Excessive Use: The goto statement can make programs difficult to understand and maintain because it breaks the natural flow of execution. It's often discouraged in favor of more structured control statements like loops (for, while) and conditionals (if-else).
+
+// Use in Loops: goto can be used to exit from deeply nested loops, but structured loops are generally clearer and more maintainable.
+// ------------------------------------------------------------------------------------------------
