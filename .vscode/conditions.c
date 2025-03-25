@@ -121,14 +121,24 @@ int main()
 // label: statement;
 // ------------------------------------------------------------------------------------------------
 // example of goto statement
-int i = 0;
-while (i < 5) {
-    printf("%d\n", i);
-    i++;
-    if (i == 3) {
-        goto end;
+#include <stdio.h>
+int main() {
+    int num = 0;
+
+    // This is the label
+    start:
+        printf("Enter a number greater than 0: ");
+        scanf("%d", &num);
+
+        // Using goto to jump to a different part of the code
+        if (num <= 0) {
+            printf("Invalid number. Please try again.\n");
+            goto start; // Jumps back to the "start" label
         }
-        }
-        end:
-        printf("end of loop");
+
+    printf("You entered a valid number: %d\n", num);
+    
+    return 0;
+}
+
     
