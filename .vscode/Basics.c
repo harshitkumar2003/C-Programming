@@ -25,19 +25,19 @@ int main()  // main fucntion in a c program atleast one function will be present
     //  %d is a format specifier for displaying integer
     //  %c is a format specifier for displaying character 
     //  %s is a format specifier for displaying string
-    //  %f is a format specifier for displaying floating number
+    //  %f is a format specifier for displaying floating number real number
     printf("%d",a);
-    printf("\n%d",b);
 
     // Aruthmetic operation using operation
-    // addition
+    // addition of a and b
     printf("\n%d",a+b);
-    // subtraction
+    // subtraction of a and b
     printf("\n%d",a-b);
-    // multiplication
+    // multiplication of and b
     printf("\n%d",a*b);
-    // division
+    // division of a and b
     printf("\n%d",a/b);
+
     return 0;  // end a program
 }
 
