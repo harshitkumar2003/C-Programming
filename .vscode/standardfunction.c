@@ -124,3 +124,4 @@ int main() {
 // Note: The fgets() function includes the newline character in the input string.
 // ---------------------------------------------------------------------------
 // Note: The gets() function includes the newline character in the input string.
+
