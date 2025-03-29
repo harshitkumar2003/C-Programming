@@ -43,7 +43,7 @@ int main() {
 // ---------------------------------------------------------------------------
 fgets() // This function is used to read a line of input from the user. It takes a string as an argument and stores the input in that string.
 // ---------------------------------------------------------------------------
-// Here is an example of how to use these functions:
+// Here is an example of how to use fgets() functions:
 // ---------------------------------------------------------------------------
 #include <stdio.h>
 int main() {
