@@ -7,13 +7,13 @@ int main()
     // -------------------------------------------------------------
 
     // -------------------------------------------------------------
-    // int a,b,c;
-    // printf("Enter the value of a:");
-    // scanf("%d",&a);
-    // printf("Enter the value of b:");
-    // scanf("%d",&b);
-    // c=a+b;
-    // printf("The sum of a and b is: %d",c);
+    // Printing sum of two variable 
+     int a,b;
+     printf("Enter the value of a:");
+     scanf("%d",&a);
+     printf("Enter the value of b:");
+     scanf("%d",&b);
+     printf("The sum of a and b is: %d", a+b);
     // -------------------------------------------------------------
 return 0;
 }
