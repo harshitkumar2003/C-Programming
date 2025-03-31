@@ -39,6 +39,10 @@ int main() {
 // ---------------------------------------------------------------------------------
 // operator precedence is the order in which operators are executed when there are multiple operators in an expression
 // operator precedence is as follows:
+int x = 12 * 4/ 4;
+int y = 1 * 4 / 5*3;
+printf("%d",x);
+printf("\n%d",y);
 // 1. Parentheses ()
 // 2. Exponents (**)
 // 3. Multiplication (*)
