@@ -42,7 +42,7 @@ int main() {
 int x = 12 * 4/ 4;
 int y = 1 * 4 / 5*3;
 printf("%d",x);
-printf("\n%d",y);
+printf("\n  %d",y);
 // 1. Parentheses ()
 // 2. Exponents (**)
 // 3. Multiplication (*)
