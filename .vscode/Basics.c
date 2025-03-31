@@ -73,15 +73,25 @@ int x = 12 > 4 && 2 > 13;
 // 12. Logical NOT (!=)
 int x = 2 < 4 != 12 < 13;
 // 13. Bitwise AND (&)
+int x = 12 & 4;
 // 14. Bitwise OR (|)
+int x = 12 | 4;
 // 15. Bitwise XOR (^)
+int x = 12 ^ 4;
 // 16. Bitwise NOT (~)
+int x = ~12;
 // 17. Left Shift (<<)
+int x = 12 << 4;
 // 18. Right Shift (>>)
+int x = 12 >> 4;
 // 19. Increment (++)
+int x = 12++;
 // 20. Decrement (--)
+int x = 12--;
 // 21. Ternary (?:)
+int x = 12 > 4 ? 12 : 4;
 // 22. Comma (,)
+int x = 12, 4;
 // 23. Assignment operators (+=, -=, *=, /=, %=, <<=, >>=
 // 24. Bitwise operators (&, |, ^, ~)
 // 25. Logical operators (&&, ||, !)
