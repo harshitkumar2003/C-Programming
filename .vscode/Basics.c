@@ -43,15 +43,29 @@ int x = 12 * 4/ 4;
 int y = 1 * 4 / 5*3;
 printf("%d",x);
 printf("\n  %d",y);
+// ---------------------------------------------------------------------------------
+
 // 1. Parentheses ()
 // 2. Exponents (**)
 // 3. Multiplication (*)
+int x = 12 * 4;
 // 4. Division (/)
+int x = 12 / 4;
 // 5. Modulus (%)
+int x = 12 % 4;
 // 6. Addition (+)
+int x = 12 + 4;
 // 7. Subtraction (-)
+int x = 12 - 4;
 // 8. Assignment (=)
+int x = 12 = 4;
 // 9. Comparison (==, !=, >, <, >=, <=)
+int x = 12 == 4;
+int x = 12 != 4;
+int x = 12 > 4;
+int x = 12 < 4;
+int x = 12 >= 4;
+int x = 12 <= 4;
 // 10. Logical AND (&&)
 // 11. Logical OR (||)
 // 12. Logical NOT (!)
