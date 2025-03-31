@@ -67,8 +67,11 @@ int x = 12 < 4;
 int x = 12 >= 4;
 int x = 12 <= 4;
 // 10. Logical AND (&&)
+int x = 2 < 4 && 12 < 13;
 // 11. Logical OR (||)
-// 12. Logical NOT (!)
+int x = 12 > 4 && 2 > 13;
+// 12. Logical NOT (!=)
+int x = 2 < 4 != 12 < 13;
 // 13. Bitwise AND (&)
 // 14. Bitwise OR (|)
 // 15. Bitwise XOR (^)
