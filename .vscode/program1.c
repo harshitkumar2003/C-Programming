@@ -129,3 +129,29 @@
 //      }
 //      return 0;
 //   }
+// ----------------------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------------------------------------
+// WAP to check if a student passed or failed
+
+#include<stdio.h>
+  int main ()
+  {
+      int m;
+      printf("Enter marks 0 to 100: ");
+      scanf("%d", &m);
+      if(m >=0 && m <= 30)
+      {
+           printf("Fail");
+      }
+      else if(m >= 30 && m <= 100)
+      {
+        printf("Pass");
+      }
+     else
+     {
+           printf("Wrong Marks");
+     }
+     return 0;
+  }
