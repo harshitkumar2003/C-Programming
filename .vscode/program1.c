@@ -185,18 +185,50 @@
 //      }
 //      return 0;
 //   }
+// ----------------------------------------------------------------------------------------------
 
-#include<stdio.h>
-  int main ()
-  {
-     int x=2;
-      if(x=1)
-      {
-           printf("x is equal to 1");
-      }
-     else
-     {
-           printf("x is equal to 2");
-     }
-     return 0;
-  }
+
+// ----------------------------------------------------------------------------------------------
+// check the code 
+
+// #include<stdio.h>
+//   int main ()
+//   {
+//      int x=2;
+//       if(x=1) 
+//       // error in if because of assingment operator when we compare a number we use comparison operator(==)
+//       {
+//            printf("x is equal to 1");
+//       }
+//      else
+//      {
+//            printf("x is equal to 2");
+//      }
+//      return 0;
+//   }
+// ----------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------
+// WAP to find if a character entered by user is upper case or not
+
+// #include<stdio.h>
+//   int main ()
+//   {
+//       char ch;
+//       printf("Enter a character: ");
+//       scanf("%c", &ch);
+//       if(ch >= 'A' && ch <= 'Z' )
+//       {
+//            printf("Upper Case");
+//       }
+//       else if(ch >= 'a' && ch <= 'z' )
+//       {
+//            printf("Lower Case");
+//       }
+//      else
+//      {
+//            printf("Not English Letter");
+//      }
+//      return 0;
+//   }
