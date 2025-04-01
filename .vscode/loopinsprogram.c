@@ -14,10 +14,7 @@
 #include<stdio.h>
   int main ()
   {
-      int i;
-    //   printf("Enter a num: ");
-    //   scanf("%d", &num);
-      for(i = 19; i == 1; i=i-1)
+      for(int i = 10; i <= 1; i--)
       {
            printf("%d\n",i);
       }
