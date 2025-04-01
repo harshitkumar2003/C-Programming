@@ -6,17 +6,18 @@
 //       scanf("%d", &num);
 //       for(i = 1; i <= num; i++)
 //       {
-//            printf("hello world\n");
+    //            printf("hello world\n");
 //       }
 //      return 0;
 //   }
 
-#include<stdio.h>
-  int main ()
-  {
-      for(int i = 10; i <= 1; i--)
+
+    #include<stdio.h>
+      int main ()
       {
-           printf("%d\n",i);
-      }
-     return 0;
-  }
+          for(int i = 0; i <= 10; i++)
+          {
+               printf("%d\n",i);
+          }
+         return 0;
+    }
