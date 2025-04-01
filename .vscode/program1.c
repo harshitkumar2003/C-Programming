@@ -159,25 +159,29 @@
 
 
 //  ----------------------------------------------------------------------------------------------
-// WAP to check if a student passed or failed
+// WAP to give grades to a student
 
-#include<stdio.h>
-  int main ()
-  {
-      int m;
-      printf("Enter marks 0 to 100: ");
-      scanf("%d", &m);
-      if(m >=0 && m <= 30)
-      {
-           printf("Fail");
-      }
-      else if(m >= 30 && m <= 100)
-      {
-        printf("Pass");
-      }
-     else
-     {
-           printf("Wrong Marks");
-     }
-     return 0;
-  }
+// #include<stdio.h>
+//   int main ()
+//   {
+//       int m;
+//       printf("Enter marks 0 to 100: ");
+//       scanf("%d", &m);
+//       if(m < 30)
+//       {
+//            printf("Grade: C");
+//       }
+//       else if(m >= 30 && m <= 70)
+//       {
+//         printf("Grade: B");
+//       }
+//      else if(m >=70 && m <= 90)
+//      {
+//            printf("Grade: A");
+//      }
+//      else
+//      {
+//            printf("Grade: A+");
+//      }
+//      return 0;
+//   }
