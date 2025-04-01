@@ -17,7 +17,7 @@
       int i;
     //   printf("Enter a num: ");
     //   scanf("%d", &num);
-      for(i = 9; i <= 1; i=i-1)
+      for(i = 19; i == 1; i=i-1)
       {
            printf("%d\n",i);
       }
