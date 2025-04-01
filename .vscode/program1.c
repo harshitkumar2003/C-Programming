@@ -68,25 +68,64 @@
 // Homework Question
 // 1. WAP to print the average of 3 numbers
 
-#include<stdio.h>
- int main ()
- {
-   float a,b,c;
-   float avg;
-     printf("Enter a number: ");
-     scanf("%f", &a);
-     printf("Enter a number: ");
-     scanf("%f", &b);
-     printf("Enter a number: ");
-     scanf("%f", &c);
-     avg = (a+b+c) / 3;
-     printf("the average of 3 number is: %f",avg);
-    return 0;
- }
-//  ----------------------------------------------------------------------------------------------
+// #include<stdio.h>
+//  int main ()
+//  {
+//    float a,b,c;
+//    float avg;
+//      printf("Enter a number: ");
+//      scanf("%f", &a);
+//      printf("Enter a number: ");
+//      scanf("%f", &b);
+//      printf("Enter a number: ");
+//      scanf("%f", &c);
+//      avg = (a+b+c) / 3;
+//      printf("the average of 3 number is: %f",avg);
+//     return 0;
+//  }
+// ------------------------------------------------------------------------------------------------
+
+
+//  -----------------------------------------------------------------------------------------------
 // 2. WAP to check if given character is digit or not
 
-//  ----------------------------------------------------------------------------------------------
+// #include<stdio.h>
+//   int main ()
+//   {
+//       char ch;
+//       printf("Enter a character: ");
+//       scanf("%c", &ch);
+//       if(ch >= '0' && ch <= '9')
+//       {
+//            printf("Given character is digit");
+//       }
+//      else
+//      {
+//            printf("Given character is not a digit");
+//      }
+//      return 0;
+//   }
 //  ----------------------------------------------------------------------------------------------
 
+
+//  ----------------------------------------------------------------------------------------------
 // 3. WAP to print the smallest number
+
+// #include<stdio.h>
+//   int main ()
+//   {
+//       int num1, num2;
+//       printf("Enter a number 1: ");
+//       scanf("%d", &num1);
+//       printf("Enter a number 2: ");
+//       scanf("%d", &num2);
+//       if(num1 < num2)
+//       {
+//            printf("smallest number is: %d",num1);
+//       }
+//      else
+//      {
+//            printf("smallest number is: %d",num2);
+//      }
+//      return 0;
+//   }
