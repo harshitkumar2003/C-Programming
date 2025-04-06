@@ -41,7 +41,7 @@
     int i,j;
        for(i = 0,j = i; i <= 10 && j <= i; i++,j--)
        {
-            printf("%d\n",i);
+            printf("%d\n",j);
        }
       return 0;
    }
