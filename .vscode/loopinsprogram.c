@@ -37,9 +37,10 @@
  #include<stdio.h>
    int main ()
    {
-       for(int i = 1; i <= 10; i++)
+    int i,j;
+       for(i = 0,j=i; i <= 10 && j<=i; i++,j--)
        {
-            printf("%d\n",i);
+            printf("%d\n",j);
        }
       return 0;
    }
