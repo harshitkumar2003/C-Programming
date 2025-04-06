@@ -34,13 +34,14 @@
     // }
 
 // -----------------------------------------------------------------------
+// this program prints -ve number upto 10 in single for loop with declaring two variable at same time
  #include<stdio.h>
    int main ()
    {
     int i,j;
-       for(i = 0,j=i; i <= 10 && j<=i; i++,j--)
+       for(i = 0,j = i; i <= 10 && j <= i; i++,j--)
        {
-            printf("%d\n",j);
+            printf("%d\n",i);
        }
       return 0;
    }
