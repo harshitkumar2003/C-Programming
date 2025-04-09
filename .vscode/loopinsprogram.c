@@ -43,7 +43,7 @@
     printf("Program for entering names in an array of three:\n ");
     for(int i = 1; i <= 3; i++){
         printf("Enter name %d: ", i);
-        scanf("%s", name);bb
+        scanf("%s", name);
     }
     temp[3] = name[3];
     for(int j = 0; j <= 3; j++){
