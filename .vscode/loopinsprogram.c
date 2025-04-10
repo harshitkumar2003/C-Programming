@@ -35,11 +35,11 @@
 
 // -----------------------------------------------------------------------
 // this program prints -ve number upto 10 in single for loop with declaring two variable at same time
- #include<stdio.h>
-   int main ()
-   {
-    char name[3];
-    char temp[3];
+//  #include<stdio.h>
+//    int main ()
+//    {
+//     char name[3];
+//     char temp[3];
     printf("Program for entering names in an array of three:\n ");
     for(int i = 1; i <= 3; i++){
         printf("Enter name %d: ", i);
