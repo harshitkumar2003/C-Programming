@@ -42,7 +42,7 @@
 //     char temp[3];
     // printf("Program for entering names in an array of three:\n ");
     // for(int i = 1; i <= 3; i++){
-        printf("Enter name %d: ", i);
+        // printf("Enter name %d: ", i);
         scanf("%s", name);
     }
     temp[3] = name[3];
