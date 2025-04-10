@@ -47,7 +47,7 @@
     // }
     // temp[3] = name[3];
     // for(int j = 0; j <= 3; j++){
-        printf("Name %d: %c\n", j, temp);
+        // printf("Name %d: %c\n", j, temp);
     }
     return 0;
    }
