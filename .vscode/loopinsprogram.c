@@ -48,9 +48,9 @@
     // temp[3] = name[3];
     // for(int j = 0; j <= 3; j++){
         // printf("Name %d: %c\n", j, temp);
-    }
-    return 0;
-   }
+//     }
+//     return 0;
+//    }
 //    {
 //     int array
 //     int i,j;
