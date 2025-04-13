@@ -85,19 +85,10 @@
     #include<stdio.h>
     int main()
     {
-        int a;
-        do {
-            printf("Enter a number: ");
-            scanf("%d", &a);
-            if (a % 2 == 0) {
-                printf("Even number\n");
-                }
-                else {
-                    printf("Odd number\n");
-                    }
-        } while(1);
-        printf("Thank you");
-
-        return 0;
+        int a=1;
+        while(a<=10){
+            printf("Enter a number: "); scanf("%d", &a);
+        }
+    return 0;
     }
     // -----------------------------------------------------------------------
