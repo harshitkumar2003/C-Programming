@@ -60,17 +60,22 @@
     //     }
     //    return 0;
     // }
+    // -----------------------------------------------------------------------
+
+    // -----------------------------------------------------------------------
+    // I have created this pattern logic using my creativity
+    // Create a pattern where a middle value decreases while loop index increases
     
-    #include<stdio.h>
-    int main ()
-    {
-        int a;
-        int b;
-        int c;
-        for(a = 0, b = 10, c = 0; a <= 10, b >= 1, c <= 10*2; a++,b--,c++)
-        {
-            printf("%d  %d  %d\n",a,b,c);
-            }
-            return 0;
-            
-    }
+    // #include<stdio.h>
+    // int main ()
+    // {
+    //     int a;
+    //     int b;
+    //     int c;
+    //     for(a = 0, b = 10, c = 0; a <= 10, b >= 1, c <= 10*2; a++,b--,c++)
+    //     {
+    //         printf("%d  %d  %d\n",a,b,c);
+    //         }
+    //         return 0;     
+    // }
+    // -----------------------------------------------------------------------
