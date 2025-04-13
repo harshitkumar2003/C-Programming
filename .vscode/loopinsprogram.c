@@ -105,7 +105,7 @@
         int a;
         printf("enter a number: ");
         scanf("%d",&a);
-        while(a!=0){
+        while(a){
         printf("%d\n",a);
         a++;
     }
