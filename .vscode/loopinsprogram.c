@@ -120,10 +120,11 @@ int main()
     int a,i=0;
     printf("enter a number: ");
     scanf("%d",&a);
-    while(i<=a){
-    printf("%d\n",i);
+   do {
+    printf("%d\t",i);
     i++;
-}
+    }while(i<=a);
+   
 return 0;
 }
 // -----------------------------------------------------------------------
