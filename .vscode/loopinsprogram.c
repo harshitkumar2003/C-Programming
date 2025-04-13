@@ -85,11 +85,17 @@
     int main()
     {
         int a;
-        while(a!=0)
-        {
+        do {
             printf("Enter a number: ");
-            a++;
-        }
+            scanf("%d", &a);
+            if (a % 2 == 0) {
+                printf("Even number\n");
+                }
+                else {
+                    printf("Odd number\n");
+                    }
+        } while(1);
+
         return 0;
     }
     // -----------------------------------------------------------------------
