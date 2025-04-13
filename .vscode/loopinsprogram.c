@@ -102,12 +102,12 @@
     #include<stdio.h>
     int main()
     {
-        int a;
+        int a,i=0;
         printf("enter a number: ");
         scanf("%d",&a);
-        while(a){
-        printf("%d\n",a);
-        a++;
+        while(i<=a){
+        printf("%d\n",i);
+        i++;
     }
     return 0;
 }
