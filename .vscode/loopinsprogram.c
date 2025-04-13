@@ -96,6 +96,7 @@
                     printf("Odd number\n");
                     }
         } while(1);
+        printf("Thank you");
 
         return 0;
     }
