@@ -99,16 +99,31 @@
 
 // -----------------------------------------------------------------------
 // printing n numbers entered by user using while loop
-    #include<stdio.h>
-    int main()
-    {
-        int a,i=0;
-        printf("enter a number: ");
-        scanf("%d",&a);
-        while(i<=a){
-        printf("%d\n",i);
-        i++;
-    }
-    return 0;
+//     #include<stdio.h>
+//     int main()
+//     {
+//         int a,i=0;
+//         printf("enter a number: ");
+//         scanf("%d",&a);
+//         while(i<=a){
+//         printf("%d\n",i);
+//         i++;
+//     }
+//     return 0;
+// }
+// -----------------------------------------------------------------------
+
+// -----------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+    int a,i=0;
+    printf("enter a number: ");
+    scanf("%d",&a);
+    while(i<=a){
+    printf("%d\n",i);
+    i++;
+}
+return 0;
 }
 // -----------------------------------------------------------------------
