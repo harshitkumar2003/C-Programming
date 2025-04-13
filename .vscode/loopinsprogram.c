@@ -82,17 +82,33 @@
 
     // -----------------------------------------------------------------------
     // Using do while loop print odd even numbers upto 10
+//     #include<stdio.h>
+//     int main()
+//     {
+//         int a=1;
+//         while(a<=10){
+//             if(a%2==0)
+//             printf("%d is even\n",a);
+//         else
+//         printf("%d is odd\n",a);
+//     a++;
+// }
+// return 0;
+// }
+// -----------------------------------------------------------------------
+
+// -----------------------------------------------------------------------
+// printing n numbers entered by user using while loop
     #include<stdio.h>
     int main()
     {
-        int a=1;
+        int a;
+        printf("enter a number: ");
+        scanf("%d",&a);
         while(a<=10){
-            if(a%2==0)
-            printf("%d is even\n",a);
-        else
-        printf("%d is odd\n",a);
-    a++;
+        printf("%d is even\n",a);
+        a++;
+    }
+    return 0;
 }
-return 0;
-}
-    // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
