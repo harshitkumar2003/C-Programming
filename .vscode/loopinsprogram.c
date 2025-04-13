@@ -64,5 +64,9 @@
     #include<stdio.h>
     int main ()
     {
+        int a;
+        int b;
+        int c;
+        for(a = 0, b = 10, c = 0; a <= 10, b >= 1, c <= 10; a++,b--,c++)
         
     }
