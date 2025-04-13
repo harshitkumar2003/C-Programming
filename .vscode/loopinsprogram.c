@@ -105,8 +105,8 @@
         int a;
         printf("enter a number: ");
         scanf("%d",&a);
-        while(a<=10){
-        printf("%d is even\n",a);
+        while(a!=0){
+        printf("%d\n",a);
         a++;
     }
     return 0;
