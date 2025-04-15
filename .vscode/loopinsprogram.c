@@ -124,7 +124,7 @@ int main()
    do {
     printf("%d\n",i);
     i++;
-    while();
+    while(i<=a);
   }
 return 0;
 }
