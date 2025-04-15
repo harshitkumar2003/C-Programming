@@ -117,7 +117,8 @@
 #include<stdio.h>
 int main()
 {
-    int a,i=0;
+    int a,
+    int i=0;
     printf("enter a number: ");
     scanf("%d",&a);
    do {
