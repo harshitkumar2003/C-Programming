@@ -115,17 +115,17 @@
 
 // -----------------------------------------------------------------------
 // printing n numbers entered by user using do-while loop
-#include<stdio.h>
-int main()
-{
-    int a;
-    int i=0;
-    printf("enter a number: ");
-    scanf("%d",&a);
-   do {
-    printf("%d\n",i);
-    i++;
-  } while(i<=a);
-return 0;
-}
+// #include<stdio.h>
+// int main()
+// {
+//     int a;
+//     int i=0;
+//     printf("enter a number: ");
+//     scanf("%d",&a);
+//    do {
+//     printf("%d\n",i);
+//     i++;
+//   } while(i<=a);
+// return 0;
+// }
 // ----------------------------------------------------------------------
