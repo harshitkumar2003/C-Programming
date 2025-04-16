@@ -149,3 +149,9 @@ int main()
 
 // Use in Loops: goto can be used to exit from deeply nested loops, but structured loops are generally clearer and more maintainable.
 // ------------------------------------------------------------------------------------------------
+
+
+
+// ==================================
+//       conditions finished
+// ==================================
