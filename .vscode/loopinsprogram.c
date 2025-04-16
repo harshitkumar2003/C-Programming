@@ -117,15 +117,15 @@
 #include<stdio.h>
 int main()
 {
-    int a,
+    int a;
     int i=0;
     printf("enter a number: ");
     scanf("%d",&a);
    do {
     printf("%d\n",i);
     i++;
-    while();
-  }
+   
+  } while(i<=a);
 return 0;
 }
 // ----------------------------------------------------------------------
