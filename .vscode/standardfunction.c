@@ -127,3 +127,6 @@ int main() {
 // ---------------------------------------------------------------------------
 // Note: The gets() function includes the newline character in the input string.
 
+// ==========================================================
+//      standard input/output funtion finished finished
+// ==========================================================

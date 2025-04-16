@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------------------------------
-// WAP to check the number is divisible 2 or not
+// 1. WAP to check the number is divisible 2 or not
 
 // #include<stdio.h>
 // int main ()
@@ -18,7 +18,7 @@
 // -------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------
-// WAP to check if 1(true) or 0(false) for following statement:
+// 2. WAP to check if 1(true) or 0(false) for following statement:
 // if it's sunday and it's snowing = true
 // if it's monday or it's raining = true
 // if a number is greater than 9 and less than 100 = true
@@ -66,7 +66,7 @@
 
 // ------------------------------------------------------------------------------------------------
 // Homework Question
-// 1. WAP to print the average of 3 numbers
+// 3. WAP to print the average of 3 numbers
 
 // #include<stdio.h>
 //  int main ()
@@ -133,7 +133,7 @@
 
 
 //  ----------------------------------------------------------------------------------------------
-// WAP to check if a student passed or failed
+// 4. WAP to check if a student passed or failed
 
 // #include<stdio.h>
 //   int main ()
@@ -159,7 +159,7 @@
 
 
 //  ----------------------------------------------------------------------------------------------
-// WAP to give grades to a student
+// 5. WAP to give grades to a student
 
 // #include<stdio.h>
 //   int main ()
@@ -189,7 +189,7 @@
 
 
 // ----------------------------------------------------------------------------------------------
-// check the code 
+// 6. check the code 
 
 // #include<stdio.h>
 //   int main ()
@@ -210,7 +210,7 @@
 
 
 // ----------------------------------------------------------------------------------------------
-// WAP to find if a character entered by user is upper case or not
+// 7. WAP to find if a character entered by user is upper case or not
 
 // #include<stdio.h>
 //   int main ()
@@ -232,3 +232,10 @@
 //      }
 //      return 0;
 //   }
+// ----------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------
+// ========================================
+//          11. programs finished
+// ========================================
