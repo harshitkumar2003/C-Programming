@@ -81,7 +81,7 @@
     // -----------------------------------------------------------------------
 
     // -----------------------------------------------------------------------
-    // Using do while loop print odd even numbers upto 10
+    // Using while loop print odd even numbers upto 10
 //     #include<stdio.h>
 //     int main()
 //     {
