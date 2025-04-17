@@ -26,47 +26,47 @@
 //  ----------------------------------------------------------------------------------------
 // Example 1: Factorial of a Number
 // Factorial of a number using recursion
-#include <stdio.h>
+// #include <stdio.h>
 // Recursive function to calculate factorial
-int factorial(int n) {
-    if (n == 0) { // Base case
-        return 1;
-    } else {
-        return n * factorial(n - 1); // Recursive call
-    }
-}
+// int factorial(int n) { //function definition
+//     if (n == 0 || n == 1) { // Base case
+//         return 1; // Factorial of 0 or 1 is 1
+//     } else {
+//         return n * factorial(n - 1); // Recursive call
+//     }
+// }
 
-int main() {
-    int num = 5;
-    printf("Factorial of %d is %d\n", num, factorial(num));
-    return 0;
-}
+// int main() {
+//     int num = 1;
+//     printf("Factorial of %d is %d\n", num, factorial(num));
+//     return 0;
+// }
 // ----------------------------------------------------------------------------------------
 
 
 // ----------------------------------------------------------------------------------------
 // Example 2: Fibonacci Series
-#include <stdio.h>
-// Recursive function to calculate nth Fibonacci number
-int fibonacci(int n) {
-    if (n == 0) { // Base case
-        return 0;
-    } else if (n == 1) { // Base case
-        return 1;
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2); // Recursive call
-    }
-}
+//  #include <stdio.h>
+ // Recursive function to calculate nth Fibonacci number
+//  int fibonacci(int n) {
+//      if (n == 0) { // Base case
+//          return 0;
+//      } else if (n == 1) { // Base case
+//          return 1;
+//      } else {
+//          return fibonacci(n - 1) + fibonacci(n - 2); // Recursive call
+//      }
+//  }
 
-int main() {
-    int terms = 10;
-    printf("Fibonacci series up to %d terms:\n", terms);
-    for (int i = 0; i < terms; i++) {
-        printf("%d ", fibonacci(i));
-    }
-    printf("\n");
-    return 0;
-}
+//  int main() {
+//      int terms;
+//      printf("Fibonacci series up to %d terms: ", terms);
+//      scanf("%d", &terms);
+//      for (int i = 0; i < terms; i++) {
+//          printf("%d ", fibonacci(i));
+//      }
+//      return 0;
+//  }
 // -------------------------------------------------------------------------------------------------
 
 
