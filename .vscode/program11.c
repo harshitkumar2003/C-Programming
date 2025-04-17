@@ -304,28 +304,61 @@
 
 // ----------------------------------------------------------------------------------------------
 // 11. WAP to print the factorial of a number n
+// #include<stdio.h>
+//    int main()
+//    {
+//        int n, i;
+//        long long factorial = 1; // Use long long to handle larger factorials
+//        printf("Enter a positive integer: ");
+//        scanf("%d", &n);
+
+//        // Check if the number is negative
+//        if (n < 0)
+//            printf("Factorial is not defined for negative numbers.\n");
+//        else
+//        {
+//            for (i = 1; i <= n; i++)
+//            {
+//                factorial *= i; // Multiply factorial by i
+//            }
+//               printf("Factorial of %d = %lld\n", n, factorial); // Print the result
+//               }
+//          return 0;
+//     }
+// ----------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------
+// 12. WAP to print reverse the table or number n
+// #include<stdio.h>
+//    int main()
+//    {
+//        int n, i;
+//          printf("Enter a number: ");
+//             scanf("%d", &n);
+//             printf("Multiplication table of %d in reverse order:\n", n);
+//             for (i = 10; i >= 1; i--)
+//             {
+//                 printf("%d x %d = %d\n", n, i, n * i); // Print the multiplication table in reverse order
+//             }
+//          return 0;
+//     }
+// ----------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------
+// 13. WAP to print the sum of all numbers between 5 to 50 include 5 and 50
 #include<stdio.h>
    int main()
    {
-       int n, i;
-       long long factorial = 1; // Use long long to handle larger factorials
-       printf("Enter a positive integer: ");
-       scanf("%d", &n);
-
-       // Check if the number is negative
-       if (n < 0)
-           printf("Factorial is not defined for negative numbers.\n");
-       else
-       {
-           for (i = 1; i <= n; i++)
-           {
-               factorial *= i; // Multiply factorial by i
-           }
-              printf("Factorial of %d = %lld\n", n, factorial); // Print the result
-              }
+         int i, sum = 0; // Initialize sum to 0
+            for (i = 5; i <= 50; i++)
+            {
+                sum += i; // Add each number to the sum
+            }
+            printf("Sum of all numbers between 5 and 50 is: %d\n", sum); // Print the result
          return 0;
     }
-
 // ----------------------------------------------------------------------------------------------
 
 
