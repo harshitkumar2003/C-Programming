@@ -287,18 +287,45 @@
 
 // ----------------------------------------------------------------------------------------------
 // 10. WAP to print all number from 1 to 10 except 5, 7
- #include<stdio.h>
+//  #include<stdio.h>
+//    int main()
+//    {
+//     int i;
+//     for(i = 1; i <= 10; i++)
+//     {
+//         if (i == 5 || i == 7)
+//         continue; // Skip printing 5 and 7
+//         printf("%d\n", i);
+//     }
+//     return 0;
+//    }
+// ----------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------
+// 11. WAP to print the factorial of a number n
+#include<stdio.h>
    int main()
    {
-    int i;
-    for(i=1; i<=10; i++)
-    {
-        if(i==5 || i==7)
-        continue;
-        printf("%d\n", i);
+       int n, i;
+       long long factorial = 1; // Use long long to handle larger factorials
+       printf("Enter a positive integer: ");
+       scanf("%d", &n);
+
+       // Check if the number is negative
+       if (n < 0)
+           printf("Factorial is not defined for negative numbers.\n");
+       else
+       {
+           for (i = 1; i <= n; i++)
+           {
+               factorial *= i; // Multiply factorial by i
+           }
+              printf("Factorial of %d = %lld\n", n, factorial); // Print the result
+              }
+         return 0;
     }
-    return 0;
-   }
+
 // ----------------------------------------------------------------------------------------------
 
 
