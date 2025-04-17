@@ -23,8 +23,29 @@
 //  ----------------------------------------------------------------------------------------
 
 
+
 //  ----------------------------------------------------------------------------------------
-// Example 1: WAP to Print Hello World using Recursion
+// Example 1: WAP to Print hello world and goodbye using two function (basic program of function)
+// #include <stdio.h>
+// void hello()
+// {
+//     printf("Hello World\n"); // Print "Hello World"
+//     goodbye(); // Call goodbye function
+// }
+// void goodbye()
+// {
+    //     printf("Goodbye\n"); // Print "Goodbye"
+    // }
+    // int main()
+// {
+//     hello(); // Call hello function
+//     return 0; // Return success
+// }
+//  ----------------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------------------------------
+// Example 2: WAP to Print Hello World using Recursion
 // #include <stdio.h>
 // // Function to print "Hello World"
 // void printHello(int n) {
@@ -40,27 +61,6 @@
 //     return 0; // Return success
 // }
 //  ----------------------------------------------------------------------------------------
-
-
-//  ----------------------------------------------------------------------------------------
-// Example 2: WAP to Print hello world and goodbye using two function (basic program of function)
-// #include <stdio.h>
-// void hello()
-// {
-//     printf("Hello World\n"); // Print "Hello World"
-//     goodbye(); // Call goodbye function
-// }
-// void goodbye()
-// {
-//     printf("Goodbye\n"); // Print "Goodbye"
-// }
-// int main()
-// {
-//     hello(); // Call hello function
-//     return 0; // Return success
-// }
-//  ----------------------------------------------------------------------------------------
-  
 
 //  ----------------------------------------------------------------------------------------
 // Example 3: Factorial of a Number
