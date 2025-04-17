@@ -23,7 +23,6 @@
 //  ----------------------------------------------------------------------------------------
 
 
-
 //  ----------------------------------------------------------------------------------------
 // Example 1: WAP to Print hello world and goodbye using two function (basic program of function)
 // #include <stdio.h>
@@ -62,8 +61,14 @@
 // }
 //  ----------------------------------------------------------------------------------------
 
+
 //  ----------------------------------------------------------------------------------------
-// Example 3: Factorial of a Number
+// Example 3: WAP to Print 
+//  ----------------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------------------------------
+// Example : Factorial of a Number
 // Factorial of a number using recursion
 // #include <stdio.h>
 // Recursive function to calculate factorial
@@ -84,7 +89,7 @@
 
 
 // ----------------------------------------------------------------------------------------
-// Example 4: Fibonacci Series
+// Example : Fibonacci Series
 //  #include <stdio.h>
  // Recursive function to calculate nth Fibonacci number
 //  int fibonacci(int n) {
