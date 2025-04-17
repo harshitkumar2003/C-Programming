@@ -348,17 +348,31 @@
 
 // ----------------------------------------------------------------------------------------------
 // 13. WAP to print the sum of all numbers between 5 to 50 include 5 and 50
-#include<stdio.h>
-   int main()
-   {
-         int i, sum = 0; // Initialize sum to 0
-            for (i = 5; i <= 50; i++)
-            {
-                sum += i; // Add each number to the sum
-            }
-            printf("Sum of all numbers between 5 and 50 is: %d\n", sum); // Print the result
-         return 0;
-    }
+// #include<stdio.h>
+//    int main()
+//    {
+//          int i, sum = 0; // Initialize sum to 0
+//             for (i = 5; i <= 50; i++)
+//             {
+//                 sum += i; // Add each number to the sum
+//             }
+//             printf("Sum of all numbers between 5 and 50 is: %d\n", sum); // Print the result
+//          return 0;
+//     }
+// ----------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------
+// Homework Question
+// 14. WAP to print the sum of all even numbers between 1 to 100 include 1 and 100
+// 15. WAP to print the sum of all odd numbers between 1 to 100 include 1 and 100
+// 16. Research what a nested loop is and use it to print the following pattern:
+// *****
+// *****
+// *****
+// *****
+// 17. WAP to check if a number is prime or not
+// 18. WAP to print prime numbers in a given range 
 // ----------------------------------------------------------------------------------------------
 
 
