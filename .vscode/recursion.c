@@ -21,6 +21,45 @@
  * }
  */
 //  ----------------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------------------------------
+// Example 1: WAP to Print Hello World using Recursion
+// #include <stdio.h>
+// // Function to print "Hello World"
+// void printHello(int n) {
+//     if (n > 0) { // Base case
+//         printf("Hello World\n"); // Print message
+//         printHello(n - 1); // Recursive call with decremented value
+//     }
+// }
+// // Main function
+// int main() {
+//     int n = 5; // Number of times to print
+//     printHello(n); // Call the recursive function
+//     return 0; // Return success
+// }
+//  ----------------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------------------------------
+// Example 2: WAP to Print hello world and goodbye using recusion (basic program of recursion)
+#include <stdio.h>
+void hello()
+{
+    printf("Hello World\n"); // Print "Hello World"
+    goodbye(); // Call goodbye function
+}
+void goodbye()
+{
+    printf("Goodbye\n"); // Print "Goodbye"
+}
+int main()
+{
+    hello(); // Call hello function
+    return 0; // Return success
+}
+//  ----------------------------------------------------------------------------------------
   
 
 //  ----------------------------------------------------------------------------------------
