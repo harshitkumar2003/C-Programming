@@ -43,27 +43,27 @@
 
 
 //  ----------------------------------------------------------------------------------------
-// Example 2: WAP to Print hello world and goodbye using recusion (basic program of recursion)
-#include <stdio.h>
-void hello()
-{
-    printf("Hello World\n"); // Print "Hello World"
-    goodbye(); // Call goodbye function
-}
-void goodbye()
-{
-    printf("Goodbye\n"); // Print "Goodbye"
-}
-int main()
-{
-    hello(); // Call hello function
-    return 0; // Return success
-}
+// Example 2: WAP to Print hello world and goodbye using two function (basic program of function)
+// #include <stdio.h>
+// void hello()
+// {
+//     printf("Hello World\n"); // Print "Hello World"
+//     goodbye(); // Call goodbye function
+// }
+// void goodbye()
+// {
+//     printf("Goodbye\n"); // Print "Goodbye"
+// }
+// int main()
+// {
+//     hello(); // Call hello function
+//     return 0; // Return success
+// }
 //  ----------------------------------------------------------------------------------------
   
 
 //  ----------------------------------------------------------------------------------------
-// Example 1: Factorial of a Number
+// Example 3: Factorial of a Number
 // Factorial of a number using recursion
 // #include <stdio.h>
 // Recursive function to calculate factorial
@@ -84,7 +84,7 @@ int main()
 
 
 // ----------------------------------------------------------------------------------------
-// Example 2: Fibonacci Series
+// Example 4: Fibonacci Series
 //  #include <stdio.h>
  // Recursive function to calculate nth Fibonacci number
 //  int fibonacci(int n) {
