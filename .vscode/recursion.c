@@ -67,7 +67,7 @@
 #include <stdio.h>
 // // Function to calculate the sum of two numbers using recursion
  int sum(int a, int b) {
-     if (b == 0) { // Base case: if b is 0, return a
+     if (b == 0) { // Base case: when b reaches 0, return a oit means a is now the sum
          return a; // Return the first number
      } else {
          return sum(a + 1, b - 1); // Recursive call: increment a and decrement b
