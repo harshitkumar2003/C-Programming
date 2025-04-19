@@ -64,25 +64,25 @@
 
 //  ----------------------------------------------------------------------------------------
 // Example 3: WAP to Print the sum of two numbers using Recursion
-#include <stdio.h>
+// #include <stdio.h>
 // // Function to calculate the sum of two numbers using recursion
- int sum(int a, int b) {
-     if (b == 0) { // Base case: when b reaches 0, return a oit means a is now the sum
-         return a; // Return the first number
-     } else {
-         return sum(a + 1, b - 1); // Recursive call: increment a and decrement b
-        //  a is incremented by 1 and b is decremented by 1 until b becomes 0
-     }
- }
+//  int sum(int a, int b) {
+//      if (b == 0) { // Base case: when b reaches 0, return a oit means a is now the sum
+//          return a; // Return the first number
+//      } else {
+//          return sum(a + 1, b - 1); // Recursive call: increment a and decrement b
+//         //  a is incremented by 1 and b is decremented by 1 until b becomes 0
+//      }
+//  }
  // Main function
- int main() {
-     int num1, num2; // Declare two integers
-     printf("Enter two numbers: "); // Prompt user for input
-     scanf("%d %d", &num1, &num2); // Read two integers from user
-     int result = sum(num1, num2); // Call the recursive sum function
-     printf("Sum of %d and %d is: %d\n", num1, num2, result); // Print the result
-     return 0; // Return success
- }
+//  int main() {
+//      int num1, num2; // Declare two integers
+//      printf("Enter two numbers: "); // Prompt user for input
+//      scanf("%d %d", &num1, &num2); // Read two integers from user
+//      int result = sum(num1, num2); // Call the recursive sum function
+//      printf("Sum of %d and %d is: %d\n", num1, num2, result); // Print the result
+//      return 0; // Return success
+//  }
 //  ----------------------------------------------------------------------------------------
 
 
