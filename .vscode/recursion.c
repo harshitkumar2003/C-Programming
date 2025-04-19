@@ -145,7 +145,7 @@
 
 
 // -------------------------------------------------------------------------------------------------
-calculate the area of square,rectangle,circle of a number given by the user using function
+// calculate the area of square,rectangle,circle of a number given by the user using function
 // -------------------------------------------------------------------------------------------------
 
 
