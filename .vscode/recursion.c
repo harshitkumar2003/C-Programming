@@ -71,6 +71,7 @@
          return a; // Return the first number
      } else {
          return sum(a + 1, b - 1); // Recursive call: increment a and decrement b
+        //  a is incremented by 1 and b is decremented by 1 until b becomes 0
      }
  }
  // Main function
