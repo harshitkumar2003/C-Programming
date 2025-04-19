@@ -141,11 +141,18 @@
 
 // -------------------------------------------------------------------------------------------------
 // calculate the area of square of a number given by the user using function
+// #include <stdio.h>
+// #define PI 3.14 // Define constant for PI
+// // Function to calculate area of square
+
 // -------------------------------------------------------------------------------------------------
 
 
 // -------------------------------------------------------------------------------------------------
 // calculate the area of square,rectangle,circle of a number given by the user using function
+// #include <stdio.h>
+// #define PI 3.14 // Define constant for PI
+// // Function to calculate area of square
 // -------------------------------------------------------------------------------------------------
 
 
