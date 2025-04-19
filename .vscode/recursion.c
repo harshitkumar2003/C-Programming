@@ -63,9 +63,25 @@
 
 
 //  ----------------------------------------------------------------------------------------
-// Example 3: WAP to Print 
+// Example 3: WAP to Print the sum of two numbers using Recursion
 // #include <stdio.h>
-
+// // Function to calculate the sum of two numbers using recursion
+// int sum(int a, int b) {
+//     if (b == 0) { // Base case: if b is 0, return a
+//         return a; // Return the first number
+//     } else {
+//         return sum(a + 1, b - 1); // Recursive call: increment a and decrement b
+//     }
+// }
+// // Main function
+// int main() {
+//     int num1, num2; // Declare two integers
+//     printf("Enter two numbers: "); // Prompt user for input
+//     scanf("%d %d", &num1, &num2); // Read two integers from user
+//     int result = sum(num1, num2); // Call the recursive sum function
+//     printf("Sum of %d and %d is: %d\n", num1, num2, result); // Print the result
+//     return 0; // Return success
+// }
 //  ----------------------------------------------------------------------------------------
 
 
