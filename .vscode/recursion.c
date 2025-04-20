@@ -134,40 +134,61 @@ syntax:
 
 // -------------------------------------------------------------------------------------------------
 // Example: WAP to convert temperature from Celsius to Fahrenheit and vice versa using function with switch case
- #include <stdio.h>
- int celsius_to_fahrenheit(int celsius) {
-    return (celsius * 9/5) + 32; // Convert Celsius to Fahrenheit
- }
-    int fahrenheit_to_celsius(int fahrenheit) {
-        return (fahrenheit - 32) * 5/9; // Convert Fahrenheit to Celsius
-    }
-    // Main function
-    int main() {
-        int choice, temp;
-        printf("Temperature Converter\n");
-        printf("Press 1 for Celsius to Fahrenheit\n");
-        printf("Press 2 for Fahrenheit to Celsius\n");
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
-        switch (choice) {
-            case 1:
-                printf("Enter temperature in Celsius: ");
-                scanf("%d", &temp);
-                printf("Temperature in Fahrenheit: %d\n", celsius_to_fahrenheit(temp));
-                break;
-            case 2:
-                printf("Enter temperature in Fahrenheit: ");
-                scanf("%d", &temp);
-                printf("Temperature in Celsius: %d\n", fahrenheit_to_celsius(temp));
-                break;
-            default:
-                printf("Invalid choice\n");
-        }
-        return 0; // Return success
-    }
+//  #include <stdio.h>
+//  int celsius_to_fahrenheit(int celsius) {
+//     return (celsius * 9/5) + 32; // Convert Celsius to Fahrenheit
+//  }
+//     int fahrenheit_to_celsius(int fahrenheit) {
+//         return (fahrenheit - 32) * 5/9; // Convert Fahrenheit to Celsius
+//     }
+//     // Main function
+//     int main() {
+//         int choice, temp;
+//         printf("Temperature Converter\n");
+//         printf("Press 1 for Celsius to Fahrenheit\n");
+//         printf("Press 2 for Fahrenheit to Celsius\n");
+//         printf("Enter your choice: ");
+//         scanf("%d", &choice);
+//         switch (choice) {
+//             case 1:
+//                 printf("Enter temperature in Celsius: ");
+//                 scanf("%d", &temp);
+//                 printf("Temperature in Fahrenheit: %d\n", celsius_to_fahrenheit(temp));
+//                 break;
+//             case 2:
+//                 printf("Enter temperature in Fahrenheit: ");
+//                 scanf("%d", &temp);
+//                 printf("Temperature in Celsius: %d\n", fahrenheit_to_celsius(temp));
+//                 break;
+//             default:
+//                 printf("Invalid choice\n");
+//         }
+//         return 0; // Return success
+//     }
 // -------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------
+// Example: WAP to calculate the percentage of marks of 5 subjects a using function 
+#include<stdio.h>
+int percentage(int marks[], int n) {
+    int sum = 0; // Initialize sum to 0
+    for(int i = 0; i < n; i++) {
+        sum = sum + marks[i]; // Add each subject's marks to sum
+    }
+    return (sum / n); // Calculate and return percentage
+}
+// Main function
+int main() {
+    int n = 5; // Number of subjects
+    int marks[5]; // Array to store marks of 5 subjects
+    printf("Enter marks for 5 subjects:\n");
+    for(int i = 0; i < 5; i++) {
+        printf("Subject %d: ", i + 1); // Prompt user for each subject's marks
+        scanf("%d", &marks[i]); // Read marks into array
+    }
+    printf("Percentage: %d%%\n", percentage(marks, n)); // Call function and print percentage
+    return 0; // Return success
+}
 // -------------------------------------------------------------------------------------------------
 
 
