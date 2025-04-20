@@ -196,7 +196,7 @@ syntax:
 
 
 //  ----------------------------------------------------------------------------------------
-Example: WAP to Print the sum of n natural numbers using Recursion
+// Example: WAP to Print the sum of n natural numbers using Recursion
  #include <stdio.h>
 // Function to calculate the sum of n natural numbers using recursion
 int sum(int n) {
