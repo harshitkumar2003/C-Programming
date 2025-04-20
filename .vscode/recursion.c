@@ -170,7 +170,7 @@
 // -------------------------------------------------------------------------------------------------
 // calculate the area of square,rectangle,circle of a number given by the user using function with switch case
  #include <stdio.h>
- #define PI 3.14 // Define constant for PI
+ #define PI 3.1416 // Define constant for PI
 //  Function to calculate area of square
 int area_of_square(int side) {
     return side * side; // Area = side^2
@@ -178,16 +178,17 @@ int area_of_square(int side) {
 int area_of_rectangle(int length, int breadth) {
     return length * breadth; // Area = length * breadth
 }
-int area_of_circle(int radius) {
-    return PI * (radius * radius); // Area = π * radius^2
+float area_of_circle(float radius) {
+    return PI * radius * radius; // Area = π * radius^2
 }
 // Main function
 int main() {
    int choice, side, length, breadth, radius;
-   printf("Enter your choice:\n");
+   printf("Enter your choice between 1 to 3:\n");
    printf("1. Square\n");
    printf("2. Rectangle\n");
    printf("3. Circle\n");
+   printf("Enter your choice: ");
    scanf("%d", &choice);
    switch (choice) {
     case 1:
