@@ -132,6 +132,44 @@ syntax:
 // }
 // -------------------------------------------------------------------------------------------------
 
+// -------------------------------------------------------------------------------------------------
+// Example: WAP to convert temperature from Celsius to Fahrenheit and vice versa using function with switch case
+ #include <stdio.h>
+ int celsius_to_fahrenheit(int celsius) {
+    return (celsius * 9/5) + 32; // Convert Celsius to Fahrenheit
+ }
+    int fahrenheit_to_celsius(int fahrenheit) {
+        return (fahrenheit - 32) * 5/9; // Convert Fahrenheit to Celsius
+    }
+    // Main function
+    int main() {
+        int choice, temp;
+        printf("Temperature Converter\n");
+        printf("Press 1 for Celsius to Fahrenheit\n");
+        printf("Press 2 for Fahrenheit to Celsius\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        switch (choice) {
+            case 1:
+                printf("Enter temperature in Celsius: ");
+                scanf("%d", &temp);
+                printf("Temperature in Fahrenheit: %d\n", celsius_to_fahrenheit(temp));
+                break;
+            case 2:
+                printf("Enter temperature in Fahrenheit: ");
+                scanf("%d", &temp);
+                printf("Temperature in Celsius: %d\n", fahrenheit_to_celsius(temp));
+                break;
+            default:
+                printf("Invalid choice\n");
+        }
+        return 0; // Return success
+    }
+// -------------------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------
+
 
 
 // -------------------------------------------------------------------------------------------------
@@ -197,24 +235,24 @@ syntax:
 
 //  ----------------------------------------------------------------------------------------
 // Example: WAP to Print the sum of n natural numbers using Recursion
- #include <stdio.h>
+//  #include <stdio.h>
 // Function to calculate the sum of n natural numbers using recursion
-int sum(int n) {
-    if (n > 0) { // Base case
-        return n + sum(n - 1); // Recursive call
-    } else {
-        return 0; // Return 0 when n is 0
-    }
-    }
+// int sum(int n) {
+//     if (n > 0) { // Base case
+//         return n + sum(n - 1); // Recursive call
+//     } else {
+//         return 0; // Return 0 when n is 0
+//     }
+//     }
 // Main function
-int main() {
-    int n;
-    printf("Enter a number: "); // Prompt user for input
-    scanf("%d", &n); // Read the number
-    int result = sum(n); // Call the recursive sum function
-    printf("Sum of first %d natural numbers is: %d\n", n, result); // Print the result
-    return 0; // Return success
-}
+// int main() {
+//     int n;
+//     printf("Enter a number: "); // Prompt user for input
+//     scanf("%d", &n); // Read the number
+//     int result = sum(n); // Call the recursive sum function
+//     printf("Sum of first %d natural numbers is: %d\n", n, result); // Print the result
+//     return 0; // Return success
+// }
 //  ----------------------------------------------------------------------------------------
             
 
