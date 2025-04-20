@@ -152,26 +152,66 @@
 
 // -------------------------------------------------------------------------------------------------
 // calculate the area of square of a number given by the user using function
- #include <stdio.h>
+//  #include <stdio.h>
 // Function to calculate area of square
+// int area_of_square(int side) {
+//     return side * side; // Area = side^2
+// }
+// Main function
+// int main() {
+//     int  side;
+//     printf("Enter the side of the square: ");
+//     scanf("%d", &side);
+//     printf("Area of square: %d\n", area_of_square(side));
+// }
+// -------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------
+// calculate the area of square,rectangle,circle of a number given by the user using function with switch case
+ #include <stdio.h>
+ #define PI 3.14 // Define constant for PI
+//  Function to calculate area of square
 int area_of_square(int side) {
     return side * side; // Area = side^2
 }
+int area_of_rectangle(int length, int breadth) {
+    return length * breadth; // Area = length * breadth
+}
+int area_of_circle(int radius) {
+    return PI * (radius * radius); // Area = π * radius^2
+}
 // Main function
 int main() {
-    int  side;
+   int choice, side, length, breadth, radius;
+   printf("Enter your choice:\n");
+   printf("1. Square\n");
+   printf("2. Rectangle\n");
+   printf("3. Circle\n");
+   scanf("%d", &choice);
+   switch (choice) {
+    case 1:
     printf("Enter the side of the square: ");
     scanf("%d", &side);
     printf("Area of square: %d\n", area_of_square(side));
+    break;
+    case 2:
+    printf("Enter the length of the rectangle: ");
+    scanf("%d", &length);
+    printf("Enter the breadth of the rectangle: ");
+    scanf("%d", &breadth);
+    printf("Area of rectangle: %d\n", area_of_rectangle(length, breadth));
+    break;
+    case 3:
+    printf("Enter the radius of the circle: ");
+    scanf("%d", &radius);
+    printf("Area of circle: %f\n", area_of_circle(radius));
+    break;
+    default:
+    printf("Invalid choice\n");
+    }
+    return 0;
 }
-// -------------------------------------------------------------------------------------------------
-
-
-// -------------------------------------------------------------------------------------------------
-// calculate the area of square,rectangle,circle of a number given by the user using function
-// #include <stdio.h>
-// #define PI 3.14 // Define constant for PI
-// // Function to calculate area of square
 // -------------------------------------------------------------------------------------------------
 
 
