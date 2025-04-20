@@ -1,146 +1,62 @@
-// --------------------------------------------------------------------------------------
+//  ----------------------------------------------------------------------------------------
 /*
- * Recursion in C Programming
- *
- * Recursion is a process where a function calls itself directly or indirectly.
- * It is used to solve problems that can be broken down into smaller, similar sub-problems.
- *
- * Key Points:
- * 1. A recursive function must have a base case to terminate the recursion.
- * 2. Each recursive call should progress towards the base case.
- * 3. Recursion can be memory-intensive due to the function call stack.
+===================================
+* function in c programming
+===================================
 
- * Syntax:
- * return_type function_name(parameters) {
- *     if (base_case_condition) {
- *         return base_case_value;
- *     } else {
- *         // Recursive call
- *         return function_name(modified_parameters);
- *     }
- * }
- */
+key points:
+* 1. A function is a block of code that performs a specific task.
+* 2. Functions help in code reusability and modular programming.
+* 3. Functions can take parameters and return values.
+* 4. Functions can be defined with or without return types.
+* 5. Functions can be called from other functions or the main function.
+* 6. Functions can be recursive, meaning they can call themselves.
+* 7. Functions can be passed as arguments to other functions.
+* 8. Functions can be overloaded, meaning multiple functions can have the same name with different parameters.
+* 9. Functions can be inline, meaning they can be expanded in place to reduce function call overhead.
+* 10. Functions can be static, meaning they can have internal linkage and are not visible outside their translation unit.
+* 11. Functions can be extern, meaning they can have external linkage and are visible across translation units.
+* 12. Functions can be defined in header files and included in multiple source files.
+* 13. Functions can be defined in libraries and linked to programs at compile time or runtime.
+* 14. Functions can be defined in different programming languages and called from C using foreign function interfaces (FFI).
+
+syntax:
+* return_type function_name(parameter_list) {
+*     // function body
+*     // code to be executed
+*    return value; // optional
+* }
+*/ 
 //  ----------------------------------------------------------------------------------------
 
 
 //  ----------------------------------------------------------------------------------------
-// Example 1: WAP to Print hello world and goodbye using two function (basic program of function)
+// Example : WAP to Print hello world and goodbye using two function (basic program of function)
 // #include <stdio.h>
 // void hello()
 // {
-//     printf("Hello World\n"); // Print "Hello World"
+//     printf("Hello World\n"); // Print "Hello World"    
 //     goodbye(); // Call goodbye function
 // }
 // void goodbye()
+//     printf("Goodbye\n"); // Print "Goodbye"    
+// }
+// int main()
 // {
-    //     printf("Goodbye\n"); // Print "Goodbye"
-    // }
-    // int main()
-// {
-//     hello(); // Call hello function
+//     hello(); // Call hello function    
 //     return 0; // Return success
 // }
 //  ----------------------------------------------------------------------------------------
 
 
-//  ----------------------------------------------------------------------------------------
-// Example 2: WAP to Print Hello World using Recursion
-// #include <stdio.h>
-// // Function to print "Hello World"
-// void printHello(int n) {
-//     if (n > 0) { // Base case
-//         printf("Hello World\n"); // Print message
-//         printHello(n - 1); // Recursive call with decremented value
-//     }
-// }
-// // Main function
-// int main() {
-//     int n = 5; // Number of times to print
-//     printHello(n); // Call the recursive function
-//     return 0; // Return success
-// }
-//  ----------------------------------------------------------------------------------------
-
-
-//  ----------------------------------------------------------------------------------------
-// Example 3: WAP to Print the sum of two numbers using Recursion
-// #include <stdio.h>
-// // Function to calculate the sum of two numbers using recursion
-//  int sum(int a, int b) {
-//      if (b == 0) { // Base case: when b reaches 0, return a oit means a is now the sum
-//          return a; // Return the first number
-//      } else {
-//          return sum(a + 1, b - 1); // Recursive call: increment a and decrement b
-//         //  a is incremented by 1 and b is decremented by 1 until b becomes 0
-//      }
-//  }
- // Main function
-//  int main() {
-//      int num1, num2; // Declare two integers
-//      printf("Enter two numbers: "); // Prompt user for input
-//      scanf("%d %d", &num1, &num2); // Read two integers from user
-//      int result = sum(num1, num2); // Call the recursive sum function
-//      printf("Sum of %d and %d is: %d\n", num1, num2, result); // Print the result
-//      return 0; // Return success
-//  }
-//  ----------------------------------------------------------------------------------------
-
-
-//  ----------------------------------------------------------------------------------------
-// Example : Factorial of a Number
-// Factorial of a number using recursion
-// #include <stdio.h>
-// Recursive function to calculate factorial
-// int factorial(int n) { //function definition
-//     if (n == 0 || n == 1) { // Base case
-//         return 1; // Factorial of 0 or 1 is 1
-//     } else {
-//         return n * factorial(n - 1); // Recursive call
-//     }
-// }
-
-// int main() {
-//     int num = 1;
-//     printf("Factorial of %d is %d\n", num, factorial(num));
-//     return 0;
-// }
-// ----------------------------------------------------------------------------------------
-
-
-// ----------------------------------------------------------------------------------------
-// Example : Fibonacci Series
-//  #include <stdio.h>
- // Recursive function to calculate nth Fibonacci number
-//  int fibonacci(int n) {
-//      if (n == 0) { // Base case
-//          return 0;
-//      } else if (n == 1) { // Base case
-//          return 1;
-//      } else {
-//          return fibonacci(n - 1) + fibonacci(n - 2); // Recursive call
-//      }
-//  }
-
-//  int main() {
-//      int terms;
-//      printf("Fibonacci series up to %d terms: ", terms);
-//      scanf("%d", &terms);
-//      for (int i = 0; i < terms; i++) {
-//          printf("%d ", fibonacci(i));
-//      }
-//      return 0;
-//  }
 // -------------------------------------------------------------------------------------------------
-
-
-// -------------------------------------------------------------------------------------------------
-//  WAP for adding GST in a product price using function
+// Examole: WAP for adding GST in a product price using function
 //  #include <stdio.h>
 //  int price(float p) {
 //      return p +  (p * 0.18); // Add 18% GST to the price
 //  }
 //  int main() {
-//     float p ; 
+//     float p ;         
 //     printf("Enter the price of the product: "); // Prompt user for input
 //     scanf("%f", &p);
 //     float tatal_price = price(p); // Call the function to calculate total price
@@ -148,8 +64,8 @@
 //     return 0; // Return success
 //  }
 // -------------------------------------------------------------------------------------------------
-
-
+        
+        
 // -------------------------------------------------------------------------------------------------
 // calculate the area of square of a number given by the user using function
 //  #include <stdio.h>
@@ -165,69 +81,186 @@
 //     printf("Area of square: %d\n", area_of_square(side));
 // }
 // -------------------------------------------------------------------------------------------------
-
-
+            
+            
 // -------------------------------------------------------------------------------------------------
-// calculate the area of square,rectangle,circle of a number given by the user using function with switch case
- #include <stdio.h>
- #define PI 3.1416 // Define constant for PI
-//  Function to calculate area of square
-int area_of_square(int side) {
-    return side * side; // Area = side^2
-}
-int area_of_rectangle(int length, int breadth) {
-    return length * breadth; // Area = length * breadth
-}
-float area_of_circle(float radius) {
-    return PI * radius * radius; // Area = π * radius^2
-}
+// Example: WAP to calculate the area of square,rectangle,circle of a number given by the user using function with switch case
+// #include <stdio.h>
+// #define PI 3.1416 // Define constant for PI
+//  Functions to calculate area of square, rectangle and circle
+// int area_of_square(int side) {
+// return side * side; // Area = side^2
+// }
+// int area_of_rectangle(int length, int breadth) {
+// return length * breadth; // Area = length * breadth
+// }
+// float area_of_circle(float radius) {
+// return PI * radius * radius; // Area = π * radius^2
+// }
+
 // Main function
-int main() {
-   int choice, side, length, breadth, radius;
-   printf("Enter your choice between 1 to 3:\n");
-   printf("1. Square\n");
-   printf("2. Rectangle\n");
-   printf("3. Circle\n");
-   printf("Enter your choice: ");
-   scanf("%d", &choice);
-   switch (choice) {
-    case 1:
-    printf("Enter the side of the square: ");
-    scanf("%d", &side);
-    printf("Area of square: %d\n", area_of_square(side));
-    break;
-    case 2:
-    printf("Enter the length of the rectangle: ");
-    scanf("%d", &length);
-    printf("Enter the breadth of the rectangle: ");
-    scanf("%d", &breadth);
-    printf("Area of rectangle: %d\n", area_of_rectangle(length, breadth));
-    break;
-    case 3:
-    printf("Enter the radius of the circle: ");
-    scanf("%d", &radius);
-    printf("Area of circle: %f\n", area_of_circle(radius));
-    break;
-    default:
-    printf("Invalid choice\n");
-    }
-    return 0;
-}
+// int main() {
+// int choice, side, length, breadth, radius;
+// printf("Enter your choice between 1 to 3:\n");
+// printf("1. Square\n");
+// printf("2. Rectangle\n");
+// printf("3. Circle\n");
+// printf("Enter your choice: ");
+// scanf("%d", &choice);
+// switch (choice) {
+// case 1:
+// printf("Enter the side of the square: ");
+// scanf("%d", &side);
+// printf("Area of square: %d\n", area_of_square(side));
+// break;
+// case 2:
+// printf("Enter the length of the rectangle: ");
+// scanf("%d", &length);
+// printf("Enter the breadth of the rectangle: ");
+// scanf("%d", &breadth);
+// printf("Area of rectangle: %d\n", area_of_rectangle(length, breadth));
+// break;
+// case 3:
+// printf("Enter the radius of the circle: ");
+// scanf("%d", &radius);
+// printf("Area of circle: %f\n", area_of_circle(radius));
+// break;
+// default:
+// printf("Invalid choice\n");
+// }
+// return 0;
+// }
 // -------------------------------------------------------------------------------------------------
+
 
 
 // -------------------------------------------------------------------------------------------------
 /*
- * Advantages of Recursion:
- * - Simplifies code for problems like tree traversal, factorial, Fibonacci, etc.
- * - Makes the code easier to read and maintain for certain problems.
+====================================
+* Recursion in C Programming
+===================================
+ 
+* Recursion is a process where a function calls itself directly or indirectly.
+* It is used to solve problems that can be broken down into smaller, similar sub-problems.
 
- * Disadvantages of Recursion:
- * - Can lead to stack overflow if the base case is not defined or reached.
- * - May be less efficient than iterative solutions due to overhead of function calls.
+* Key Points:
+* 1. A recursive function must have a base case to terminate the recursion.
+* 2. Each recursive call should progress towards the base case.
+* 3. Recursion can be memory-intensive due to the function call stack.
+* 4. Recursive functions can be less efficient than iterative solutions for some problems.
+* 5. Recursion is often used in algorithms like sorting, searching, and tree traversal.
+* 6. Recursive functions can be used to solve problems like factorial, Fibonacci series, and more.
 
- * Tips:
- * - Always define a clear base case.
- * - Use recursion only when it simplifies the problem.
+* Advantages of Recursion:
+* - Simplifies code for problems like tree traversal, factorial, Fibonacci, etc.
+* - Makes the code easier to read and maintain for certain problems.
+
+* Disadvantages of Recursion:
+* - Can lead to stack overflow if the base case is not defined or reached.
+* - May be less efficient than iterative solutions due to overhead of function calls.
+
+* Tips:
+* - Always define a clear base case.
+* - Use recursion only when it simplifies the problem.
+
+* Syntax:
+* return_type function_name(parameters) {
+*     if (base_case_condition) {
+    *         return base_case_value;
+    *     } else {
+        *         // Recursive call
+        *         return function_name(modified_parameters);
+        *     }
+        * }
  */
+//  ----------------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------------------------------
+// Example: WAP to Print Hello World using Recursion
+// #include <stdio.h>
+// Function to print "Hello World"
+// void printHello(int n) {
+//     if (n > 0) { // Base case
+//         printf("Hello World\n"); // Print message
+//         printHello(n - 1); // Recursive call with decremented value
+//     }
+// }
+// Main function
+// int main() {
+//     int n = 5; // Number of times to print
+//     printHello(n); // Call the recursive function
+//     return 0; // Return success
+// }
+//  ----------------------------------------------------------------------------------------
+            
+
+//  ----------------------------------------------------------------------------------------
+// Example: WAP to Print the sum of two numbers using Recursion
+// #include <stdio.h>
+// // Function to calculate the sum of two numbers using recursion
+//  int sum(int a, int b) {
+//      if (b == 0) { // Base case: when b reaches 0, return a oit means a is now the sum    
+//          return a; // Return the first number
+//      } else {
+//          return sum(a + 1, b - 1); // Recursive call: increment a and decrement b    
+//         //  a is incremented by 1 and b is decremented by 1 until b becomes 0
+//      }
+//  }
+// Main function
+//  int main() {
+//      int num1, num2; // Declare two integers
+//      printf("Enter two numbers: "); // Prompt user for input
+//      scanf("%d %d", &num1, &num2); // Read two integers from user    
+//      int result = sum(num1, num2); // Call the recursive sum function
+//      printf("Sum of %d and %d is: %d\n", num1, num2, result); // Print the result
+//      return 0; // Return success
+//  }
+//  ----------------------------------------------------------------------------------------
+
+            
+//  ----------------------------------------------------------------------------------------
+// Example: Factorial of a Number
+// Factorial of a number using recursion
+// #include <stdio.h>
+// Recursive function to calculate factorial
+// int factorial(int n) { //function definition
+//     if (n == 0 || n == 1) { // Base case
+//         return 1; // Factorial of 0 or 1 is 1
+//     } else {
+//         return n * factorial(n - 1); // Recursive call
+//     }
+// }    
+// Main function
+// int main() {
+//     int num = 1;
+//     printf("Factorial of %d is %d\n", num, factorial(num));
+//     return 0;
+// }    
+// ----------------------------------------------------------------------------------------
+        
+        
+// ----------------------------------------------------------------------------------------
+// Example: Fibonacci Series
+//  #include <stdio.h>
+// Recursive function to calculate nth Fibonacci number
+//  int fibonacci(int n) {
+//      if (n == 0) { // Base case
+//          return 0;
+//      } else if (n == 1) { // Base case    
+//          return 1;
+//      } else {
+//          return fibonacci(n - 1) + fibonacci(n - 2); // Recursive call
+//      }
+//  }
+//  Main function          
+//  int main() {
+//      int terms;
+//      printf("Fibonacci series up to %d terms: ", terms);        
+//      scanf("%d", &terms);
+//      for (int i = 0; i < terms; i++) {
+//          printf("%d ", fibonacci(i));
+//      }    
+//      return 0;
+//  }
 // -------------------------------------------------------------------------------------------------
