@@ -135,7 +135,18 @@
 
 // -------------------------------------------------------------------------------------------------
 //  WAP for adding GST in a product price using function
-// #include <stdio.h>
+ #include <stdio.h>
+ int price(float p) {
+     return p +  (p * 0.18); // Add 18% GST to the price
+ }
+ int main() {
+    float p ; 
+    printf("Enter the price of the product: "); // Prompt user for input
+    scanf("%f", &p);
+    float tatal_price = price(p); // Call the function to calculate total price
+    printf("Total price after adding GST: %.2f\n", tatal_price); // Print the total price
+    return 0; // Return success
+ }
 // -------------------------------------------------------------------------------------------------
 
 
