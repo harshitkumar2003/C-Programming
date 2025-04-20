@@ -193,6 +193,29 @@ syntax:
 //     return 0; // Return success
 // }
 //  ----------------------------------------------------------------------------------------
+
+
+//  ----------------------------------------------------------------------------------------
+Example: WAP to Print the sum of n natural numbers using Recursion
+ #include <stdio.h>
+// Function to calculate the sum of n natural numbers using recursion
+int sum(int n) {
+    if (n > 0) { // Base case
+        return n + sum(n - 1); // Recursive call
+    } else {
+        return 0; // Return 0 when n is 0
+    }
+    }
+// Main function
+int main() {
+    int n;
+    printf("Enter a number: "); // Prompt user for input
+    scanf("%d", &n); // Read the number
+    int result = sum(n); // Call the recursive sum function
+    printf("Sum of first %d natural numbers is: %d\n", n, result); // Print the result
+    return 0; // Return success
+}
+//  ----------------------------------------------------------------------------------------
             
 
 //  ----------------------------------------------------------------------------------------
