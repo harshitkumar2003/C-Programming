@@ -221,7 +221,15 @@ Example: WAP to print the square root of a number using function
 // Function to calculate square root of a number
  double square_root(double num) {
     return sqrt(num); // Return square root of the number
-    
+ }
+// Main function
+ int main() {
+    double number;
+   printf("Enter a number: "); // Prompt user for input
+   
+
+
+
 // -------------------------------------------------------------------------------------------------
 
 
