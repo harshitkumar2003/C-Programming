@@ -193,7 +193,24 @@ syntax:
 
 // -------------------------------------------------------------------------------------------------
 // Example: WAP to print sum of digits of a number using function
-
+ #include <stdio.h>
+// Function to calculate sum of digits of a number
+ int sum_of_digits(int num) {
+        if (num == 0) { // Base case: if number is 0, return 0
+            return 0;
+        } else {
+            return (num % 10) + sum_of_digits(num / 10); // Recursive call: add last digit and call function with remaining digits
+        }
+    }
+// Main function
+int main() {
+    int number;
+    printf("Enter a number: "); // Prompt user for input
+    scanf("%d", &number); // Read the number
+    int sum = sum_of_digits(number); // Call function to calculate sum of digits
+    printf("Sum of digits of %d is: %d\n", number, sum); // Print the result
+    return 0; // Return success
+}
 // -------------------------------------------------------------------------------------------------
 
 
