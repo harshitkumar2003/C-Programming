@@ -215,7 +215,13 @@ syntax:
 
 
 // -------------------------------------------------------------------------------------------------
-
+Example: WAP to print the square root of a number using function
+#include <stdio.h>
+#include <math.h> // Include math library for sqrt function
+// Function to calculate square root of a number
+ double square_root(double num) {
+    return sqrt(num); // Return square root of the number
+    
 // -------------------------------------------------------------------------------------------------
 
 
