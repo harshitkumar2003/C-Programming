@@ -226,10 +226,11 @@ Example: WAP to print the square root of a number using function
  int main() {
     double number;
    printf("Enter a number: "); // Prompt user for input
-   
-
-
-
+   scanf("%lf", &number); // Read the number
+    double result = square_root(number); // Call function to calculate square root
+    printf("Square root of %.2f is: %.2f\n", number, result); // Print the result
+    return 0; // Return success
+ }
 // -------------------------------------------------------------------------------------------------
 
 
