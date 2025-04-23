@@ -169,26 +169,26 @@ syntax:
 
 // -------------------------------------------------------------------------------------------------
 // Example: WAP to calculate the percentage of marks of 5 subjects a using function 
-#include<stdio.h>
-int percentage(int marks[], int n) {
-    int sum = 0; // Initialize sum to 0
-    for(int i = 0; i < n; i++) {
-        sum = sum + marks[i]; // Add each subject's marks to sum
-    }
-    return (sum / n); // Calculate and return percentage
-}
+// #include<stdio.h>
+// int percentage(int marks[], int n) {
+//     int sum = 0; // Initialize sum to 0
+//     for(int i = 0; i < n; i++) {
+//         sum = sum + marks[i]; // Add each subject's marks to sum
+//     }
+//     return (sum / n); // Calculate and return percentage
+// }
 // Main function
-int main() {
-    int n = 5; // Number of subjects
-    int marks[5]; // Array to store marks of 5 subjects
-    printf("Enter marks for 5 subjects:\n");
-    for(int i = 0; i < 5; i++) {
-        printf("Subject %d: ", i + 1); // Prompt user for each subject's marks
-        scanf("%d", &marks[i]); // Read marks into array
-    }
-    printf("Percentage: %d%%\n", percentage(marks, n)); // Call function and print percentage
-    return 0; // Return success
-}
+// int main() {
+//     int n = 6; // Number of subjects
+//     int marks[6]; // Array to store marks of 5 subjects
+//     printf("Enter marks for 5 subjects:\n");
+//     for(int i = 0; i < 6; i++) {
+//         printf("Subject %d: ", i + 1); // Prompt user for each subject's marks
+//         scanf("%d", &marks[i]); // Read marks into array
+//     }
+//     printf("Percentage: %d%%\n", percentage(marks, n)); // Call function and print percentage
+//     return 0; // Return success
+// }
 // -------------------------------------------------------------------------------------------------
 
 
