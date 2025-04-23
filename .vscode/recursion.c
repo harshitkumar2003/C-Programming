@@ -219,7 +219,7 @@ Example: WAP to print the square root of a number using function
 #include <stdio.h>
 #include <math.h> // Include math library for sqrt function
 // Function to calculate square root of a number
- double square_root(double num) {
+ double square_root(int num) {
         if (num < 0) { // Check if the number is negative
             printf("Error: Negative number\n"); // Print error message
             return -1; // Return -1 for error
@@ -232,9 +232,9 @@ Example: WAP to print the square root of a number using function
  }
 // Main function
  int main() {
- double number;
+int number;
    printf("Enter a number: "); // Prompt user for input
-   scanf("%lf", &number); // Read the number
+   scanf("%d", &number); // Read the number
     double result = square_root(number); // Call function to calculate square root
     printf("Square root of %.2f is: %.2f\n", number, result); // Print the result
     return 0; // Return success
