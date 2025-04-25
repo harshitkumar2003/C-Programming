@@ -13,3 +13,6 @@
 // * 6. Pointers can be passed to functions to modify the original variable's value.
 // * 7. Pointers can be used to allocate and deallocate memory dynamically using malloc() and free() functions.
 // * 8. Pointers can be used to create arrays of pointers, pointer to pointers, and function pointers.
+// * 9. Pointers can be used to create multi-dimensional arrays and strings.
+// * 10. Pointers can be used to create and manipulate complex data types like structures and unions.
+// * 11. Pointers can be used to create and manipulate
