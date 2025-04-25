@@ -18,3 +18,4 @@
 // * 11. Pointers can be used to create and manipulate arrays of structures and structures of pointers.
 // * 12. Pointers can be used to create and manipulate arrays of arrays and arrays of pointers to functions.
 // * 13. Pointers can be used to create and manipulate arrays of pointers to structures and structures of pointers to arrays.
+// * 14. Pointers can be used to create and manipulate arrays of pointers to functions and functions of pointers to arrays.
