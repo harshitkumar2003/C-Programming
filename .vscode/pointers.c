@@ -8,3 +8,4 @@
 // * 2. They are declared using the asterisk (*) symbol before the variable name.
 // * 3. Pointers can be dereferenced using the asterisk (*) operator to access the value at the address they point to.
 // * 4. The address of a variable can be obtained using the ampersand (&) operator.
+// * 5. Pointers can be used to create dynamic data structures like linked lists, trees, etc.
