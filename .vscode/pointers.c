@@ -15,4 +15,4 @@
 // * 8. Pointers can be used to create arrays of pointers, pointer to pointers, and function pointers.
 // * 9. Pointers can be used to create multi-dimensional arrays and strings.
 // * 10. Pointers can be used to create and manipulate complex data types like structures and unions.
-// * 11. Pointers can be used to create and manipulate arrays of structures and structures of pointers
+// * 11. Pointers can be used to create and manipulate arrays of structures and structures of pointers.
