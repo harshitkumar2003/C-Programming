@@ -12,3 +12,4 @@
 // * 5. Pointers can be used to create dynamic data structures like linked lists, trees, etc.
 // * 6. Pointers can be passed to functions to modify the original variable's value.
 // * 7. Pointers can be used to allocate and deallocate memory dynamically using malloc() and free() functions.
+// * 8. Pointers can be used to create arrays of pointers, pointer to pointers, and function pointers.
