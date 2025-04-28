@@ -29,16 +29,82 @@
 
 
 // -------------------------------------------------------------------------------------------------------------
-// Example 1: Basic Pointer Declaration and Initialization
-int main() {
-    int a = 10; // Declare an integer variable
-    int *p; // Declare a pointer to an integer
-    p = &a; // Initialize the pointer with the address of the variable 'a'
-    printf("Value of a: %d\n", a); // Output: 10
-    printf("Address of a: %p\n", (void*)&a); // Output: Address of 'a'
-    printf("Value of p: %p\n", (void*)p); // Output: Address of 'a'
-    printf("Value pointed by p: %d\n", *p); // Output: 10
+// syntax:
+// Example: Basic Pointer Declaration and Initialization
+// int main() {
+//     int a = 10; // Declare an integer variable
+//     int *p; // Declare a pointer to an integer
+//     p = &a; // Initialize the pointer with the address of the variable 'a'
+//     printf("Value of a: %d\n", a); // Output: 10
+//     printf("Address of a: %p\n", (void*)&a); // Output: Address of 'a'
+//     printf("Value of p: %p\n", (void*)p); // Output: Address of 'a'
+//     printf("Value pointed by p: %d\n", *p); // Output: 10
 
-    return 0;
-}
+//     return 0;
+// }
+// -------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------
+// Example: Pointer Arithmetic
+//  #include <stdio.h>
+//  int main() {
+//      int arr[] = {1, 2, 3, 4, 5}; // Declare an array of integers
+//      int *p = arr; // Initialize the pointer with the address of the first element of the array
+
+//      printf("Array elements using pointer arithmetic:\n");
+//      for (int i = 0; i < 5; i++) {
+//          printf("%d ", *(p + i)); // Access array elements using pointer arithmetic
+//      }
+//      printf("\n");
+
+// return 0;
+//  }
+// -------------------------------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------------------------------------------
+// * variable that stores the address of another variable. They are used to manipulate data in memory directly and can be used to create dynamic data structures like linked lists, trees, etc
+
+// Example: Pointer to Pointer
+//   #include <stdio.h>
+//   int main() {
+//     int a = 10; // Declare an integer variable
+//      int *p; // Declare a pointer to an integer
+//      int **q; // Declare a pointer to a pointer to an integer
+//      p = &a; // Initialize the pointer with the address of the variable 'a'
+//      q = &p; // Initialize the pointer to pointer with the address of the pointer 'p'
+//       printf("Value of a: %d\n", a); // Output: 10
+//         printf("Address of a: %p\n", (void*)&a); // Output: Address of 'a'
+//         printf("Value of p: %p\n", (void*)p); // Output: Address of 'a'
+//         printf("Value pointed by p: %d\n", *p); // Output: 10
+//         printf("Value of q: %p\n", (void*)q); // Output: Address of 'p'
+//         printf("Value pointed by q: %p\n", (void*)*q); // Output: Address of 'a'
+//         printf("Value pointed by q: %d\n", **q); // Output: 10
+//         printf("Address of p: %p\n", (void*)&p); // Output: Address of 'p'
+//         printf("Address of q: %p\n", (void*)&q); // Output: Address of 'q'
+//   return 0;
+//     }
+// -------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------
+// Example: Pointer to Function
+   #include <stdio.h>
+    void square(int n ); // Function to print square of a number
+    void square(int n) {
+         printf("Square is: %d\n", n*n);
+    }
+    // main  function to demonstrate pointer to function
+    int main() {
+        func_ptr = square (num); // Initialize the function pointer with the address of the function 'square'
+        func_ptr(5); // Call the function using the function pointer
+        return 0;
+    }
+
+
+
+
+
+
+
 // -------------------------------------------------------------------------------------------------------------
