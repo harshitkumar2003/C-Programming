@@ -215,30 +215,36 @@ syntax:
 
 
 // -------------------------------------------------------------------------------------------------
-Example: WAP to print the square root of a number using function
-#include <stdio.h>
-#include <math.h> // Include math library for sqrt function
-// Function to calculate square root of a number
- double square_root(int num) {
-        if (num < 0) { // Check if the number is negative
-            printf("Error: Negative number\n"); // Print error message
-            return -1; // Return -1 for error
-        }
-        if (num == 0 || num == 1) { // Base case: square root of 0 or 1 is itself
-            return num;
-        }
-        // Calculate square root using sqrt function from math library
-    return sqrt(num); // Return square root of the number
- }
-// Main function
- int main() {
-int number;
-   printf("Enter a number: "); // Prompt user for input
-   scanf("%d", &number); // Read the number
-    double result = square_root(number); // Call function to calculate square root
-    printf("Square root of %.2f is: %.2f\n", number, result); // Print the result
-    return 0; // Return success
- }
+// Example: WAP to print the square root of a number using function
+// #include <stdio.h>
+// #include <math.h> // Include math library for sqrt function
+// // Function to calculate square root of a number
+//  double square_root(double num) {
+//         if (num < 0) { // Check if the number is negative
+//             printf("Error: Negative number\n"); // Print error message
+//             return -1; // Return -1 for error
+//         }
+//         if (num == 0 || num == 1) { // Base case: square root of 0 or 1 is itself
+//             return num;
+//         }
+//         // Calculate square root using sqrt function from math library
+//     return sqrt(num); // Return square root of the number
+//  }
+// // Main function
+//  int main() {
+// int number;
+//    printf("Enter a number: "); // Prompt user for input
+//    scanf("%d", &number); // Read the number
+//     double squareRootResult = square_root(number); // Call function to calculate square root
+//     printf("Square root of %d is: %.2lf\n", number, squareRootResult); // Print the result
+//     return 0; // Return success
+//  }
+// -------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------
+// Example: WAP to print Hot and Cold depends on the temperature user input using function
+// #include <stdio.h>
 // -------------------------------------------------------------------------------------------------
 
 
