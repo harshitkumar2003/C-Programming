@@ -268,24 +268,24 @@ syntax:
 
 // -------------------------------------------------------------------------------------------------
 // Example: WAP to make your own power function 
-#include <stdio.h>
-// Function to calculate power of a number
-int power(int base, int exponent) {
-    if (exponent == 0) { // Base case: any number raised to the power of 0 is 1
-        return 1;
-    } else {
-        return base * power(base, exponent - 1); // Recursive call: multiply base with power of base and exponent-1
-    }
-}
-// Main function
-int main() {
-    int base, exponent;
-    printf("Enter base and exponent: "); // Prompt user for input
-    scanf("%d %d", &base, &exponent); // Read base and exponent
-    int result = power(base, exponent); // Call function to calculate power
-    printf("%d raised to the power of %d is: %d\n", base, exponent, result); // Print the result
-    return 0; // Return success
-}
+// #include <stdio.h>
+// // Function to calculate power of a number
+// int power(int base, int exponent) {
+//     if (exponent == 0) { // Base case: any number raised to the power of 0 is 1
+//         return 1;
+//     } else {
+//         return base * power(base, exponent - 1); // Recursive call: multiply base with power of base and exponent-1
+//     }
+// }
+// // Main function
+// int main() {
+//     int base, exponent;
+//     printf("Enter base and exponent: "); // Prompt user for input
+//     scanf("%d %d", &base, &exponent); // Read base and exponent
+//     int result = power(base, exponent); // Call function to calculate power
+//     printf("%d raised to the power of %d is: %d\n", base, exponent, result); // Print the result
+//     return 0; // Return success
+// }
 // -------------------------------------------------------------------------------------------------
 
 
