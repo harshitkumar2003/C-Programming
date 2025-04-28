@@ -34,7 +34,6 @@ int main() {
     int a = 10; // Declare an integer variable
     int *p; // Declare a pointer to an integer
     p = &a; // Initialize the pointer with the address of the variable 'a'
-
     printf("Value of a: %d\n", a); // Output: 10
     printf("Address of a: %p\n", (void*)&a); // Output: Address of 'a'
     printf("Value of p: %p\n", (void*)p); // Output: Address of 'a'
