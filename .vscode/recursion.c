@@ -244,7 +244,7 @@ syntax:
 
 // -------------------------------------------------------------------------------------------------
 // Example: WAP to print Hot and Cold depends on the temperature user input using function
-// #include <stdio.h>
+#include <stdio.h>
 // -------------------------------------------------------------------------------------------------
 
 
