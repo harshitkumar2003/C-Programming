@@ -245,6 +245,23 @@ syntax:
 // -------------------------------------------------------------------------------------------------
 // Example: WAP to print Hot and Cold depends on the temperature user input using function
 #include <stdio.h>
+// Function to check if temperature is hot or cold
+ void check_temperature(int temp) {
+        if (temp > 30) { // If temperature is greater than 30
+            printf("Hot\n"); // Print "Hot"
+        } else if (temp < 15) { // If temperature is less than 15
+            printf("Cold\n"); // Print "Cold"
+        } else {
+            printf("Moderate\n"); // Print "Moderate" for temperatures between 15 and 30
+        }
+    }
+// Main function
+ int main() {
+    int temperature;
+    printf("Enter the temperature: "); // Prompt user for input
+    scanf("%d", &temperature); // Read the temperature
+    check_temperature(temperature); // Call function to check temperature
+    return 0; // Return success
 // -------------------------------------------------------------------------------------------------
 
 
