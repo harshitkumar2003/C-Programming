@@ -262,6 +262,7 @@ syntax:
     scanf("%d", &temperature); // Read the temperature
     check_temperature(temperature); // Call function to check temperature
     return 0; // Return success
+ }
 // -------------------------------------------------------------------------------------------------
 
 
