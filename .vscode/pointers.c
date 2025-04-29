@@ -105,4 +105,17 @@
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: Pointer to Array
+#include <stdio.h>
+int main() {
+    int arr[] = {1, 2, 3, 4, 5}; // Declare an array of integers
+    int *p = arr; // Initialize the pointer with the address of the first element of the array
+
+    printf("Array elements using pointer:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", *(p + i)); // Access array elements using pointer
+    }
+    printf("\n");
+
+    return 0;
+}
 // ------------------------------------------------------------------------------------------------------------
