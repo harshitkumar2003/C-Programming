@@ -149,6 +149,16 @@
 //     (*p)--; // Decrement the value at the address pointed by the pointer
 // }
 
+// int main() {
+    //  int a = 10; // Declare an integer variable
+    //  *ptr = &a; // Initialize the pointer with the address of the variable 'a'
+    //     printf("Value of a before increment: %d\n", a); // Output: 10
+    //     ++ptr; // Increment the value at the address pointed by the pointer
+    //     printf("Value of a after increment: %d\n", a); // Output: 11
+    //     --ptr; // Decrement the value at the address pointed by the pointer
+    //     printf("Value of a after decrement: %d\n", a); // Output: 10
+
+
 
 
 
