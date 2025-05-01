@@ -63,8 +63,6 @@
 // -------------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------------
-// * variable that stores the address of another variable. They are used to manipulate data in memory directly and can be used to create dynamic data structures like linked lists, trees, etc
-
 // Example: Pointer to Pointer
 //   #include <stdio.h>
 //   int main() {
@@ -128,6 +126,7 @@ struct Point { // Define a structure
     int x;
     int y;
 };
+
 
 
 
