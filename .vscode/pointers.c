@@ -189,7 +189,6 @@
 // }
 // ------------------------------------------------------------------------------------------------------------
 // Example: calculate the sum, average and product of two numbers using pointers
-]\
 #include <stdio.h>
 void calculate(int a, int b, int *sum, float *avg, int *prod) { // Function to calculate sum, average and product using pointers
     *sum = *a + *b; // Calculate sum and store it at the address pointed by 'sum'
