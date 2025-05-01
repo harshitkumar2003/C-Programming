@@ -145,9 +145,9 @@
 //     (*p)++; // Increment the value at the address pointed by the pointer
 // }
 
-decrement(int *p) { // Function to decrement the value pointed by the pointer
-    (*p)--; // Decrement the value at the address pointed by the pointer
-}
+// decrement(int *p) { // Function to decrement the value pointed by the pointer
+//     (*p)--; // Decrement the value at the address pointed by the pointer
+// }
 
 
 
