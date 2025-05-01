@@ -99,6 +99,18 @@
 //         func_ptr(5); // Call the function using the function pointer
 //         return 0;
 //     }
+// Example: Pointer to Function for changing value of a variable in main function
+//    #include <stdio.h>
+//     void square(int *n ); // Function to print square of a number
+//     void square(int *n) {
+//          printf("Square is: %d\n", (*n)*(*n));
+//     }
+//     // main  function to demonstrate pointer to function
+//     int main() {
+//         func_ptr = square (num); // Initialize the function pointer with the address of the function 'square'
+//         func_ptr(5); // Call the function using the function pointer
+//         return 0;
+//     }
 // ------------------------------------------------------------------------------------------------------------
 
 
