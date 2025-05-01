@@ -173,20 +173,20 @@
     // }
 // ------------------------------------------------------------------------------------------------------------
 // Example: swapping two numbers using pointers
-#include <stdio.h>
-void swap(int *a, int *b) { // Function to swap two numbers using pointers
-    int temp; // Temporary variable to hold the value during swapping
-    temp = *a; // Store the value pointed by 'a' in 'temp'
-    *a = *b; // Assign the value pointed by 'b' to the address pointed by 'a'
-    *b = temp; // Assign the value stored in 'temp' to the address pointed by 'b'
-}
-int main() {
-    int x = 5, y = 10; // Declare two integer variables
-    printf("Before swapping: x = %d, y = %d\n", x, y); // Output: Before swapping: x = 5, y = 10
-    swap(&x, &y); // Call the swap function with the addresses of 'x' and 'y'
-    printf("After swapping: x = %d, y = %d\n", x, y); // Output: After swapping: x = 10, y = 5
-    return 0;
-}
+// #include <stdio.h>
+// void swap(int *a, int *b) { // Function to swap two numbers using pointers
+//     int temp; // Temporary variable to hold the value during swapping
+//     temp = *a; // Store the value pointed by 'a' in 'temp'
+//     *a = *b; // Assign the value pointed by 'b' to the address pointed by 'a'
+//     *b = temp; // Assign the value stored in 'temp' to the address pointed by 'b'
+// }
+// int main() {
+//     int x = 5, y = 10; // Declare two integer variables
+//     printf("Before swapping: x = %d, y = %d\n", x, y); // Output: Before swapping: x = 5, y = 10
+//     swap(&x, &y); // Call the swap function with the addresses of 'x' and 'y'
+//     printf("After swapping: x = %d, y = %d\n", x, y); // Output: After swapping: x = 10, y = 5
+//     return 0;
+// }
 // ------------------------------------------------------------------------------------------------------------
 // Example: calculate the sum, average and product of two numbers using pointers
 ]\
