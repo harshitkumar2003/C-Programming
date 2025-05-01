@@ -122,20 +122,20 @@
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: Pointer to Structure
-#include <stdio.h>
-struct Point { // Define a structure
-    int x = 0;
-    int y = 5;
-};
-int main() {
-    struct Point p1; // Declare a structure variable
-    struct Point *p2; // Declare a pointer to the structure
-    p2 = &p1; // Initialize the pointer with the address of the structure variable
+// #include <stdio.h>
+// struct Point { // Define a structure
+//     int x = 0;
+//     int y = 5;
+// };
+// int main() {
+//     struct Point p1; // Declare a structure variable
+//     struct Point *p2; // Declare a pointer to the structure
+//     p2 = &p1; // Initialize the pointer with the address of the structure variable
 
-    printf("Point coordinates: (%d, %d)\n", p2->x, p2->y); // Access structure members using pointer
+//     printf("Point coordinates: (%d, %d)\n", p2->x, p2->y); // Access structure members using pointer
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 
