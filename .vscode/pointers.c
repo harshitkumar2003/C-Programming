@@ -188,34 +188,31 @@
 //     return 0;
 // }
 // ------------------------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------------------
 // Example: calculate the sum, average and product of two numbers using pointers
-#include <stdio.h>
-void calculate(int a, int b, int *sum, float *avg, int *prod); // functiom prototype
-void calculate(int a, int b, int *sum, float *avg, int *prod) { // Function to calculate sum, average and product using pointers
-    *sum = a + b; // Calculate sum and store it at the address pointed by 'sum'
-    *avg = (a + b) / 2; // Calculate average and store it at the address pointed by 'avg'
-    *prod = (a) * (b); // Calculate product and store it at the address pointed by 'prod'
-}
-int main() {
-    int x = 5, y = 10; // Declare two integer variables
-    int sum; // Variable to store sum
-    float avg; // Variable to store average
-    int prod; // Variable to store product
+// #include <stdio.h>
+// void calculate(int a, int b, int *sum, float *avg, int *prod); // functiom prototype
+// void calculate(int a, int b, int *sum, float *avg, int *prod) { // Function to calculate sum, average and product using pointers
+//     *sum = a + b; // Calculate sum and store it at the address pointed by 'sum'
+//     *avg = (a + b) / 2; // Calculate average and store it at the address pointed by 'avg'
+//     *prod = (a) * (b); // Calculate product and store it at the address pointed by 'prod'
+// }
+// int main() {
+//     int x = 5, y = 10; // Declare two integer variables
+//     int sum; // Variable to store sum
+//     float avg; // Variable to store average
+//     int prod; // Variable to store product
 
-    calculate(x, y, &sum, &avg, &prod); // Call the calculate function with the addresses of 'sum', 'avg' and 'prod'
+//     calculate(x, y, &sum, &avg, &prod); // Call the calculate function with the addresses of 'sum', 'avg' and 'prod'
 
-    printf("Sum: %d\n", sum); // Output: Sum: 15
-    printf("Average: %.2f\n", avg); // Output: Average: 7.50
-    printf("Product: %d\n", prod); // Output: Product: 50
+//     printf("Sum: %d\n", sum); // Output: Sum: 15
+//     printf("Average: %.2f\n", avg); // Output: Average: 7.50
+//     printf("Product: %d\n", prod); // Output: Product: 50
 
-    return 0;
-}
-
-
-
-
-
-
+//     return 0;
+// }
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
 
