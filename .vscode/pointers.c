@@ -219,7 +219,7 @@
 // ------------------------------------------------------------------------------------------------------------
 // Homework Assignment: 
 //  Example: WAP to find maximum using pointers between two numbers.
-Example: WAP to print elements of an array using pointers in reverse order. 
+// Example: WAP to print elements of an array using pointers in reverse order. 
 // ------------------------------------------------------------------------------------------------------------
 
 
