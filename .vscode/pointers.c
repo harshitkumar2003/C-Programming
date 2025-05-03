@@ -268,7 +268,7 @@ int main() {
 
     printf("English Alphabets:\n");
     for (int i = 0; i < 26; i++) {
-        printf("%c ", *(p + i)); // Access and print each alphabet using pointer
+        printf("%c\t ",*p+i); // Access and print each alphabet using pointer
     }
     printf("\n");
 
