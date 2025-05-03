@@ -223,21 +223,21 @@
 // Example: WAP to print all english alphabets using pointers.
 // ------------------------------------------------------------------------------------------------------------
 //  Example: WAP to find maximum using pointers between two numbers.
- #include <stdio.h>
- void find_max(int *a, int *b, int *max) { // Function to find maximum using pointers
-     if (*a > *b) { // Compare the values pointed by 'a' and 'b'
-         *max = *a; // Assign the maximum value to the address pointed by 'max'
-     } else {
-         *max = *b; // Assign the maximum value to the address pointed by 'max'
-     }
- }
-    int main() {
-        int x = 5, y = 10; // Declare two integer variables
-        int max; // Variable to store maximum
+//  #include <stdio.h>
+//  void find_max(int *a, int *b, int *max) { // Function to find maximum using pointers
+//      if (*a > *b) { // Compare the values pointed by 'a' and 'b'
+//          *max = *a; // Assign the maximum value to the address pointed by 'max'
+//      } else {
+//          *max = *b; // Assign the maximum value to the address pointed by 'max'
+//      }
+//  }
+//     int main() {
+//         int x = 5, y = 10; // Declare two integer variables
+//         int max; // Variable to store maximum
     
-        find_max(&x, &y, &max); // Call the find_max function with the addresses of 'x', 'y' and 'max'
+//         find_max(&x, &y, &max); // Call the find_max function with the addresses of 'x', 'y' and 'max'
     
-        printf("Maximum: %d\n", max); // Output: Maximum: 10
+//         printf("Maximum: %d\n", max); // Output: Maximum: 10
     
-        return 0;
-    }
+//         return 0;
+//     }
