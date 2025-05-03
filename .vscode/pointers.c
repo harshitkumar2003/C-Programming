@@ -242,4 +242,7 @@
 //         return 0;
 //     }
 
+
 // ------------------------------------------------------------------------------------------------------------
+// Example: WAP to print elements of an array using pointers in reverse order. 
+#include <stdio.h>
