@@ -50,15 +50,20 @@
 '
 '
 //  -------------------------------------------------------------------------------------------------------
-#include <stdio.h>
-int main() {
-    // Declaration and Initialization
-    int numbers[5] = {10, 20, 30, 40, 50};
+// #include <stdio.h>
+// int main() {
+//     // Declaration and Initialization
+//     int numbers[5] = {10, 20, 30, 40, 50};
 
-    // Accessing and Printing Elements
-    for (int i = 0; i < 5; i++) {
-        printf("Element at index %d: %d\n", i, numbers[i]);
-    }
+//     // Accessing and Printing Elements
+//     for (int i = 0; i < 5; i++) {
+//         printf("Element at index %d: %d\n", i, numbers[i]);
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+//  -------------------------------------------------------------------------------------------------------
+
+
+//  -------------------------------------------------------------------------------------------------------
+//  -------------------------------------------------------------------------------------------------------
