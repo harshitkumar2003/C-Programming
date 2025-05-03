@@ -263,3 +263,15 @@
 // ------------------------------------------------------------------------------------------------------------
 // Example: WAP to print all english alphabets using pointers.
 #include <stdio.h>
+int main() {
+    char *p = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Declare a pointer to a string of English alphabets
+
+    printf("English Alphabets:\n");
+    for (int i = 0; i < 26; i++) {
+        printf("%c ", *(p + i)); // Access and print each alphabet using pointer
+    }
+    printf("\n");
+
+    return 0;
+}
+
