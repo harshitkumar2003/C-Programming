@@ -246,3 +246,18 @@
 // ------------------------------------------------------------------------------------------------------------
 // Example: WAP to print elements of an array using pointers in reverse order. 
 #include <stdio.h>
+int main() {
+    int arr[] = {1, 2, 3, 4, 5}; // Declare an array of integers
+    int *p = arr + 4; // Initialize the pointer with the address of the last element of the array
+
+    printf("Array elements in reverse order:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", *(p - i)); // Access array elements in reverse order using pointer
+    }
+    printf("\n");
+
+    return 0;
+}
+
+
+// ------------------------------------------------------------------------------------------------------------
