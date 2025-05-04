@@ -67,26 +67,26 @@
 
 //  -------------------------------------------------------------------------------------------------------
 // Example: Enter prize of three item and print their total price with gst
-#include <stdio.h>
-int main() {
-    // Declaration and Initialization
-    float prices[3]; // Array to store prices of 3 items
-    float total = 0.0; // Variable to store total price
-    float gst_rate = 0.18; // GST rate (18%)
+// #include <stdio.h>
+// int main() {
+//     // Declaration and Initialization
+//     float prices[3]; // Array to store prices of 3 items
+//     float total = 0.0; // Variable to store total price
+//     float gst_rate = 0.18; // GST rate (18%)
 
-    // Input prices from user
-    for (int i = 0; i < 3; i++) {
-        printf("Enter price of item %d: ", i + 1);
-        scanf("%f", &prices[i]);
-        total += prices[i]; // Add price to total
-    }
+//     // Input prices from user
+//     for (int i = 0; i < 3; i++) {
+//         printf("Enter price of item %d: ", i + 1);
+//         scanf("%f", &prices[i]);
+//         total += prices[i]; // Add price to total
+//     }
 
-    // Calculate total price with GST
-    float total_with_gst = total + (total * gst_rate);
+//     // Calculate total price with GST
+//     float total_with_gst = total + (total * gst_rate);
 
-    // Print total price with GST
-    printf("Total price with GST: %.2f\n", total_with_gst);
+//     // Print total price with GST
+//     printf("Total price with GST: %.2f\n", total_with_gst);
 
-    return 0;
-}
+//     return 0;
+// }
 
