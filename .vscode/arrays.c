@@ -129,6 +129,6 @@
 // 3. Initialization: Arrays can be initialized at the time of declaration or later. Example: int arr[5] = {1, 2, 3, 4, 5};
 // 4. Accessing Elements: Array elements are accessed using their index, starting from 0. Example: arr[0] = 1;
 // 5. Types of Arrays: One-dimensional arrays (single row) and multi-dimensional arrays (e.g., 2D arrays). Example: int matrix[3][3];
-
+// 6. Memory Layout: Arrays are stored in contiguous memory locations, and the name of the array represents the address of the first element.
 //  -------------------------------------------------------------------------------------------------------
 
