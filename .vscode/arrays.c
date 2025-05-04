@@ -107,18 +107,18 @@
 //    - For example, if `ptr` is a pointer to the first element of the array, you can access the second element using `*(ptr + 1)` or `ptr[1]`.
 
 // 3. Example of Pointer Arithmetic with Arrays:
-#include <stdio.h>
-int main() {
-    int arr[5] = {10, 20, 30, 40, 50}; // Array declaration and initialization
-    int *ptr = arr; // Pointer to the first element of the array
+// #include <stdio.h>
+// int main() {
+//     int arr[5] = {10, 20, 30, 40, 50}; // Array declaration and initialization
+//     int *ptr = arr; // Pointer to the first element of the array
 
-    // Accessing elements using pointer arithmetic
-    for (int i = 0; i < 5; i++) {
-        printf("Element at index %d: %d\n", i, *(ptr + i)); // Accessing using pointer arithmetic
-    }
+//     // Accessing elements using pointer arithmetic
+//     for (int i = 0; i < 5; i++) {
+//         printf("Element at index %d: %d\n", i, *(ptr + i)); // Accessing using pointer arithmetic
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 
