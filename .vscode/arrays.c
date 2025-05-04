@@ -123,5 +123,8 @@
 
 
 //  -------------------------------------------------------------------------------------------------------
+// Arrays in Pointers.c
+// 1. Definition: An array is a collection of elements of the same data type stored in contiguous memory locations.
+// 2. Declaration: Arrays are declared using the syntax: data_type array_name[size]; where size is the number of elements in the array.
 //  -------------------------------------------------------------------------------------------------------
 
