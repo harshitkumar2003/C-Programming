@@ -93,6 +93,8 @@
 
 
 //  -------------------------------------------------------------------------------------------------------
-// Example: 
+// Pointer arithmetic in C allows you to perform arithmetic operations on pointers, which can be useful when working with arrays. Here are some key points about pointer arithmetic:
+// 1. Pointer Arithmetic Basics:
+//    - You can increment or decrement a pointer to move to the next or previous element in an array.
 //  -------------------------------------------------------------------------------------------------------
 
