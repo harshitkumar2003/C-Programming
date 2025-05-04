@@ -130,5 +130,7 @@
 // 4. Accessing Elements: Array elements are accessed using their index, starting from 0. Example: arr[0] = 1;
 // 5. Types of Arrays: One-dimensional arrays (single row) and multi-dimensional arrays (e.g., 2D arrays). Example: int matrix[3][3];
 // 6. Memory Layout: Arrays are stored in contiguous memory locations, and the name of the array represents the address of the first element.
+// 7. Limitations: Fixed size (size must be defined at compile time) and homogeneous data (only one data type).
+// 8. Common Operations: Traversing, searching, sorting, insertion, and deletion of elements.
 //  -------------------------------------------------------------------------------------------------------
 
