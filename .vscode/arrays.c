@@ -82,7 +82,8 @@ int main() {
     }
 
     // Calculate GST
-    float gst 
+    float gst = total * gst_rate;
+    float final_price = total + gst; // Total price including GST
 
 
 
