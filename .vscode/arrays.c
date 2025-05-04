@@ -66,7 +66,7 @@
 
 
 //  -------------------------------------------------------------------------------------------------------
-// Example: enter prize of three item and print their total price with gst
+// Example: Enter prize of three item and print their total price with gst
 #include <stdio.h>
 int main() {
     // Declaration and Initialization
