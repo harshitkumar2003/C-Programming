@@ -96,5 +96,12 @@
 // Pointer arithmetic in C allows you to perform arithmetic operations on pointers, which can be useful when working with arrays. Here are some key points about pointer arithmetic:
 // 1. Pointer Arithmetic Basics:
 //    - You can increment or decrement a pointer to move to the next or previous element in an array.
+//    - For example, if `ptr` is a pointer to an integer, `ptr + 1` points to the next integer in memory (i.e., `ptr + sizeof(int)` bytes ahead).
+//    - Similarly, `ptr - 1` points to the previous integer in memory.
+// 2. Pointer Arithmetic with Arrays:
+//    - When you have an array, the name of the array acts as a pointer to the first element of the array.
+//    - For example, if you have `int arr[5];`, then `arr` is equivalent to `&arr[0]` (the address of the first element).
+//    - You can use pointer arithmetic to access elements of the array using pointers.
+//    - For example, if `ptr` is a pointer to the first element of the array, you can access the second element using `*(ptr + 1)` or `ptr[1]`.
 //  -------------------------------------------------------------------------------------------------------
 
