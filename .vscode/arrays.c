@@ -81,14 +81,11 @@ int main() {
         total += prices[i]; // Add price to total
     }
 
-    // Calculate GST
-    float gst = total * gst_rate;
-    float final_price = total + gst; // Total price including GST
+    // Calculate total price with GST
+    float total_with_gst = total + (total * gst_rate);
 
-    // Print total price and GST
-    printf("Total price: %.2f\n", total);
-    // printf("GST (18%%): %.2f\n", gst);
-    // printf("Final price including GST: %.2f\n", final_price);
+    // Print total price with GST
+    printf("Total price with GST: %.2f\n", total_with_gst);
 
     return 0;
 }
