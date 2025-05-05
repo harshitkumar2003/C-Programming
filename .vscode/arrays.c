@@ -137,19 +137,41 @@
 
 //  -------------------------------------------------------------------------------------------------------
 // Traverse an array using pointers
-  #include <stdio.h>
-  int main() {
-      int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
-      int *ptr = arr; // Initialize the pointer with the address of the first element of the array
+//   #include <stdio.h>
+//   int main() {
+//       int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
+//       int *ptr = arr; // Initialize the pointer with the address of the first element of the array
 
-      printf("Array elements using pointer:\n");
-      for (int i = 4; i >= 0; i--) {
-                  printf("%d ", *(ptr + i)); // Access array elements using pointer
+//       printf("Array elements using pointer:\n");
+//       for (int i = 4; i >= 0; i--) {
+//                   printf("%d ", *(ptr + i)); // Access array elements using pointer
 
-      }
-      printf("\n");
-      return 0;
- }
+//       }
+//       printf("\n");
+//       return 0;
+//  }
+//  -------------------------------------------------------------------------------------------------------
+
+//  -------------------------------------------------------------------------------------------------------
+// Example: WAP to print odd and even numbers in an array
+// #include <stdio.h>
+// int main () {
+//     int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
+//     printf("Even numbers in the array:\n");
+//     for (int i = 0; i < 5; i++) {
+//         if (arr[i] % 2 == 0) { // Check if the number is even
+//             printf("%d ", arr[i]); // Print even number
+//         }
+//     }
+//     printf("\nOdd numbers in the array:\n");
+//     for (int i = 0; i < 5; i++) {
+//         if (arr[i] % 2 != 0) { // Check if the number is odd
+//             printf("%d ", arr[i]); // Print odd number
+//         }
+//     }
+//     printf("\n");
+//     return 0;
+// }
 //  -------------------------------------------------------------------------------------------------------
 
 
@@ -158,44 +180,82 @@
 //  #include <stdio.h>
 //  int main() {
 //         int arr[5] = {10, 20, 30, 40, 50}; // Declare an array of integers
-//         int num, found = 0; // Initialize a variable to check if the number is found
+//          int num, found = 0; // Initialize a variable to check if the number is found
     
-//         printf("Enter a number to search: ");
-//         scanf("%d", &num); // Input the number to search
-    
-//         // Search for the number in the array
-//         for (int i = 0; i < 5; i++) {
-//             if (arr[i] == num) {
-//                 printf("Number %d found at index %d\n", num, i); // Print the index if found
-//                 found = 1; // Set found to true
-//                 break; // Exit the loop
+//          printf("Enter a number to search: ");  
+//                scanf("%d", &num); // Input the number to search
+//          // Search for the number in the array
+//          for (int i = 0; i < 5; i++) {
+//              if (arr[i] == num) {
+//                  printf("Number %d found at index %d\n", num, i); // Print the index if found
+//                  found = 1; // Set found to true                
+//               break; // Exit the loop
+//              }
+//              else 
+//                 printf("Number %d not found at index %d\n", num, i); // Print if not found
 //             }
-//         }
-    
-//         if (!found) {
-//             printf("Number %d not found in the array\n", num); // Print if not found
-//         }
-    
-//         return 0;
-//     }
+//          return 0;
+//      }
 //  -------------------------------------------------------------------------------------------------------
-
 
 
 //   -------------------------------------------------------------------------------------------------------
-// Example: WAP to print the table of 2 and 3 and multiplication of i * j using 2D array
+// Example: WAP to print the table of  and 3 and square of i using 2D array
+
 // 1. Definition: A 2D array is an array of arrays, where each element is itself an array. It can be visualized as a table with rows and columns.
+
 // 2. Declaration: A 2D array is declared using the syntax: data_type array_name[rows][columns]; where rows and columns are the dimensions of the array
-// #include <stdio.h>
-// int main() {
-//     int arr[2][10];
+
+//  #include <stdio.h>
+//  int main() {
+//      int arr[2][10];
 //     for(int i = 1, j = 1; i <= 10 && j <= 10; i++, j++) { 
-//         int two = 2 * i;
-//         int three = 3 * j;
-//         int sqr = i * j;
-//         printf("2 X %d = %d \t 3 X %d = %d \t %d X %d = %d\n",i,two,j,three,i,j,sqr);
-//     }
-//     return 0; 
-// }
+//         int two = 4 * i;
+//          int three = 8 * j;
+//          int sqr = i * j;
+//          printf("4 X %d = %d \t 8 X %d = %d \t %d X %d = %d\n",i,two,j,three,i,j,sqr);
+//      }
+//      return 0; 
+//  }
 //  -------------------------------------------------------------------------------------------------------
+// Example: WAP to print the table of 2 and 3 
+#include <stdio.h>
+void table(int arr[][10], int rows, int cols, int num);
+void table(int arr[][10], int rows, int cols, int num) {
+        int arr[2][10]; // Declare a 2D array with 2 rows and 10 columns
+        for (int i = 0; i < cols; i++) {
+                arr[n][i] = num * (i + 1); // Fill the array with multiplication table values
+            }
+    
+        return arr;
+}
+int main() {
+    int arr[2][10]; // Declare a 2D array with 2 rows and 10 columns
+    int num1, num2; // Variables to store the numbers for multiplication tables
+    printf("Enter the first number: ");
+    scanf("%d", &num1); // Input the first number
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2); // Input the second number
+
+    // Fill the array with multiplication table values
+    table(arr, 2, 10, num1);
+    table(arr, 2, 10, num2);
+
+    // Print the multiplication tables
+    printf("Multiplication Table of %d:\n", num1);
+    for (int i = 0; i < 10; i++) {
+        printf("%d x %d = %d\n", num1, i + 1, arr[0][i]);
+    }
+
+    printf("\nMultiplication Table of %d:\n", num2);
+    for (int i = 0; i < 10; i++) {
+        printf("%d x %d = %d\n", num2, i + 1, arr[1][i]);
+    }
+    return 0;
+}
+    
+
+    
+
 
