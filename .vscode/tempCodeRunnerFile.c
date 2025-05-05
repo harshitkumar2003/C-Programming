@@ -1,12 +1,13 @@
-#include <stdio.h>
-int main() {
-    int arr[5] = {10, 20, 30, 40, 50}; // Array declaration and initialization
-    int *ptr = arr; // Pointer to the first element of the array
+ #include <stdio.h>
+//  int main() {
+//      int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
+//      int *ptr = arr; // Initialize the pointer with the address of the first element of the array
 
-    // Accessing elements using pointer arithmetic
-    for (int i = 0; i < 5; i++) {
-        printf("Element at index %d: %d\n", i, *(ptr + i)); // Accessing using pointer arithmetic
-    }
+//      printf("Array elements using pointer:\n");
+//      for (int i = 0; i < 5; i++) {
+//          printf("%d ", *(ptr + i)); // Access array elements using pointer
 
-    return 0;
-}
+//      }
+//      printf("\n");
+//      return 0;
+// }

@@ -137,18 +137,54 @@
 
 //  -------------------------------------------------------------------------------------------------------
 // Traverse an array using pointers
- #include <stdio.h>
- int main() {
-     int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
-     int *ptr = arr; // Initialize the pointer with the address of the first element of the array
+//  #include <stdio.h>
+//  int main() {
+//      int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
+//      int *ptr = arr; // Initialize the pointer with the address of the first element of the array
 
-     printf("Array elements using pointer:\n");
-     for (int i = 0; i < 5; i++) {
-         printf("%d ", *(ptr + i)); // Access array elements using pointer
+//      printf("Array elements using pointer:\n");
+//      for (int i = 0; i < 5; i++) {
+//          printf("%d ", *(ptr + i)); // Access array elements using pointer
 
-     }
-     printf("\n");
-     return 0;
+//      }
+//      printf("\n");
+//      return 0;
+// }
+//  -------------------------------------------------------------------------------------------------------
+
+
+//  -------------------------------------------------------------------------------------------------------
+// Example: WAP to print array of a number given by the user  
+// #include <stdio.h>
+// int mian () {
+// int arr [5] = {1,2,3,4,5};
+// int num;
+// printf("Enter the number: ");
+// scanf("%d",&num);
+// for(int i = 0; i < 5; i++) {
+//     if (arr[i] == num ) {
+//          printf("\n The number %d is present in index of %d",num, arr[i]);
+//     }
+//   else  
+// printf("The number is not present in an array");
+// }
+// printf("\n");
+// return 0;
+// }
+//  -------------------------------------------------------------------------------------------------------
+
+
+//  -------------------------------------------------------------------------------------------------------
+// Example: WAP to print the table of 2 and 3 using 2D array 
+#include <stdio.h>
+int main() {
+    int arr[2][10];
+    for(int i = 1, j = 1; i <= 10 && j <= 10; i++, j++) { 
+        int two = 2 * i;
+        int three = 3 * j;
+        printf("2 X %d = %d \t 3 X %d = %d\n",i,two,j,three);
+    }
+    return 0; 
 }
 //  -------------------------------------------------------------------------------------------------------
 
