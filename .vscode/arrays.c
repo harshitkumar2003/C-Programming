@@ -143,7 +143,7 @@
       int *ptr = arr; // Initialize the pointer with the address of the first element of the array
 
       printf("Array elements using pointer:\n");
-      for (int i = 0; i < 5; i++) {
+      for (int i = 4; i >= 0; i--) {
                   printf("%d ", *(ptr + i)); // Access array elements using pointer
 
       }
