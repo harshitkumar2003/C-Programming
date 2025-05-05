@@ -175,17 +175,19 @@
 
 
 //  -------------------------------------------------------------------------------------------------------
-// Example: WAP to print the table of 2 and 3 using 2D array 
-#include <stdio.h>
-int main() {
-    int arr[2][10];
-    for(int i = 1, j = 1; i <= 10 && j <= 10; i++, j++) { 
-        int two = 2 * i;
-        int three = 3 * j;
-        int sqr = i * j;
-        printf("2 X %d = %d \t 3 X %d = %d \t %d X %d = %d\n",i,two,j,three,i,j,sqr);
-    }
-    return 0; 
-}
+// Example: WAP to print the table of 2 and 3 and multiplication of i * j using 2D array
+// 1. Definition: A 2D array is an array of arrays, where each element is itself an array. It can be visualized as a table with rows and columns.
+// 2. Declaration: A 2D array is declared using the syntax: data_type array_name[rows][columns]; where rows and columns are the dimensions of the array
+// #include <stdio.h>
+// int main() {
+//     int arr[2][10];
+//     for(int i = 1, j = 1; i <= 10 && j <= 10; i++, j++) { 
+//         int two = 2 * i;
+//         int three = 3 * j;
+//         int sqr = i * j;
+//         printf("2 X %d = %d \t 3 X %d = %d \t %d X %d = %d\n",i,two,j,three,i,j,sqr);
+//     }
+//     return 0; 
+// }
 //  -------------------------------------------------------------------------------------------------------
 
