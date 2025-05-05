@@ -154,27 +154,47 @@
 
 
 //  -------------------------------------------------------------------------------------------------------
-// Example: WAP to print array of a number given by the user  
-// #include <stdio.h>
-// int mian () {
-// int arr [5] = {1,2,3,4,5};
-// int num;
-// printf("Enter the number: ");
-// scanf("%d",&num);
-// for(int i = 0; i < 5; i++) {
-//     if (arr[i] == num ) {
-//          printf("\n The number %d is present in index of %d",num, arr[i]);
-//     }
-//   else  
-// printf("The number is not present in an array");
-// }
-// printf("\n");
-// return 0;
-// }
+// Example: WAP to print index of array of a number given by the user
+ #include <stdio.h>
+ int main() {
+        int arr[5] = {10, 20, 30, 40, 50}; // Declare an array of integers
+        int num, found = 0; // Initialize a variable to check if the number is found
+    
+        printf("Enter a number to search: ");
+        scanf("%d", &num); // Input the number to search
+    
+        // Search for the number in the array
+        for (int i = 0; i < 5; i++) {
+            if (arr[i] == num) {
+                printf("Number %d found at index %d\n", num, i); // Print the index if found
+                found = 1; // Set found to true
+                break; // Exit the loop
+            }
+        }
+    
+        if (!found) {
+            printf("Number %d not found in the array\n", num); // Print if not found
+        }
+    
+        return 0;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
 //  -------------------------------------------------------------------------------------------------------
 
 
-//  -------------------------------------------------------------------------------------------------------
+//
+//   -------------------------------------------------------------------------------------------------------
 // Example: WAP to print the table of 2 and 3 and multiplication of i * j using 2D array
 // 1. Definition: A 2D array is an array of arrays, where each element is itself an array. It can be visualized as a table with rows and columns.
 // 2. Declaration: A 2D array is declared using the syntax: data_type array_name[rows][columns]; where rows and columns are the dimensions of the array
