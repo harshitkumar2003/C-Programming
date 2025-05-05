@@ -182,8 +182,8 @@ int main() {
     for(int i = 1, j = 1; i <= 10 && j <= 10; i++, j++) { 
         int two = 2 * i;
         int three = 3 * j;
-        int t = i * j;
-        printf("2 X %d = %d \t 3 X %d = %d \t %d X %d = %d\n",i,two,j,three,i,j,t);
+        int sqr = i * j;
+        printf("2 X %d = %d \t 3 X %d = %d \t %d X %d = %d\n",i,two,j,three,i,j,sqr);
     }
     return 0; 
 }
