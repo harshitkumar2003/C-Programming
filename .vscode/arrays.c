@@ -218,27 +218,27 @@
 //      return 0; 
 //  }
 //  -------------------------------------------------------------------------------------------------------
-// Example: WAP to print the table of 2 and 3 
-#include <stdio.h>
-void table(int arr[][10], int rows, int cols, int num);
-int main() {
-    int arr[2][10]; // Declare a 2D array with 2 rows and 10 columns
-    int num1 = 2, num2 = 3; // Numbers for which to print the table
+// Example: WAP to print the table of 2 and 3 using 2D array 
+// #include <stdio.h>
+// void table(int arr[][10], int rows, int cols, int num);
+// int main() {
+//     int arr[2][10]; // Declare a 2D array with 2 rows and 10 columns
+//     int num1 = 2, num2 = 3; // Numbers for which to print the table
 
     // Call the function to print the tables
-    table(arr, 2, 10, num1);
-    table(arr, 2, 10, num2);
+//     table(arr, 2, 10, num1);
+//     table(arr, 2, 10, num2);
 
-    return 0;
-}
-void table(int arr[][10], int rows, int cols, int num) {
-    printf("Table of %d:\n", num);
-    for (int i = 1; i <= 10; i++) {
-        arr[0][i] = num * i; // Calculate the table value
-        printf("%d x %d = %d\n", num, i, arr[0][i]); // Print the table value
-    }
-    printf("\n");
-}
+//     return 0;
+// }
+// void table(int arr[][10], int rows, int cols, int num) {
+//     printf("Table of %d:\n", num);
+//     for (int i = 1; i <= 10; i++) {
+//         arr[0][i] = num * i; // Calculate the table value
+//         printf("%d x %d = %d\n", num, i, arr[0][i]); // Print the table value
+//     }
+//     printf("\n");
+// }
     
 
     
