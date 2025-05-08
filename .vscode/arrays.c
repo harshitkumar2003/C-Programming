@@ -314,32 +314,31 @@
 
 // ---------------------------------------------------------------------------------------------------
 // Example: WAP to insert an element in an array at a specific position
-#include <stdio.h>
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
-    int num, pos; // Variables to store the number to insert and the position
+// #include <stdio.h>
+// int main() {
+//     int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
+//     int num, pos; // Variables to store the number to insert and the position
 
-    printf("Enter a number to insert: ");  
-    scanf("%d", &num); // Input the number to insert
-    printf("Enter the position (0-4) to insert the number: ");  
-    scanf("%d", &pos); // Input the position
+//     printf("Enter a number to insert: ");  
+//     scanf("%d", &num); // Input the number to insert
+//     printf("Enter the position (0-4) to insert the number: ");  
+//     scanf("%d", &pos); // Input the position
 
-    // Shift elements to the right to make space for the new element
-    for (int i = 4; i > pos; i--) {
-        arr[i] = arr[i - 1]; // Shift elements to the right
-    }
-    arr[pos] = num; // Insert the new element at the specified position
+//     // Shift elements to the right to make space for the new element
+//     for (int i = 4; i > pos; i--) {
+//         arr[i] = arr[i - 1]; // Shift elements to the right
+//     }
+//     arr[pos] = num; // Insert the new element at the specified position
 
-    // Print the updated array
-    printf("Updated array after insertion:\n");
-    for (int i = 0; i < 5; i++) {
-        printf("%d ", arr[i]); // Print each element of the array
-    }
-    printf("\n");
+//     // Print the updated array
+//     printf("Updated array after insertion:\n");
+//     for (int i = 0; i < 5; i++) {
+//         printf("%d ", arr[i]); // Print each element of the array
+//     }
+//     printf("\n");
 
-    return 0;
-} 
-
+//     return 0;
+// } 
 // ---------------------------------------------------------------------------------------------------
 
 
