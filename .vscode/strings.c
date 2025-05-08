@@ -14,5 +14,12 @@
 
 // keywords: C, strings, character array, null-terminated, string representation, memory allocation, string manipulation, string functions, string length, string comparison, string concatenation, string copy, string input/output.
 
-
-
+// #include <stdio.h>
+// #include <string.h> // Include string.h for string functions
+int main() {
+     char str[100]; // Declare a character array to store the string
+        printf("Enter a string: "); // Prompt the user for input
+        fgets(str, sizeof(str), stdin); // Read a string from standard input
+        printf("You entered: %s", str); // Print the entered string
+        return 0; // Return 0 to indicate successful execution
+}
