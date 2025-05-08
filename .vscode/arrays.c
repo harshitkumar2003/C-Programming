@@ -368,34 +368,33 @@
 
 // ---------------------------------------------------------------------------------------------------
 // Example: WAP to delete an element from an array at a specific position
-#include <stdio.h>
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
-    int pos; // Variable to store the position of the element to delete
+// #include <stdio.h>
+// int main() {
+//     int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
+//     int pos; // Variable to store the position of the element to delete
 
-    printf("Enter the position (0-4) to delete the element: ");  
-    scanf("%d", &pos); // Input the position
+//     printf("Enter the position (0-4) to delete the element: ");  
+//     scanf("%d", &pos); // Input the position
 
-    // Shift elements to the left to remove the specified element
-    for (int i = pos; i < 4; i++) {
-        arr[i] = arr[i + 1]; // Shift elements to the left
-    }
-    if (pos >= 0 && pos < 5) // Check if the position is valid
-        arr[4] = 0; // Set the last element to 0 after deletion
-    else
-    { // If the position is invalid
-    printf("Invalid position! Please enter a position between 0 and 4.\n"); // Print an error message
-    return 1; // Return 0 to indicate successful execution
-    // Print the updated array
-    }
-    printf("Updated array after deletion:\n");
-    for (int i = 0; i < 4; i++) {
-        printf("%d ", arr[i]); // Print each element of the array
-    }
-    printf("\n");
-
-    return 0;
-}
+//     // Shift elements to the left to remove the specified element
+//     for (int i = pos; i < 4; i++) {
+//         arr[i] = arr[i + 1]; // Shift elements to the left
+//     }
+//     if (pos >= 0 && pos < 5) // Check if the position is valid
+//         arr[4] = 0; // Set the last element to 0 after deletion
+//     else
+//     { // If the position is invalid
+//     printf("Invalid position! Please enter a position between 0 and 4.\n"); // Print an error message
+//     return 1; // Return 0 to indicate successful execution
+//     // Print the updated array
+//     }
+//     printf("Updated array after deletion:\n");
+//     for (int i = 0; i < 4; i++) {
+//         printf("%d ", arr[i]); // Print each element of the array
+//     }
+//     printf("\n");
+//     return 0;
+// }
 
 
 
