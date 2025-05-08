@@ -246,24 +246,33 @@
 // ====================
 // ---------------------------------------------------------------------------------------------------
 // Example: WAP to find how many times a number is repeated in an array
-#include<stdio.h>
-int main() {
-    int arr[5] = {1, 5, 3, 4, 5}; // Declare an array of integers
-    int num, count = 0; // Initialize a variable to count occurrences
+// #include<stdio.h>
+// int main() {
+//     int arr[5] = {1, 5, 3, 4, 5}; // Declare an array of integers
+//     int num, count = 0; // Initialize a variable to count occurrences
 
-    printf("Enter a number to count its occurrences: ");  
-    scanf("%d", &num); // Input the number to search
+//     printf("Enter a number to count its occurrences: ");  
+//     scanf("%d", &num); // Input the number to search
 
-    // Count occurrences of the number in the array
-    for (int i = 0; i < 5; i++) {
-        if (arr[i] == num) {
-            count++; // Increment count if the number is found
-        }
-    }
+//     // Count occurrences of the number in the array
+//     for (int i = 0; i < 5; i++) {
+//         if (arr[i] == num) {
+//             count++; // Increment count if the number is found
+//         }
+//     }
 
-    printf("Number %d occurs %d times in the array.\n", num, count); // Print the count
-    return 0;
-}
+//     printf("Number %d occurs %d times in the array.\n", num, count); // Print the count
+//     return 0;
+// }
+// ---------------------------------------------------------------------------------------------------
+
+
+// ---------------------------------------------------------------------------------------------------
+// Example: WAP to find the largest and smallest number in an array
+#include <stdio.h>
+
+
+
 
 
 
