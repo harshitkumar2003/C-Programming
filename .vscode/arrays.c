@@ -295,7 +295,24 @@
 
 // ---------------------------------------------------------------------------------------------------
 // Example: WAP to find the sum of all elements in an array
-// #include <stdio.h>
+#include <stdio.h>
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
+    int sum = 0; // Initialize sum to 0
+
+    // Calculate the sum of all elements in the array
+    for (int i = 0; i < 5; i++) {
+        sum += arr[i]; // Add each element to the sum
+    }
+
+    printf("Sum of all elements in the array: %d\n", sum); // Print the sum
+
+    return 0;
+}
+// ---------------------------------------------------------------------------------------------------
+
+
+// ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
     
