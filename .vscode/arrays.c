@@ -270,6 +270,26 @@
 // ---------------------------------------------------------------------------------------------------
 // Example: WAP to find the largest and smallest number in an array
 #include <stdio.h>
+int main() {
+    int arr[5] = {10, 20, 5, 40, 15}; // Declare an array of integers
+    int largest = arr[0]; // Initialize largest with the first element
+    int smallest = arr[0]; // Initialize smallest with the first element
+
+    // Find the largest and smallest numbers in the array
+    for (int i = 1; i < 5; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i]; // Update largest if a larger number is found
+        }
+        if (arr[i] < smallest) {
+            smallest = arr[i]; // Update smallest if a smaller number is found
+        }
+    }
+
+    printf("Largest number in the array: %d\n", largest); // Print the largest number
+    printf("Smallest number in the array: %d\n", smallest); // Print the smallest number
+
+    return 0;
+
 
 
 
