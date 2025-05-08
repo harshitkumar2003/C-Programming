@@ -344,7 +344,25 @@
 
 // ---------------------------------------------------------------------------------------------------
 // Example: WAP to insert an element at the end of an array
-// #include <stdio.h>
+#include <stdio.h>
+int main() {
+    int arr[6] = {1, 2, 3, 4, 5}; // Declare an array of integers with size 6
+    int num; // Variable to store the number to insert
+
+    printf("Enter a number to insert at the end: ");  
+    scanf("%d", &num); // Input the number to insert
+
+    arr[5] = num; // Insert the new element at the end of the array
+
+    // Print the updated array
+    printf("Updated array after insertion:\n");
+    for (int i = 0; i < 6; i++) {
+        printf("%d ", arr[i]); // Print each element of the array
+    }
+    printf("\n");
+
+    return 0;
+}
 // ---------------------------------------------------------------------------------------------------
 
     
