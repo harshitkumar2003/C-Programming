@@ -248,7 +248,7 @@
 // Example: WAP to find how many times a number is repeated in an array
 #include<stdio.h>
 int main() {
-    int arr[5] = {1, 2, 3, 4, 5}; // Declare an array of integers
+    int arr[5] = {1, 5, 3, 4, 5}; // Declare an array of integers
     int num, count = 0; // Initialize a variable to count occurrences
 
     printf("Enter a number to count its occurrences: ");  
