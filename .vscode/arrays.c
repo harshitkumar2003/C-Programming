@@ -289,7 +289,7 @@ int main() {
     printf("Smallest number in the array: %d\n", smallest); // Print the smallest number
 
     return 0;
-
+}
 
 
 
