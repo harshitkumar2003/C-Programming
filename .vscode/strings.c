@@ -12,3 +12,7 @@
 // For example:
 // char str[] = "Hello"; // Compiler allocates 6 bytes (5 characters + 1 null terminator)
 
+// keywords: C, strings, character array, null-terminated, string representation, memory allocation, string manipulation, string functions, string length, string comparison, string concatenation, string copy, string input/output.
+
+
+
