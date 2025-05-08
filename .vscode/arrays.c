@@ -344,7 +344,8 @@ int main() {
 
 
 // ---------------------------------------------------------------------------------------------------
-// Example: WAP to delete an element from an array at a specific position
+// Example: WAP to insert an element at the end of an array
+// #include <stdio.h>
 // ---------------------------------------------------------------------------------------------------
 
     
