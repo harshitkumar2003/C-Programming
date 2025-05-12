@@ -16,10 +16,19 @@
 
 // #include <stdio.h>
 // #include <string.h> // Include string.h for string functions
+// int main() {
+//      char str[100]; // Declare a character array to store the string
+//         printf("Enter a string: "); // Prompt the user for input
+//         fgets(str, sizeof(str), stdin); // Read a string from standard input
+//         printf("You entered: %s", str); // Print the entered string
+//         return 0; // Return 0 to indicate successful execution
+// }
+// ----------------------------------------------------------------------------------------------------
+#include <stdio.h>
 int main() {
-     char str[100]; // Declare a character array to store the string
-        printf("Enter a string: "); // Prompt the user for input
-        fgets(str, sizeof(str), stdin); // Read a string from standard input
-        printf("You entered: %s", str); // Print the entered string
-        return 0; // Return 0 to indicate successful execution
+    char name[] = "John Doe"; // Declare and initialize a string 
+        char greeting[] = {'H', 'e', 'l', 'l', 'o', '\0'}; // Declare and initialize a string using character array
+        printf("Name: %s\n", name); // Print the string using %s format specifier
+        printf("Greeting: %s\n", greeting); // Print the string using %s format specifier
+        return 0;
 }
