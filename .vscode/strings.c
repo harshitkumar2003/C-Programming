@@ -32,3 +32,4 @@ int main() {
         printf("Greeting: %s\n", greeting); // Print the string using %s format specifier
         return 0;
 }
+// ----------------------------------------------------------------------------------------------------
