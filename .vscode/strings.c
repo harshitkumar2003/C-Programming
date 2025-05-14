@@ -139,7 +139,10 @@ int main(){  // main function
 
 
 // -----------------------------------------------------------------------------------------------------
-
+// standard library functon
+// We have to write string.h header file while using string functions
+// 1> strlen(str) -> count no of characters excluding '\0'
+// printf("length is:%d",name);
 // -----------------------------------------------------------------------------------------------------
 
 
