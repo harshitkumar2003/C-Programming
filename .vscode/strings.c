@@ -248,32 +248,47 @@
 // - Zero if str1 is equal to str2
 
 // Example: WAP to compare two strings using strcmp()
+// #include <stdio.h>
+// #include <string.h> // Include string.h for string functions
+// int main() {
+//     char str1[100]; // Declare a character array for the first string
+//     char str2[100]; // Declare a character array for the second string
+//     printf("Enter first string: "); // Prompt the user for input
+//     fgets(str1, sizeof(str1), stdin); // Read the first string from standard input
+//     printf("Enter second string: "); // Prompt the user for input
+//     fgets(str2, sizeof(str2), stdin); // Read the second string from standard input
+
+//     int result = strcmp(str1, str2); // Compare the two strings
+
+//     if (result == 0) {
+//         printf("Strings are equal.\n"); // Print if strings are equal
+//     } else if (result < 0) {
+//         printf("String 1 is less than String 2.\n"); // Print if str1 is less than str2
+//     } else {
+//         printf("String 1 is greater than String 2.\n"); // Print if str1 is greater than str2
+//     }
+//     return 0; // Return 0 to indicate successful execution
+// }
+// -----------------------------------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------------------------------
+// Example: WAP to take a string input from the user using %c and print it back to them
 #include <stdio.h>
-#include <string.h> // Include string.h for string functions
 int main() {
-    char str1[100]; // Declare a character array for the first string
-    char str2[100]; // Declare a character array for the second string
-    printf("Enter first string: "); // Prompt the user for input
-    fgets(str1, sizeof(str1), stdin); // Read the first string from standard input
-    printf("Enter second string: "); // Prompt the user for input
-    fgets(str2, sizeof(str2), stdin); // Read the second string from standard input
-
-    int result = strcmp(str1, str2); // Compare the two strings
-
-    if (result == 0) {
-        printf("Strings are equal.\n"); // Print if strings are equal
-    } else if (result < 0) {
-        printf("String 1 is less than String 2.\n"); // Print if str1 is less than str2
-    } else {
-        printf("String 1 is greater than String 2.\n"); // Print if str1 is greater than str2
+    char str[100]; // Declare a character array to store the string
+    int i = 0; // Initialize an index variable to 0
+    char ch; // Declare a character variable to store individual characters
+    printf("Enter a character: "); // Prompt the user for input
+    while(ch != '\n') { // Loop until a newline character is encountered
+    scanf("%c", &ch); // Read a character from standard input
+    str[i] = ch; // Store the character in the string array
+    i++; // Increment the index
     }
-
+    str[i] = '\0'; // Add a null terminator to the end of the string
+    printf("You entered: %s", str); // Print the entered string
     return 0; // Return 0 to indicate successful execution
-// -----------------------------------------------------------------------------------------------------
-
-
-// -----------------------------------------------------------------------------------------------------
-
+}
 // -----------------------------------------------------------------------------------------------------
 
 
