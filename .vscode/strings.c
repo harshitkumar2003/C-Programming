@@ -240,7 +240,35 @@
 
 
 // -----------------------------------------------------------------------------------------------------
+// 4> strcmp(str1, str2) -> compares two strings lexicographically.
+// It is a standard library function that compares two strings.
+// It takes two strings as arguments and returns an integer value:
+// - A negative value if str1 is less than str2
+// - A positive value if str1 is greater than str2
+// - Zero if str1 is equal to str2
 
+// Example: WAP to compare two strings using strcmp()
+#include <stdio.h>
+#include <string.h> // Include string.h for string functions
+int main() {
+    char str1[100]; // Declare a character array for the first string
+    char str2[100]; // Declare a character array for the second string
+    printf("Enter first string: "); // Prompt the user for input
+    fgets(str1, sizeof(str1), stdin); // Read the first string from standard input
+    printf("Enter second string: "); // Prompt the user for input
+    fgets(str2, sizeof(str2), stdin); // Read the second string from standard input
+
+    int result = strcmp(str1, str2); // Compare the two strings
+
+    if (result == 0) {
+        printf("Strings are equal.\n"); // Print if strings are equal
+    } else if (result < 0) {
+        printf("String 1 is less than String 2.\n"); // Print if str1 is less than str2
+    } else {
+        printf("String 1 is greater than String 2.\n"); // Print if str1 is greater than str2
+    }
+
+    return 0; // Return 0 to indicate successful execution
 // -----------------------------------------------------------------------------------------------------
 
 
