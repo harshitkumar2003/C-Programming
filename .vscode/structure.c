@@ -42,3 +42,39 @@
 
 //     return 0;
 // }
+// ------------------------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------------------
+// Array of Structures:
+// An array of structures is a collection of multiple structure variables, allowing you to store and manage multiple records of the same type.
+// This is useful when you need to handle a list of similar data items, such as a list of students or employees.
+// You can declare an array of structures by specifying the structure type followed by the array size and then access individual structure members using the array index.
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
+// Example: WAP to create an array of structures to store details of multiple students and print them
+#include <stdio.h>
+#include <string.h>
+#define MAX_STUDENTS 100 // Maximum number of students
+// Define a structure named Student
+struct Student {
+    char name[50]; // Member to store the student's name
+    int rollNumber; // Member to store the student's roll number
+    float marks; // Member to store the student's marks
+};
+int main() {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------------
