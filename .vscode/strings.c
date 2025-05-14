@@ -84,16 +84,16 @@
 
 // -----------------------------------------------------------------------------------------------------
 // Example: WAP to ask user to enter their first name and print it back to them also try with their full name.
-#include <stdio.h>
-int main(){
-    char name[20];
-    printf("enter your name: ");
+// #include <stdio.h>
+// int main(){
+//    char name[20];
+//    printf("enter your name: ");
     //scanf ("%s",&name); it's a choice to use & or not in a string both will be support
-    scanf ("%s",name);
+//    scanf ("%s",name);
     //NOTE: scanf() cannot read multiword string with spaces here gets(for read) and puts(for print) come 
-    print("Your name is: %s",name);
-    return 0;
-}
+//    print("Your name is: %s",name);
+//    return 0;
+// }
 // -----------------------------------------------------------------------------------------------------
 
 
