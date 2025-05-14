@@ -39,6 +39,7 @@
 
 
 // ----------------------------------------------------------------------------------------------------
+// In read input string is also a pointer don't need to (&) while input
 // In the above code, we declare and initialize a string using both methods. The first method uses double quotes to create a string literal, while the second method uses a character array with individual characters. Both methods are valid in C.
 // The %s format specifier is used to print strings in C. It automatically handles the null terminator, so you don't need to worry about it when printing strings.
 // The output of the above code will be:
