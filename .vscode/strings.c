@@ -345,41 +345,33 @@
 
 // -----------------------------------------------------------------------------------------------------
 // Example: WAP to create a function that count the number of vowels in a string
-#include <stdio.h>
-int countVowels(char str[]); // Function prototype
-int countVowels(char str[]) { // Function definition
-    int count = 0; // Initialize a count variable to 0
-    for (int i = 0; str[i] != '\0'; i++) { // Loop through the string until the null terminator
-        char ch = str[i]; // Get the current character
-        // Check if the character is a vowel (both uppercase and lowercase)
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
-            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
-            count++; // Increment the count if a vowel is found
-        }
-    }
-        // Check if the string is empty
-        if (count == 0) {
-            printf("No vowels found in the string.\n"); // Print if no vowels are found
-        } else {
-            printf("Number of vowels: %d\n", count); // Print the number of vowels
-        }
-    return count; // Return the count of vowels
-}
-int main() {
-    char str[100]; // Declare a character array to store the string
-    printf("Enter a string: "); // Prompt the user for input
-    scanf("%s",str);// Read a string from standard input
-    countVowels(str); // Call the function to count vowels in the string
-    return 0; // Return 0 to indicate successful execution
-}
-
-
-
-
-
-
-
-
+// #include <stdio.h>
+// int countVowels(char str[]); // Function prototype
+// int countVowels(char str[]) { // Function definition
+//     int count = 0; // Initialize a count variable to 0
+//     for (int i = 0; str[i] != '\0'; i++) { // Loop through the string until the null terminator
+//         char ch = str[i]; // Get the current character
+//         // Check if the character is a vowel (both uppercase and lowercase)
+//         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+//             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+//             count++; // Increment the count if a vowel is found
+//         }
+//     }
+//         // Check if the string is empty
+//         if (count == 0) {
+//             printf("No vowels found in the string.\n"); // Print if no vowels are found
+//         } else {
+//             printf("Number of vowels: %d\n", count); // Print the number of vowels
+//         }
+//     return count; // Return the count of vowels
+// }
+// int main() {
+//     char str[100]; // Declare a character array to store the string
+//     printf("Enter a string: "); // Prompt the user for input
+//     scanf("%s",str);// Read a string from standard input
+//     countVowels(str); // Call the function to count vowels in the string
+//     return 0; // Return 0 to indicate successful execution
+// }
 // -----------------------------------------------------------------------------------------------------
 
 
