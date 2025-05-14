@@ -274,31 +274,72 @@
 
 // -----------------------------------------------------------------------------------------------------
 // Example: WAP to take a string input from the user using %c and print it back to them
+// #include <stdio.h>
+// int main() {
+//     char str[100]; // Declare a character array to store the string
+//     int i = 0; // Initialize an index variable to 0
+//     char ch; // Declare a character variable to store individual characters
+//     printf("Enter a character: "); // Prompt the user for input
+//     while(ch != '\n') { // Loop until a newline character is encountered
+//     scanf("%c", &ch); // Read a character from standard input
+//     str[i] = ch; // Store the character in the string array
+//     i++; // Increment the index
+//     }
+//     str[i] = '\0'; // Add a null terminator to the end of the string
+//     printf("You entered: %s", str); // Print the entered string
+//     return 0; // Return 0 to indicate successful execution
+// }
+// -----------------------------------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------------------------------
+// Example: WAP to create the salted form of a string entered by the user
+// #include <stdio.h>
+// #include <string.h> // Include string.h for string functions
+// void generateSaltedString(char newpassword[]);
+// void generateSaltedString(char newpassword[]) {
+//     char salt[] = "1234"; // Define a salt string
+//     char saltedStr[200]; // Declare a character array to store the salted string
+//     strcpy(saltedStr, newpassword); // Copy the original string to the salted string
+//     strcat(saltedStr, salt); // Concatenate the salt to the salted string
+//     printf("Salted String: %s\n", saltedStr); // Print the salted string
+// }
+// int main() {
+//     char str[100]; // Declare a character array to store the string
+//     printf("Enter a string: "); // Prompt the user for input
+//     scanf("%s", str); // Read a string from standard input   
+//     generateSaltedString(str); // Call the function to generate the salted string
+// }
+// -----------------------------------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------------------------------
+// Example: WAP to create a function that takes a string as input and returns the sliced string
 #include <stdio.h>
-int main() {
-    char str[100]; // Declare a character array to store the string
-    int i = 0; // Initialize an index variable to 0
-    char ch; // Declare a character variable to store individual characters
-    printf("Enter a character: "); // Prompt the user for input
-    while(ch != '\n') { // Loop until a newline character is encountered
-    scanf("%c", &ch); // Read a character from standard input
-    str[i] = ch; // Store the character in the string array
-    i++; // Increment the index
+int sliceString(char str[], int start, int end); // Function prototype
+int sliceString(char str[], int start, int end) { // Function definition
+    char slicedStr[100]; // Declare a character array to store the sliced string
+    int j = 0; // Initialize an index variable for the sliced string
+    for (int i = start; i < end; i++) { // Loop from start to end index
+        slicedStr[j] = str[i]; // Copy characters from the original string to the sliced string
+        j++; // Increment the index for the sliced string
     }
-    str[i] = '\0'; // Add a null terminator to the end of the string
-    printf("You entered: %s", str); // Print the entered string
+    slicedStr[j] = '\0'; // Add a null terminator to the end of the sliced string
+    printf("Sliced String: %s\n", slicedStr); // Print the sliced string
     return 0; // Return 0 to indicate successful execution
 }
-// -----------------------------------------------------------------------------------------------------
 
-
-// -----------------------------------------------------------------------------------------------------
-
-// -----------------------------------------------------------------------------------------------------
-
-
-// -----------------------------------------------------------------------------------------------------
-
+int main() {
+    char str[100]; // Declare a character array to store the string
+    int start, end; // Declare variables for start and end indices
+    printf("Enter a string: "); // Prompt the user for input
+    scanf("%s", str); // Read a string from standard input
+    printf("Enter start index: "); // Prompt the user for start index
+    scanf("%d", &start); // Read the start index from standard input
+    printf("Enter end index: "); // Prompt the user for end index
+    scanf("%d", &end); // Read the end index from standard input
+    sliceString(str, start, end); // Call the function to slice the string
+}
 // -----------------------------------------------------------------------------------------------------
 
 
