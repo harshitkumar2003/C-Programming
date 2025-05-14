@@ -84,26 +84,33 @@
 
 // -----------------------------------------------------------------------------------------------------
 // Example: WAP to ask user to enter their first name and print it back to them also try with their full name.
-// #include <stdio.h>
-// int main(){
-//    char name[20];
-//    printf("enter your name: ");
-    //scanf ("%s",&name); it's a choice to use & or not in a string both will be support
-//    scanf ("%s",name);
-    //NOTE: scanf() cannot read multiword string with spaces here gets(for read) and puts(for print) come 
-//    print("Your name is: %s",name);
-//    return 0;
-// }
+//  #include <stdio.h>
+//  int main(){
+//     char name[20];
+//     printf("enter your name: ");
+//     //scanf ("%s",&name); it's a choice to use & or not in a string both will be support
+//     scanf ("%s",name);
+//     //NOTE: scanf() cannot read multiword string with spaces here gets(for read) and puts(for print) come 
+//     printf("Your name is: %s",name);
+//     return 0;
+//  }
 // -----------------------------------------------------------------------------------------------------
 
 
 // -----------------------------------------------------------------------------------------------------
+// =========================
 // String functions
-// gets(str) -> dangerous and outdated function because it can not  identify the size of string.
+// =========================
+// 1> gets(str) -> read string from standard input
+// It is dangerous and outdated function because it can not  identify the size of string.
 // It can cause buffer overflow if the input string is longer than the allocated memory.
 // We can input even multiword string
-// puts(str) -> for printing string with spaces.
-// gets(str) -> for reading multiword string with spaces.
+
+// 2> puts(str) -> print string to standard output
+// It is also outdated function.
+// It automatically adds a newline character after printing the string.
+// It is used to print a string to the standard output (stdout).
+// It is a safer alternative to printf("%s", str) because it does not require format specifiers.
 
 // Example: WAP to ask user to enter their first name and print it back to them also try with their full name.
 // #include <stdio.h>
@@ -115,8 +122,12 @@
 //     puts(name); // Print the entered string (including spaces)
 //     return 0; // Return 0 to indicate successful execution
 // }
-// fgets(str,n,file)
-// fgets(str,100,stdin) function stops when n-1 line is entered, where (stdin) means standard input file
+
+// 3> fgets(str,n,file)
+// It is a safer alternative to gets() because it allows you to specify the maximum number of characters to read.
+// It reads a string from the specified file (or stdin) and stores it in the character array str.
+// It stops reading when either a newline character is encountered or the specified number of characters (n-1) has been read.
+// It automatically adds a null terminator at the end of the string.
 // -----------------------------------------------------------------------------------------------------
 
 
@@ -156,18 +167,75 @@
 // -----------------------------------------------------------------------------------------------------
 // standard library functon
 // We have to write string.h header file while using string functions
-// 1> strlen(str) -> count no of characters excluding '\0'
-// printf("length is:%d",name);
+// #include <string.h> Include string.h for string functions
+
+// 1> strlen(str) -> returns the length of the string excluding the null terminator.
+// It is a standard library function that calculates the length of a string.
+// It takes a string as input and returns the number of characters in the string, not including the null terminator.
+
+// Example: WAP to find the length of a string using strlen()
+// #include <stdio.h>
+// #include <string.h> // Include string.h for string functions
+// int main() {
+//     char str[100]; // Declare a character array to store the string
+//     printf("Enter a string: "); // Prompt the user for input
+//     fgets(str, sizeof(str), stdin); // Read a string from standard input
+
+//     int length = strlen(str + 1); // Calculate the length of the string using strlen()
+//     // The +1 is used to skip the first character of the string
+//     printf("Length of the string: %d\n", length); // Print the length of the string
+//     return 0; // Return 0 to indicate successful execution
+// }
 // -----------------------------------------------------------------------------------------------------
 
 
 // -----------------------------------------------------------------------------------------------------
+// 2> strcpy(dest, src) -> copies the string from src to dest.
+// It is a standard library function that copies a string from one location to another.
+// It takes two arguments: the destination string (dest) and the source string (src).
+// The destination string must have enough space to hold the copied string, including the null terminator.
 
+// Example: WAP to copy a string using strcpy()
+// #include <stdio.h>
+// #include <string.h> // Include string.h for string functions
+// int main() {
+//     char newstr[100]; // Declare a character array for the source string
+//     char oldstr[100]; // Declare a character array for the destination string
+
+//     printf("Enter a old string: "); // Prompt the user for input
+//     fgets(oldstr, sizeof(oldstr), stdin); // Read a string from standard input
+
+//     printf("Enter a new string: "); // Prompt the user for input
+//     fgets(newstr, sizeof(newstr), stdin); // Read a string from standard input
+
+//     strcpy(oldstr, newstr); // Copy the source string to the destination string
+
+//     printf("Copied string: %s", newstr); // Print the copied string
+//     return 0; // Return 0 to indicate successful execution
+// }
 // -----------------------------------------------------------------------------------------------------
 
 
 // -----------------------------------------------------------------------------------------------------
+// 3> strcat(dest, src) -> concatenates the string from src to dest.
+// It is a standard library function that appends one string to another.
+// It takes two arguments: the destination string (dest) and the source string (src).
+// The destination string must have enough space to hold the concatenated string, including the null terminator.
 
+// Example: WAP to concatenate two strings using strcat()
+//  #include <stdio.h>
+//  #include <string.h> // Include string.h for string functions
+//  int main() {
+//     char str1[100]; // Declare a character array for the first string
+//     char str2[50]; // Declare a character array for the second string
+//     printf("Enter first string: "); // Prompt the user for input
+//     fgets(str1, sizeof(str1), stdin); // Read the first string from standard input
+//     printf("Enter second string: "); // Prompt the user for input
+//     fgets(str2, sizeof(str2), stdin); // Read the second string from standard input
+//     strcat(str1, str2); // Concatenate the second string to the first string
+//     printf("Concatenated string: %s", str1); // Print the concatenated string
+//     return 0; // Return 0 to indicate successful execution
+//     }
 // -----------------------------------------------------------------------------------------------------
 
 
