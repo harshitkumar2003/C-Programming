@@ -90,7 +90,13 @@ int main(){
     printf("enter your name: ");
     //scanf ("%s",&name); it's a choice to use & or not in a string both will be support
     scanf ("%s",name);
+    //NOTE: scanf() cannot read multiword string with spaces here gets(for read) and puts(for print) come 
     print("Your name is: %s",name);
     return 0;
 }
+// -----------------------------------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------------------------------
+// String functions
 // -----------------------------------------------------------------------------------------------------
