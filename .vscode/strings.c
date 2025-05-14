@@ -315,35 +315,70 @@
 
 // -----------------------------------------------------------------------------------------------------
 // Example: WAP to create a function that takes a string as input and returns the sliced string
+// #include <stdio.h>
+// int sliceString(char str[], int start, int end); // Function prototype
+// int sliceString(char str[], int start, int end) { // Function definition
+//     char slicedStr[100]; // Declare a character array to store the sliced string
+//     int j = 0; // Initialize an index variable for the sliced string
+//     for (int i = start; i < end; i++) { // Loop from start to end index
+//         slicedStr[j] = str[i]; // Copy characters from the original string to the sliced string
+//         j++; // Increment the index for the sliced string
+//     }
+//     slicedStr[j] = '\0'; // Add a null terminator to the end of the sliced string
+//     printf("Sliced String: %s\n", slicedStr); // Print the sliced string
+//     return 0; // Return 0 to indicate successful execution
+// }
+
+// int main() {
+//     char str[100]; // Declare a character array to store the string
+//     int start, end; // Declare variables for start and end indices
+//     printf("Enter a string: "); // Prompt the user for input
+//     scanf("%s", str); // Read a string from standard input
+//     printf("Enter start index: "); // Prompt the user for start index
+//     scanf("%d", &start); // Read the start index from standard input
+//     printf("Enter end index: "); // Prompt the user for end index
+//     scanf("%d", &end); // Read the end index from standard input
+//     sliceString(str, start, end); // Call the function to slice the string
+// }
+// -----------------------------------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------------------------------
+// Example: WAP to create a function that count the number of vowels in a string
 #include <stdio.h>
-int sliceString(char str[], int start, int end); // Function prototype
-int sliceString(char str[], int start, int end) { // Function definition
-    char slicedStr[100]; // Declare a character array to store the sliced string
-    int j = 0; // Initialize an index variable for the sliced string
-    for (int i = start; i < end; i++) { // Loop from start to end index
-        slicedStr[j] = str[i]; // Copy characters from the original string to the sliced string
-        j++; // Increment the index for the sliced string
+int countVowels(char str[]); // Function prototype
+int countVowels(char str[]) { // Function definition
+    int count = 0; // Initialize a count variable to 0
+    for (int i = 0; str[i] != '\0'; i++) { // Loop through the string until the null terminator
+        char ch = str[i]; // Get the current character
+        // Check if the character is a vowel (both uppercase and lowercase)
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+            count++; // Increment the count if a vowel is found
+        }
     }
-    slicedStr[j] = '\0'; // Add a null terminator to the end of the sliced string
-    printf("Sliced String: %s\n", slicedStr); // Print the sliced string
+        // Check if the string is empty
+        if (count == 0) {
+            printf("No vowels found in the string.\n"); // Print if no vowels are found
+        } else {
+            printf("Number of vowels: %d\n", count); // Print the number of vowels
+        }
+    return count; // Return the count of vowels
+}
+int main() {
+    char str[100]; // Declare a character array to store the string
+    printf("Enter a string: "); // Prompt the user for input
+    scanf("%s",str);// Read a string from standard input
+    countVowels(str); // Call the function to count vowels in the string
     return 0; // Return 0 to indicate successful execution
 }
 
-int main() {
-    char str[100]; // Declare a character array to store the string
-    int start, end; // Declare variables for start and end indices
-    printf("Enter a string: "); // Prompt the user for input
-    scanf("%s", str); // Read a string from standard input
-    printf("Enter start index: "); // Prompt the user for start index
-    scanf("%d", &start); // Read the start index from standard input
-    printf("Enter end index: "); // Prompt the user for end index
-    scanf("%d", &end); // Read the end index from standard input
-    sliceString(str, start, end); // Call the function to slice the string
-}
-// -----------------------------------------------------------------------------------------------------
 
 
-// -----------------------------------------------------------------------------------------------------
+
+
+
+
 
 // -----------------------------------------------------------------------------------------------------
 
