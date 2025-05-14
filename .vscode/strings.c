@@ -427,3 +427,11 @@
 //     return 0; // Return 0 to indicate successful execution
 // }
 // -----------------------------------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------------------------------
+// HOMEWORK
+// Example: WAP to Print the highest frequency character in a string
+// Example: WAP to remove blank spaces from a string
+// Example: WAP to replace lowercase letters with uppercase and uppercase letters with lowercase
+
