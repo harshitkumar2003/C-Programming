@@ -23,3 +23,22 @@ struct Student { // Define a structure named Student
     int rollNumber; // Member to store the student's roll number
     float marks; // Member to store the student's marks
 };
+int main() {
+    struct Student student1; // Declare a variable of type Student
+
+    // Input student details
+    printf("Enter student's name: ");
+    scanf("%s", student1.name);
+    printf("Enter roll number: ");
+    scanf("%d", &student1.rollNumber);
+    printf("Enter marks: ");
+    scanf("%f", &student1.marks);
+
+    // Print student details
+    printf("\nStudent Details:\n");
+    printf("Name: %s\n", student1.name);
+    printf("Roll Number: %d\n", student1.rollNumber);
+    printf("Marks: %.2f\n", student1.marks);
+
+    return 0;
+}
