@@ -120,21 +120,21 @@
 
 // -----------------------------------------------------------------------------------------------------
 // Example: WAP that takes user input for their name and print thier length  
-#include <stdio.h>
-int length(char name[100]);  // creting function for counting length of input
-int length(char name[100]){ // function definiton
-    int count=0; // initialize a count variable as 0   
-    for(int i=o; name[i]!='\0';i++){ // looping for counting word of a string
-        count++;  // increase value by one when loop run
-    }
-    return count-1; // return n-1 length last length is '\0' they will also count that's why we use n-1
-}
-int main(){  // main function
-    char name[100];
-    fgets(name,100,stdin);
-    printf("length is:%d",length(name));
-    return 0;
-}
+// #include <stdio.h>
+// int length(char name[100]);  // creting function for counting length of input
+// int length(char name[100]){ // function definiton
+//     int count=0; // initialize a count variable as 0   
+//     for(int i=0; name[i]!='\0';i++){ // looping for counting word of a string
+//         count++;  // increase value by one when loop run
+//     }
+//     return count-1; // return n-1 length last length is '\0' they will also count that's why we use n-1
+// }
+// int main(){  // main function
+//     char name[100];
+//     fgets(name,100,stdin);
+//     printf("length is:%d",length(name));
+//     return 0;
+// }
 // -----------------------------------------------------------------------------------------------------
 
 
