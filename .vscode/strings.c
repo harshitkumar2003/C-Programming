@@ -100,18 +100,33 @@
 // -----------------------------------------------------------------------------------------------------
 // String functions
 // gets(str) -> dangerous and outdated function because it can not  identify the size of string.
+// It can cause buffer overflow if the input string is longer than the allocated memory.
 // We can input even multiword string
-// puts(str) -> for printing multiword string with spaces.
+// puts(str) -> for printing string with spaces.
+// gets(str) -> for reading multiword string with spaces.
+
+// Example: WAP to ask user to enter their first name and print it back to them also try with their full name.
+// #include <stdio.h>
+// int main(){
+//     char name[100]; // Declare a character array to store the string
+//     printf("Enter your name: "); // Prompt the user for input
+//     gets(name); // Read a string from standard input (including spaces)
+//     printf("Your name is: "); // Print the string using %s format specifier
+//     puts(name); // Print the entered string (including spaces)
+//     return 0; // Return 0 to indicate successful execution
+// }
 // fgets(str,n,file)
 // fgets(str,100,stdin) function stops when n-1 line is entered, where (stdin) means standard input file
 // -----------------------------------------------------------------------------------------------------
 
 
 // -----------------------------------------------------------------------------------------------------
-// string using pointer
-// char *str = "hello world";
+/* ===============================
+     String using pointer
+================================ */
+// char *str = "hello world"; // string literal
+// char str[] = "hello world"; // string array
 // It store string in memory and the assigned address is stored in the char pointer 'str'
-// char *str = "hello world";
 // string can be changed and reinitialized in pointer
 // char str = "hello world";
 // string cannot be changed and reinitialized in array of character
