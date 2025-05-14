@@ -377,28 +377,53 @@
 
 // -----------------------------------------------------------------------------------------------------
 // Example: WAP to create a function that check if a given character is present in a string
-#include <stdio.h>
-int isCharPresent(char str[], char ch); // Function prototype
-int isCharPresent(char str[], char ch) { // Function definition
-    for (int i = 0; str[i] != '\0'; i++) { // Loop through the string until the null terminator
-        if (str[i] == ch) { // Check if the character matches
-            return 1; // Return 1 if the character is found
-        }
-    }
-    return 0; // Return 0 if the character is not found
-}
-int main() {
-    char str[100]; // Declare a character array to store the string
-    char ch; // Declare a character variable to store the character to search for
-    printf("Enter a string: "); // Prompt the user for input
-    scanf("%s", str); // Read a string from standard input
-    printf("Enter a character to search: "); // Prompt the user for the character to search for
-    scanf(" %c", &ch); // Read the character from standard input (note the space before %c)
-    if (isCharPresent(str, ch)) { // Call the function to check if the character is present
-        printf("Character '%c' is present in the string.\n", ch); // Print if the character is found
-    } else {
-        printf("Character '%c' is not present in the string.\n", ch); // Print if the character is not found
-    }
-    return 0; // Return 0 to indicate successful execution
-}
+// #include <stdio.h>
+// int isCharPresent(char str[], char ch); // Function prototype
+// int isCharPresent(char str[], char ch) { // Function definition
+//     for (int i = 0; str[i] != '\0'; i++) { // Loop through the string until the null terminator
+//         if (str[i] == ch) { // Check if the character matches
+//             return 1; // Return 1 if the character is found
+//         }
+//     }
+//     return 0; // Return 0 if the character is not found
+// }
+// int main() {
+//     char str[100]; // Declare a character array to store the string
+//     char ch; // Declare a character variable to store the character to search for
+//     printf("Enter a string: "); // Prompt the user for input
+//     scanf("%s", str); // Read a string from standard input
+//     printf("Enter a character to search: "); // Prompt the user for the character to search for
+//     scanf(" %c", &ch); // Read the character from standard input (note the space before %c)
+//     if (isCharPresent(str, ch)) { // Call the function to check if the character is present
+//         printf("Character '%c' is present in the string.\n", ch); // Print if the character is found
+//     } else {
+//         printf("Character '%c' is not present in the string.\n", ch); // Print if the character is not found
+//     }
+//     return 0; // Return 0 to indicate successful execution
+// }
+// -----------------------------------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------------------------------
+// Example: WAP to convert lowercase to uppercase vowel in a string
+// #include <stdio.h>
+// int convertVowelsToUppercase(char str[]); // Function prototype
+// int convertVowelsToUppercase(char str[]) { // Function definition
+//     for (int i = 0; str[i] != '\0'; i++) { // Loop through the string until the null terminator
+//         char ch = str[i]; // Get the current character
+//         // Check if the character is a lowercase vowel
+//         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+//             str[i] = ch - 32; // Convert to uppercase by subtracting 32 from the ASCII value
+//         }
+//     }
+//     return 0; // Return 0 to indicate successful execution
+// }
+// int main() {
+//     char str[100]; // Declare a character array to store the string
+//     printf("Enter a string: "); // Prompt the user for input
+//     scanf("%s", str); // Read a string from standard input
+//     convertVowelsToUppercase(str); // Call the function to convert vowels to uppercase
+//     printf("Converted string: %s\n", str); // Print the converted string
+//     return 0; // Return 0 to indicate successful execution
+// }
 // -----------------------------------------------------------------------------------------------------
