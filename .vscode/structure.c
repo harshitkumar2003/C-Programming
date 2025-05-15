@@ -50,7 +50,38 @@
 // An array of structures is a collection of multiple structure variables, allowing you to store and manage multiple records of the same type.
 // This is useful when you need to handle a list of similar data items, such as a list of students or employees.
 // You can declare an array of structures by specifying the structure type followed by the array size and then access individual structure members using the array index.
+// syntax structure:
+struct company emp[100];
+struct company manager[20];
+struct company CEO[10];
+
+Accessing of array of structure:
+emp[0].name = "Harry";
+manager[0].department = "IT Dept.";
+CEO[0].branch = "banglore";
+structure varuable.arrayindex[].entities = values 
 // ------------------------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------------------
+// Initialize structure in single line
+struct company emp = {"Harry", 61, 8.11}; 
+// structure variable = values{name, rollno, cgpa}
+struct company emp = {0};
+// All entities will filled zero 0 
+// ------------------------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------------------
+// Structure to pointer
+struct company emp;
+struct company *ptr;
+ptr = &emp;
+printf("name = %s",(*ptr).name);
+// NOTE: * with ptr always in parenthesis
+// ------------------------------------------------------------------------------------------------------------
+
+
 // ------------------------------------------------------------------------------------------------------------
 // Example: WAP to create an array of structures to store details of multiple students and print them
 #include <stdio.h>
@@ -63,9 +94,10 @@ struct Student {
     float marks; // Member to store the student's marks
 };
 int main() {
-    
-}
+    struct student S1;
 
+}
+// ---------------------------------------------------------------------------------------------------------
 
 
 
