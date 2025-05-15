@@ -251,60 +251,57 @@ CEO[0].branch = "banglore"; */
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: WAP to create a structure to store vectors, then make a function to return sum of two verctors.
- #include <stdio.h>
- struct vector {
-     int x;
-     int y;
- };
- void calculate(struct vector v1,struct vector v2,struct vector sum);
- void calculate(struct vector v1,struct vector v2,struct vector sum) {
-     sum.x = v1.x + v2.x;
-     sum.y = v1.y + v2.y;
-     printf("sum of x is %d\t",sum.x);
-     printf("sum of y is %d",sum.y);
- }
- int main() {
-     struct vector v1 = {3, 4}; // Initialize vector v1
-     struct vector v2 = {5, 6}; // Initialize vector v2
-     struct vector sum = {0}; // Initialize sum vector to zero
-     calculate(v1, v2, sum); // Call the function to calculate the sum of vectors
-     return 0;
- }
+//  #include <stdio.h>
+//  struct vector {
+//      int x;
+//      int y;
+//  };
+//  void calculate(struct vector v1,struct vector v2,struct vector sum);
+//  void calculate(struct vector v1,struct vector v2,struct vector sum) {
+//      sum.x = v1.x + v2.x;
+//      sum.y = v1.y + v2.y;
+//      printf("sum of x is %d\t",sum.x);
+//      printf("sum of y is %d",sum.y);
+//  }
+//  int main() {
+//      struct vector v1 = {3, 4}; // Initialize vector v1
+//      struct vector v2 = {5, 6}; // Initialize vector v2
+//      struct vector sum = {0}; // Initialize sum vector to zero
+//      calculate(v1, v2, sum); // Call the function to calculate the sum of vectors
+//      return 0;
+//  }
 
 // ------------------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------------------
-
-
-// ------------------------------------------------------------------------------------------------------------
-// Example: WAP to create an array of structures to store details of multiple students and print them
+// Example: WAP to create a structure to store complex numbers (using arrow operator)
 // #include <stdio.h>
-// #include <string.h>
-// #define MAX_STUDENTS 100 // Maximum number of students
-// // Define a structure named Student
-// struct Student {
-//     char name[50]; // Member to store the student's name
-//     int rollNumber; // Member to store the student's roll number
-//     float marks; // Member to store the student's marks
+// struct Complex {
+//     float real;
+//     float imag;
 // };
 // int main() {
-//     struct student S1;
+//     struct Complex num1, num2, sum; // Declare three complex number variables
+//     // Input first complex number
+//     printf("Enter first complex number (real and imaginary parts): ");
+//     scanf("%f %f", &num1.real, &num1.imag);
+//     // Input second complex number
+//     printf("Enter second complex number (real and imaginary parts): ");
+//     scanf("%f %f", &num2.real, &num2.imag);
+    
+//     // Calculate the sum of the two complex numbers
+//     sum.real = num1.real + num2.real;
+//     sum.imag = num1.imag + num2.imag;
 
+//     // Print the result using arrow operator
+//     printf("Sum of complex numbers: %.2f + %.2fi\n", sum.real, sum.imag);
+    
+//     return 0;
 // }
-// ---------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
+// ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
