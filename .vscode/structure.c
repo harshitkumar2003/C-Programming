@@ -194,57 +194,58 @@ CEO[0].branch = "banglore"; */
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: Using typedef keyword create a structure and initialize values in variables.
-// #include <stdio.h>
-// #include <string.h>
-// struct computersciencestudent {
-//     int rollNumber;
-//     float cgpa;
-//     char name[20];
-// }css;
-// int main() {
-//     struct css detail;
-//     detail.rollNumber = 13;
-//     detail.cgpa = 9.4;
-//     strcpy(detail.name,"Harry")
-// printf("student rollNumber = %s\n",detail.rollNumber);
-// printf("student cgpa = %s\n",detail.cgpa);
-// printf("student name = %s\n",detail.name);
-// return 0;
-// }
-// // ------------------------------------------------------------------------------------------------------------
+//  #include <stdio.h>
+//  #include <string.h>
+//  struct computersciencestudent {
+//      int rollNumber;
+//      float cgpa;
+//      char name[20];
+//  }css;
+
+//  int main() {
+//     css.rollNumber = 13;
+//     css.cgpa = 9.4;
+//     strcpy(css.name, "Harry"); // Using strcpy to copy string into the character array
+//     // Alternatively, you can initialize the structure in a single line
+//     // struct computersciencestudent css = {13, 9.4, "Harry"};
+//  printf("student rollNumber = %d\n",css.rollNumber);
+//  printf("student cgpa = %f\n",css.cgpa);
+//  printf("student name = %s\n",css.name);
+//  return 0;
+//  }
+// ------------------------------------------------------------------------------------------------------------
 
 
-// // ------------------------------------------------------------------------------------------------------------
-// // Example: WAP to read and print details(houseno,block,city,state) of 5 people
-// #include <stdio.h>
-// #include <string.h>
-// struct people {
-//     int houseno;
-//     int block;
-//     char city[20];
-//     char state[20];
-// };
-// int main() {
-//     struct people detail[5];
-//     for(int i = 0; i <= detail[i]; i++)
-//     {
-//         printf("enter details of people: %d",i+1);
-//         scanf("houseno = %d",&detail[i].houseno);
-//         scanf("block = %d",&detail[i].block);
-//         scanf("city = %s",&detail[i].city);
-//         scanf("state = %s",&detail[i].state);
-//     }
-//    for(int i = 0; i <= detail[i]; i++)
-//     {
-//         printf("details of people: %d",i+1);
-//         printf("houseno = %d",detail[i].houseno);
-//         printf("block = %d",detail[i].block);
-//         printf("city = %s",detail[i].city);
-//         printf("state = %s",detail[i].state);
-//     }
-
-// return 0;
-// }
+// ------------------------------------------------------------------------------------------------------------
+ #include <stdio.h>
+// Example: WAP to read and print details(houseno,block,city,state) of 5 people
+ #include <string.h>
+ struct person {
+     int houseno;
+     int block;
+     char city[20];
+     char state[20];
+ };
+ int main() {
+     struct person detail[5];
+        // Initialize the structure array with zero values
+        for(int i = 0; i < 5; i++) {
+         printf("\nenter details of person: %d\n",i+1);
+         scanf("%d\n",&detail[i].houseno);
+         scanf("%d\n",&detail[i].block);
+         scanf("%s\n",&detail[i].city);
+         scanf("%s",&detail[i].state);
+     }
+        for(int i = 0; i < 5; i++)
+     {
+         printf("\ndetails of person: %d\n",i+1);
+         printf("houseno = %d\n",detail[i].houseno);
+         printf("block = %d\n",detail[i].block);
+         printf("city = %s\n",detail[i].city);
+         printf("state = %s\n",detail[i].state);
+     }
+ return 0;
+ }
 // ------------------------------------------------------------------------------------------------------------
 
 
