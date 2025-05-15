@@ -51,24 +51,42 @@
 // This is useful when you need to handle a list of similar data items, such as a list of students or employees.
 // You can declare an array of structures by specifying the structure type followed by the array size and then access individual structure members using the array index.
 // syntax structure:
-struct company emp[100];
-struct company manager[20];
-struct company CEO[10];
+// struct company emp[100];
+// struct company manager[20];
+// struct company CEO[10];
 
 // Accessing of array of structure:
-emp[0].name = "Harry";
+// emp[i].name
+// emp[i].rollno
+// emp[i].cgpa
+
+/* emp[0].name = "Harry";
 manager[0].department = "IT Dept.";
-CEO[0].branch = "banglore";
+CEO[0].branch = "banglore"; *\
+
 // structure varuable.arrayindex[].entities = values 
+// Here, emp, manager, and CEO are arrays of structures, each capable of holding multiple records of the respective structure type.
 // ------------------------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------------------------
 // Initialize structure in single line
-struct company emp = {"Harry", 61, 8.11}; 
-// structure variable = values{name, rollno, cgpa}
-struct company emp = {0};
-// All entities will filled zero 0 
+// syntax:
+// struct structure_name variable_name = {value1, value2, value3, ...};
+// Example: WAP to create a structure to store student details and initialize them in a single line
+// #include <stdio.h>
+// struct Student {
+//     char name[50];
+//     int rollNumber;
+//     float marks;
+// };
+// int main() {
+//     struct Student student1 = {"John Doe", 101, 85.5}; // Initialize structure in a single line
+//     printf("Name: %s\n", student1.name);
+//     printf("Roll Number: %d\n", student1.rollNumber);// Accessing structure members
+//     printf("Marks: %.2f\n", student1.marks);
+//     return 0;
+// }
 // ------------------------------------------------------------------------------------------------------------
 
 
@@ -176,25 +194,25 @@ return 0;
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: WAP to create a structure to store vectors, then make a function to return sum of two verctors.
-#include <stdio.h>
-struct vector {
-    int x;
-    int y;
-};
-void calculate(struct vector v1,struct vector v2,struct vector sum);
-void calculate(struct vector v1,struct vector v2,struct vector sum) {
-    sum.x = v1.x + v2.x;
-    sum.y = v1.y + v2.y;
-    printf("sum of x is %d",sum.x);
-    printf("sum of x is %d",sum.y);
-}
-int main() {
-    struct vector v1;
-    struct vector v2;
-    struct vector sum == {0};
+// #include <stdio.h>
+// struct vector {
+//     int x;
+//     int y;
+// };
+// void calculate(struct vector v1,struct vector v2,struct vector sum);
+// void calculate(struct vector v1,struct vector v2,struct vector sum) {
+//     sum.x = v1.x + v2.x;
+//     sum.y = v1.y + v2.y;
+//     printf("sum of x is %d",sum.x);
+//     printf("sum of x is %d",sum.y);
+// }
+// int main() {
+//     struct vector v1;
+//     struct vector v2;
+//     struct vector sum == {0};
 
-    return 0;
-}
+//     return 0;
+// }
 
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
@@ -207,19 +225,19 @@ int main() {
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: WAP to create an array of structures to store details of multiple students and print them
-#include <stdio.h>
-#include <string.h>
-#define MAX_STUDENTS 100 // Maximum number of students
-// Define a structure named Student
-struct Student {
-    char name[50]; // Member to store the student's name
-    int rollNumber; // Member to store the student's roll number
-    float marks; // Member to store the student's marks
-};
-int main() {
-    struct student S1;
+// #include <stdio.h>
+// #include <string.h>
+// #define MAX_STUDENTS 100 // Maximum number of students
+// // Define a structure named Student
+// struct Student {
+//     char name[50]; // Member to store the student's name
+//     int rollNumber; // Member to store the student's roll number
+//     float marks; // Member to store the student's marks
+// };
+// int main() {
+//     struct student S1;
 
-}
+// }
 // ---------------------------------------------------------------------------------------------------------
 
 
