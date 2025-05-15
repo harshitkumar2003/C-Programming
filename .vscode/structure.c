@@ -80,19 +80,46 @@ ptr = &emp;
 printf("name = %s",(*ptr).name);
 // NOTE: * with ptr always in parenthesis
 printf("name = %s",(*ptr) -> name);
-// Arrow operator we can also use arrow operator in field of dot operator
+// Arrow operator we can also use arrow operator in field of dot operator for  easy understanding 
 // (*ptr).roll
+// format
 // (*ptr) -> roll
-
 // ------------------------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------------------------
+// Passing structure to function
+//syntax:
+#include <stdio.h>
+struct structure_name {
+    member 1;
+    member 2;
+    member n; (needs depends on programmer)
+};
+void function_name(struct structure_name structure_variable);
+// NOTE: function always define after the structure definition
+int main() {
+    statement
+    ..........
+    ........
+    ....
+}
+// ------------------------------------------------------------------------------------------------------------
+
 
 // ------------------------------------------------------------------------------------------------------------
+// Typdef keyword 
+// Used to create alias(alternative name)/(nickname for structure) for data types
+typedef struct company {
+    member 1;
+    member 2;
+    member n;
+}cpy; // cpy is a alias for company structure
 // ------------------------------------------------------------------------------------------------------------
+
+
 // ------------------------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------------------------
+
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
