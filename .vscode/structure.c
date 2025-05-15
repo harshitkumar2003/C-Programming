@@ -119,7 +119,24 @@ typedef struct company {
 
 
 // ------------------------------------------------------------------------------------------------------------
-
+// Example: Using typedef keyword create a structure and initialize values in variables.
+#include <stdio.h>
+#include <string.h>
+struct computersciencestudent {
+    int rollNumber;
+    float cgpa;
+    char name[20];
+}css;
+int main() {
+    struct css detail;
+    detail.rollNumber = 13;
+    detail.cgpa = 9.4;
+    strcpy(detail.name,"Harry")
+printf("student rollNumber = %s\n",detail.rollNumber);
+printf("student cgpa = %s\n",detail.cgpa);
+printf("student name = %s\n",detail.name);
+return 0;
+}
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
