@@ -62,7 +62,7 @@
 
 /* emp[0].name = "Harry";
 manager[0].department = "IT Dept.";
-CEO[0].branch = "banglore"; *\
+CEO[0].branch = "banglore"; */
 
 // structure varuable.arrayindex[].entities = values 
 // Here, emp, manager, and CEO are arrays of structures, each capable of holding multiple records of the respective structure type.
@@ -92,103 +92,122 @@ CEO[0].branch = "banglore"; *\
 
 // ------------------------------------------------------------------------------------------------------------
 // Structure to pointer
-struct company emp;
-struct company *ptr;
-ptr = &emp;
-printf("name = %s",(*ptr).name);
-// NOTE: * with ptr always in parenthesis
-printf("name = %s",(*ptr) -> name);
-// Arrow operator we can also use arrow operator in field of dot operator for  easy understanding 
-// (*ptr).roll
-// format
-// (*ptr) -> roll
+// A pointer to a structure allows you to access the members of the structure using the arrow operator (->) or dereferencing the pointer with the dot operator (*).
+// syntax:
+// struct structure_name *pointer_name;
+
+// Example: WAP to create a structure to store student details and access them using a pointer*/
+
+// #include <stdio.h>
+// struct Student {
+//     char name[50];
+//     int rollNumber;
+//     float marks;
+// };
+// int main() {
+// struct Student student1 = {"John Doe", 101, 85.5}; // Initialize structure in a single line
+// printf("Name: %s\n", student1.name);
+// printf("Roll Number: %d\n", student1.rollNumber); // Accessing structure members
+// printf("Marks: %.2f\n", student1.marks);
+
+// // Create a pointer to the structure
+// struct Student *ptr = &student1; // Pointer to the structure
+// // Accessing structure members using pointer
+// printf("\nUsing Pointer:\n");
+// printf("Name: %s\n", ptr->name); // Using arrow operator
+// printf("Roll Number: %d\n", ptr->rollNumber); // Using arrow operator
+// printf("Marks: %.2f\n", ptr->marks); // Using arrow operator
+// return 0;
+// }
 // ------------------------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------------------------
 // Passing structure to function
+// You can pass a structure to a function by value or by reference (using pointers).
+// Passing by value means that a copy of the structure is made, and changes made to the structure inside the function do not affect the original structure.
 //syntax:
-#include <stdio.h>
-struct structure_name {
-    member 1;
-    member 2;
-    member n; (needs depends on programmer)
-};
-void function_name(struct structure_name structure_variable);
-// NOTE: function always define after the structure definition
-int main() {
-    statement
-    ..........
-    ........
-    ....
-}
+// #include <stdio.h>
+// struct structure_name {
+//     member 1;
+//     member 2;
+//     member n; (needs depends on programmer)
+// };
+// void function_name(struct structure_name structure_variable);
+// // NOTE: function always define after the structure definition
+// int main() {
+//     statement
+//     ..........
+//     ........
+//     ....
+// }
 // ------------------------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------------------------
 // Typdef keyword 
 // Used to create alias(alternative name)/(nickname for structure) for data types
-typedef struct company {
-    member 1;
-    member 2;
-    member n;
-}cpy; // cpy is a alias for company structure
+// typedef struct company {
+//     member 1;
+//     member 2;
+//     member n;
+// }cpy; // cpy is a alias for company structure
 // ------------------------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: Using typedef keyword create a structure and initialize values in variables.
-#include <stdio.h>
-#include <string.h>
-struct computersciencestudent {
-    int rollNumber;
-    float cgpa;
-    char name[20];
-}css;
-int main() {
-    struct css detail;
-    detail.rollNumber = 13;
-    detail.cgpa = 9.4;
-    strcpy(detail.name,"Harry")
-printf("student rollNumber = %s\n",detail.rollNumber);
-printf("student cgpa = %s\n",detail.cgpa);
-printf("student name = %s\n",detail.name);
-return 0;
-}
-// ------------------------------------------------------------------------------------------------------------
+// #include <stdio.h>
+// #include <string.h>
+// struct computersciencestudent {
+//     int rollNumber;
+//     float cgpa;
+//     char name[20];
+// }css;
+// int main() {
+//     struct css detail;
+//     detail.rollNumber = 13;
+//     detail.cgpa = 9.4;
+//     strcpy(detail.name,"Harry")
+// printf("student rollNumber = %s\n",detail.rollNumber);
+// printf("student cgpa = %s\n",detail.cgpa);
+// printf("student name = %s\n",detail.name);
+// return 0;
+// }
+// // ------------------------------------------------------------------------------------------------------------
 
 
-// ------------------------------------------------------------------------------------------------------------
-// Example: WAP to read and print details(houseno,block,city,state) of 5 people
-#include <stdio.h>
-#include <string.h>
-struct people {
-    int houseno;
-    int block;
-    char city[20];
-    char state[20];
-};
-int main() {
-    struct people detail[5];
-    for(int i = 0; i <= detail[i]; i++)
-    {
-        printf("enter details of people: %d",i+1);
-        scanf("houseno = %d",&detail[i].houseno);
-        scanf("block = %d",&detail[i].block);
-        scanf("city = %s",&detail[i].city);
-        scanf("state = %s",&detail[i].state);
-    }
-   for(int i = 0; i <= detail[i]; i++)
-    {
-        printf("details of people: %d",i+1);
-        printf("houseno = %d",detail[i].houseno);
-        printf("block = %d",detail[i].block);
-        printf("city = %s",detail[i].city);
-        printf("state = %s",detail[i].state);
-    }
+// // ------------------------------------------------------------------------------------------------------------
+// // Example: WAP to read and print details(houseno,block,city,state) of 5 people
+// #include <stdio.h>
+// #include <string.h>
+// struct people {
+//     int houseno;
+//     int block;
+//     char city[20];
+//     char state[20];
+// };
+// int main() {
+//     struct people detail[5];
+//     for(int i = 0; i <= detail[i]; i++)
+//     {
+//         printf("enter details of people: %d",i+1);
+//         scanf("houseno = %d",&detail[i].houseno);
+//         scanf("block = %d",&detail[i].block);
+//         scanf("city = %s",&detail[i].city);
+//         scanf("state = %s",&detail[i].state);
+//     }
+//    for(int i = 0; i <= detail[i]; i++)
+//     {
+//         printf("details of people: %d",i+1);
+//         printf("houseno = %d",detail[i].houseno);
+//         printf("block = %d",detail[i].block);
+//         printf("city = %s",detail[i].city);
+//         printf("state = %s",detail[i].state);
+//     }
 
-return 0;
-}
+// return 0;
+// }
 // ------------------------------------------------------------------------------------------------------------
 
 
