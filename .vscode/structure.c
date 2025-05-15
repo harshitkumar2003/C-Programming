@@ -138,7 +138,39 @@ printf("student name = %s\n",detail.name);
 return 0;
 }
 // ------------------------------------------------------------------------------------------------------------
+
+
 // ------------------------------------------------------------------------------------------------------------
+// Example: WAP to read and print details(houseno,block,city,state) of 5 people
+#include <stdio.h>
+#include <string.h>
+struct people {
+    int houseno;
+    int block;
+    char city[20];
+    char state[20];
+};
+int main() {
+    struct people detail[5];
+    for(int i = 0; i <= detail[i]; i++)
+    {
+        printf("enter details of people: %d",i+1);
+        scanf("houseno = %d",&detail[i].houseno);
+        scanf("block = %d",&detail[i].block);
+        scanf("city = %s",&detail[i].city);
+        scanf("state = %s",&detail[i].state);
+    }
+   for(int i = 0; i <= detail[i]; i++)
+    {
+        printf("details of people: %d",i+1);
+        printf("houseno = %d",detail[i].houseno);
+        printf("block = %d",detail[i].block);
+        printf("city = %s",detail[i].city);
+        printf("state = %s",detail[i].state);
+    }
+
+return 0;
+}
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
