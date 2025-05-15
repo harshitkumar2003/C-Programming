@@ -79,6 +79,11 @@ struct company *ptr;
 ptr = &emp;
 printf("name = %s",(*ptr).name);
 // NOTE: * with ptr always in parenthesis
+printf("name = %s",(*ptr) -> name);
+// Arrow operator we can also use arrow operator in field of dot operator
+// (*ptr).roll
+// (*ptr) -> roll
+
 // ------------------------------------------------------------------------------------------------------------
 
 
