@@ -217,59 +217,59 @@ CEO[0].branch = "banglore"; */
 
 
 // ------------------------------------------------------------------------------------------------------------
- #include <stdio.h>
 // Example: WAP to read and print details(houseno,block,city,state) of 5 people
- #include <string.h>
- struct person {
-     int houseno;
-     int block;
-     char city[20];
-     char state[20];
- };
- int main() {
-     struct person detail[5];
-        // Initialize the structure array with zero values
-        for(int i = 0; i < 5; i++) {
-         printf("\nenter details of person: %d\n",i+1);
-         scanf("%d\n",&detail[i].houseno);
-         scanf("%d\n",&detail[i].block);
-         scanf("%s\n",&detail[i].city);
-         scanf("%s",&detail[i].state);
-     }
-        for(int i = 0; i < 5; i++)
-     {
-         printf("\ndetails of person: %d\n",i+1);
-         printf("houseno = %d\n",detail[i].houseno);
-         printf("block = %d\n",detail[i].block);
-         printf("city = %s\n",detail[i].city);
-         printf("state = %s\n",detail[i].state);
-     }
- return 0;
- }
+
+//  #include <stdio.h>
+//  struct person {
+//      int houseno;
+//      int block;
+//      char city[20];
+//      char state[20];
+//  };
+//  int main() {
+//      struct person detail[5];
+//         // Initialize the structure array with zero values
+//         for(int i = 0; i < 5; i++) {
+//          printf("\nenter details of person: %d\n",i+1);
+//          scanf("%d\n",&detail[i].houseno);
+//          scanf("%d\n",&detail[i].block);
+//          scanf("%s\n",&detail[i].city);
+//          scanf("%s",&detail[i].state);
+//      }
+//         for(int i = 0; i < 5; i++)
+//      {
+//          printf("\ndetails of person: %d\n",i+1);
+//          printf("houseno = %d\n",detail[i].houseno);
+//          printf("block = %d\n",detail[i].block);
+//          printf("city = %s\n",detail[i].city);
+//          printf("state = %s\n",detail[i].state);
+//      }
+//  return 0;
+//  }
 // ------------------------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: WAP to create a structure to store vectors, then make a function to return sum of two verctors.
-// #include <stdio.h>
-// struct vector {
-//     int x;
-//     int y;
-// };
-// void calculate(struct vector v1,struct vector v2,struct vector sum);
-// void calculate(struct vector v1,struct vector v2,struct vector sum) {
-//     sum.x = v1.x + v2.x;
-//     sum.y = v1.y + v2.y;
-//     printf("sum of x is %d",sum.x);
-//     printf("sum of x is %d",sum.y);
-// }
-// int main() {
-//     struct vector v1;
-//     struct vector v2;
-//     struct vector sum == {0};
-
-//     return 0;
-// }
+ #include <stdio.h>
+ struct vector {
+     int x;
+     int y;
+ };
+ void calculate(struct vector v1,struct vector v2,struct vector sum);
+ void calculate(struct vector v1,struct vector v2,struct vector sum) {
+     sum.x = v1.x + v2.x;
+     sum.y = v1.y + v2.y;
+     printf("sum of x is %d\t",sum.x);
+     printf("sum of y is %d",sum.y);
+ }
+ int main() {
+     struct vector v1 = {3, 4}; // Initialize vector v1
+     struct vector v2 = {5, 6}; // Initialize vector v2
+     struct vector sum = {0}; // Initialize sum vector to zero
+     calculate(v1, v2, sum); // Call the function to calculate the sum of vectors
+     return 0;
+ }
 
 // ------------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------------------------
