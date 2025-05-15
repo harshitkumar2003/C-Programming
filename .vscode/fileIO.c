@@ -77,6 +77,31 @@
 
 
 // ------------------------------------------------------------------------------------------------
+// Example: WAP to check if a file exists and open it in read mode
+// #include <stdio.h>
+// int main() {
+// FILE *file;
+// file = fopen("data.txt", "r"); // Open the file in read mode
+// // Check if the file was opened successfully
+// if (file == NULL) {
+//     printf("Error opening file.\n");
+//     return 1; // Exit if the file cannot be opened
+// }
+// else
+// {
+//     printf("File opened successfully.\n");
+// }
+// fclose(file); // Close the file after use
+// return 0;
+// } // End of main function
+
+
+
+
+
+
+
+
 
 // ------------------------------------------------------------------------------------------------
 
