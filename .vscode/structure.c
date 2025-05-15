@@ -301,32 +301,28 @@ CEO[0].branch = "banglore"; */
 
 // ------------------------------------------------------------------------------------------------------------
 // Example: WAP to create a structure to store bank account information of a customer (account number, name, balance).
-#include <stdio.h>
-struct BankAccount {
-    int accountNumber;
-    char name[50];
-    float balance;
-};
-int main() {
-    struct BankAccount account; // Declare a variable of type BankAccount
-    // Input bank account details
-    printf("Enter account number: ");
-    scanf("%d", &account.accountNumber);
-    printf("Enter name: ");
-    scanf("%s", account.name);
-    printf("Enter balance: ");
-    scanf("%f", &account.balance);
+// #include <stdio.h>
+// struct BankAccount {
+//     int accountNumber;
+//     char name[50];
+//     float balance;
+// };
+// int main() {
+//     struct BankAccount account; // Declare a variable of type BankAccount
+//     // Input bank account details
+//     printf("Enter account number: ");
+//     scanf("%d", &account.accountNumber);
+//     printf("Enter name: ");
+//     scanf("%s", account.name);
+//     printf("Enter balance: ");
+//     scanf("%f", &account.balance);
 
-    // Print bank account details
-    printf("\nBank Account Details:\n");
-    printf("Account Number: %d\n", account.accountNumber);
-    printf("Name: %s\n", account.name);
-    printf("Balance: %.2f\n", account.balance);
+//     // Print bank account details
+//     printf("\nBank Account Details:\n");
+//     printf("Account Number: %d\n", account.accountNumber);
+//     printf("Name: %s\n", account.name);
+//     printf("Balance: %.2f\n", account.balance);
 
-    return 0;
-}
-// ------------------------------------------------------------------------------------------------------------
-
-
-// ------------------------------------------------------------------------------------------------------------
+//     return 0;
+// }
 // ------------------------------------------------------------------------------------------------------------
