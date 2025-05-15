@@ -126,32 +126,69 @@ CEO[0].branch = "banglore"; */
 // Passing structure to function
 // You can pass a structure to a function by value or by reference (using pointers).
 // Passing by value means that a copy of the structure is made, and changes made to the structure inside the function do not affect the original structure.
+
 //syntax:
-// #include <stdio.h>
-// struct structure_name {
-//     member 1;
-//     member 2;
-//     member n; (needs depends on programmer)
-// };
 // void function_name(struct structure_name structure_variable);
-// // NOTE: function always define after the structure definition
+// Passing by reference means that a pointer to the structure is passed, allowing the function to modify the original structure.
+// Passing by reference is more efficient for large structures as it avoids copying the entire structure.
+
+// Example: WAP to create a structure to store student details and pass it to a function
+
+// #include <stdio.h>
+// struct Student {
+//     char name[50];
+//     int rollNumber;
+//     float marks;
+// };
+// // Function to print student details
+// void printStudentDetails(struct Student student) {
+//     printf("Name: %s\n", student.name);
+//     printf("Roll Number: %d\n", student.rollNumber);
+//     printf("Marks: %.2f\n", student.marks);
+// }
+// // Function to modify student details
+// void modifyStudentDetails(struct Student *student) {
+//     // Modify the student details
+//     student->rollNumber += 1; // Increment roll number
+//     student->marks += 5.0; // Add 5 marks
+// }
 // int main() {
-//     statement
-//     ..........
-//     ........
-//     ....
+//     struct Student student1 = {"John Doe", 101, 85.5}; // Initialize structure in a single line
+//     printf("Original Student Details:\n");
+//     printStudentDetails(student1); // Print original details
+
+//     // Modify student details using a function
+//     modifyStudentDetails(&student1); // Pass structure by reference
+//     printf("\nModified Student Details:\n");
+//     printStudentDetails(student1); // Print modified details
+
+//     return 0;
 // }
 // ------------------------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------------------------
 // Typdef keyword 
+// The typedef keyword in C is used to create an alias (alternative name) for a data type, including structures. It allows you to define a new name for an existing type, making your code more readable and easier to maintain.
 // Used to create alias(alternative name)/(nickname for structure) for data types
-// typedef struct company {
-//     member 1;
-//     member 2;
-//     member n;
-// }cpy; // cpy is a alias for company structure
+// syntax:
+// typedef existing_type new_type_name;
+
+// Example: WAP to create a structure to store student details and use typedef to create an alias for the structure
+//  #include <stdio.h>
+
+//  typedef struct {
+//      char name[50];
+//      int rollNumber;
+//      float marks;
+//  } Student; // Create an alias for the structure
+//  int main() {
+//         Student student1 = {"John Doe", 101, 85.5}; // Use the alias to declare a structure variable
+//         printf("Name: %s\n", student1.name);
+//         printf("Roll Number: %d\n", student1.rollNumber);
+//         printf("Marks: %.2f\n", student1.marks);
+//         return 0;
+//     }
 // ------------------------------------------------------------------------------------------------------------
 
 
