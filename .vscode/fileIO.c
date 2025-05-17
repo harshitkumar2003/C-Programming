@@ -98,7 +98,7 @@
 
 
 // ------------------------------------------------------------------------------------------------
-// Example: WAP to write data to a file
+// Example: WAP to write data to a file in w mode if not exists, or overwrite if exists
 // #include <stdio.h>
 // int main() {
 //     FILE *file;
