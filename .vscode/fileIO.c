@@ -115,3 +115,29 @@
 // }
 // ------------------------------------------------------------------------------------------------
 
+
+// ------------------------------------------------------------------------------------------------
+// Example: WAP to read data from a file
+#include <stdio.h>
+int main() {
+    FILE *file;
+    char ch[100];
+    file = fopen("data.txt", "r"); // Open the file in read mode
+    // Check if the file was opened successfully
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        return 1; // Exit if the file cannot be opened
+    }
+    else
+    {
+        printf("File opened successfully.\n");
+    }
+    // Read data from the file
+    while (fgets(ch, sizeof(ch), file) != NULL) {
+        printf("%s", ch); // Print each line read from the file
+    }
+    fclose(file); // Close the file after use
+    return 0; // End of main function
+}
+// ------------------------------------------------------------------------------------------------
+
