@@ -94,14 +94,24 @@
 // fclose(file); // Close the file after use
 // return 0;
 // } // End of main function
+// ------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
+// ------------------------------------------------------------------------------------------------
+// Example: WAP to write data to a file
+// #include <stdio.h>
+// int main() {
+//     FILE *file;
+//     file = fopen("data.txt", "w"); // Open the file in write mode
+//     // Check if the file was opened successfully
+//     if (file == NULL) {
+//         printf("Error opening file.\n");
+//         return 1; // Exit if the file cannot be opened
+//     }
+//     fprintf(file, "Hello, World!\n"); // Write data to the file
+//     fclose(file); // Close the file after use
+//     printf("Data written to file successfully.\n");
+//     return 0; // End of main function
+// }
 // ------------------------------------------------------------------------------------------------
 
