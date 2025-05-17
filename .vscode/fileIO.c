@@ -117,7 +117,7 @@
 
 
 // ------------------------------------------------------------------------------------------------
-// Example: WAP to read data from a file
+// Example: WAP to read data from a file in r mode and add data to it in a mode that allows appending
 #include <stdio.h>
 int main() {
     FILE *file;
