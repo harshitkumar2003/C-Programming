@@ -153,6 +153,31 @@
 
 // ------------------------------------------------------------------------------------------------
 // Example: WAP to read the output and print using EOF 
+// #include <stdio.h>
+// int main() {
+//     FILE *file;
+//     char ch;
+//     file = fopen("data.txt", "r"); // Open the file in read mode
+//     ch = fgetc(file); // Read a character from the file
+//     // Check if the file was opened successfully
+//     if (file == NULL) {
+//         printf("Error opening file.\n");
+//         return 1; // Exit if the file cannot be opened
+//     }
+//     else
+//     {
+//         printf("File opened successfully.\n");
+//     }
+//     // Read data from the file until EOF is reached
+//  while (ch != EOF) {
+//         printf("%c", ch); // Print each character read from the file
+//         ch = fgetc(file); // Read the next character from the file
+//     }
+
+//     fclose(file); // Close the file after use
+//     return 0; // End of main function
+// }
+// ------------------------------------------------------------------------------------------------
 #include <stdio.h>
 int main() {
     FILE *file;
@@ -177,4 +202,3 @@ int main() {
     fclose(file); // Close the file after use
     return 0; // End of main function
 }
-// ------------------------------------------------------------------------------------------------
