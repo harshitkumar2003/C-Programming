@@ -320,8 +320,11 @@ int main() {
     }
     // Read two numbers from the file
     fscanf(file, "%d %d", &num1, &num2); // Read two integers from the file
+    fclose(file); // Close the file after use
+    // Calculate and print the sum and print it to a file
+    file = fopen("numbers.txt", "w"); // Open the file in read mode
     sum = num1 + num2; // Calculate the sum of the two numbers
-    printf("The sum of %d and %d is %d\n", num1, num2, sum); // Print the sum
+    fprintf(file,"The sum is %d\n", sum); // Print the sum
     fclose(file); // Close the file after use
     return 0; // End of main function
 }
