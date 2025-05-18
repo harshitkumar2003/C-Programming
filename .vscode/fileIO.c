@@ -304,28 +304,28 @@
 
 // ------------------------------------------------------------------------------------------------
 // Example: WAP to read two numbers from a file and print their sum
-#include <stdio.h>
-int main() {
-    FILE *file;
-    int num1, num2, sum;
-    file = fopen("numbers.txt", "r"); // Open the file in read mode
-    // Check if the file was opened successfully
-    if (file == NULL) {
-        printf("Error opening file.\n");
-        return 1; // Exit if the file cannot be opened
-    }
-    else
-    {
-        printf("File opened successfully.\n");
-    }
-    // Read two numbers from the file
-    fscanf(file, "%d %d", &num1, &num2); // Read two integers from the file
-    fclose(file); // Close the file after use
-    // Calculate and print the sum and print it to a file
-    file = fopen("numbers.txt", "w"); // Open the file in read mode
-    sum = num1 + num2; // Calculate the sum of the two numbers
-    fprintf(file,"The sum of %d and %d is %d\n", num1,num2,sum); // Print the sum
-    fclose(file); // Close the file after use
-    return 0; // End of main function
-}
+// #include <stdio.h>
+// int main() {
+//     FILE *file;
+//     int num1, num2, sum;
+//     file = fopen("numbers.txt", "r"); // Open the file in read mode
+//     // Check if the file was opened successfully
+//     if (file == NULL) {
+//         printf("Error opening file.\n");
+//         return 1; // Exit if the file cannot be opened
+//     }
+//     else
+//     {
+//         printf("File opened successfully.\n");
+//     }
+//     // Read two numbers from the file
+//     fscanf(file, "%d %d", &num1, &num2); // Read two integers from the file
+//     fclose(file); // Close the file after use
+//     // Calculate and print the sum and print it to a file
+//     file = fopen("numbers.txt", "w"); // Open the file in read mode
+//     sum = num1 + num2; // Calculate the sum of the two numbers also use any calculation you want
+//     fprintf(file,"The sum of %d and %d is %d\n", num1,num2,sum); // Print the sum
+//     fclose(file); // Close the file after use
+//     return 0; // End of main function
+// }
 // ------------------------------------------------------------------------------------------------
