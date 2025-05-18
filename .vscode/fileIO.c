@@ -195,7 +195,7 @@ int main() {
     }
     // Read data from the file until EOF is reached
  while (num != EOF) {
-        printf("%d", num); // Print each character read from the file
+        printf("%c", num); // Print each number read from the file
         num = fgetc(file); // Read the next character from the file
     }
 
