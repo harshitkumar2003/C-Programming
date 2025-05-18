@@ -178,6 +178,10 @@
 //     return 0; // End of main function
 // }
 // ------------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------
+// Example: WAP to read the output and print using fgetc for numbers
 #include <stdio.h>
 int main() {
     FILE *file;
