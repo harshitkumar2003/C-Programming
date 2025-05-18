@@ -210,4 +210,33 @@
 
 
 // ------------------------------------------------------------------------------------------------
+// Example: WAP to input student data and write it to a file using fprintf
+#include <stdio.h>
+int main() {
+    FILE *file;
+    char name[50];
+    int roll_no;
+    float marks;
+    file = fopen("students.txt", "w"); // Open the file in write mode
+    // Check if the file was opened successfully
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        return 1; // Exit if the file cannot be opened
+    }
+    else
+    {
+        printf("File opened successfully.\n");
+    }
+    // Input student data
+    printf("Enter student name: ");
+    fscanf(stdin, "%49s", name); // Read student name
+    printf("Enter roll number: ");
+    fscanf(stdin, "%d", &roll_no); // Read roll number
+    printf("Enter marks: ");
+    fscanf(stdin, "%f", &marks); // Read marks
+    // Write student data to the file
+    fprintf(file, "Name: %s\nRoll No: %d\nMarks: %.2f\n", name, roll_no, marks); // Write formatted data to the file
+    fclose(file); // Close the file after use
+    return 0; // End of main function
+}
 // ------------------------------------------------------------------------------------------------
