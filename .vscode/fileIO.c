@@ -182,27 +182,32 @@
 
 // ------------------------------------------------------------------------------------------------
 // Example: WAP to read the output and print using fgetc for numbers
-#include <stdio.h>
-int main() {
-    FILE *file;
-    int num;
-    file = fopen("data.txt", "r"); // Open the file in read mode
-    num = fgetc(file); // Read a character from the file
-    // Check if the file was opened successfully
-    if (file == NULL) {
-        printf("Error opening file.\n");
-        return 1; // Exit if the file cannot be opened
-    }
-    else
-    {
-        printf("File opened successfully.\n");
-    }
-    // Read data from the file until EOF is reached
- while (num != EOF) {
-        printf("%c", num); // Print each number read from the file
-        num = fgetc(file); // Read the next character from the file
-    }
+// #include <stdio.h>
+// int main() {
+//     FILE *file;
+//     int num;
+//     file = fopen("data.txt", "r"); // Open the file in read mode
+//     num = fgetc(file); // Read a character from the file
+//     // Check if the file was opened successfully
+//     if (file == NULL) {
+//         printf("Error opening file.\n");
+//         return 1; // Exit if the file cannot be opened
+//     }
+//     else
+//     {
+//         printf("File opened successfully.\n");
+//     }
+//     // Read data from the file until EOF is reached
+//  while (num != EOF) {
+//         printf("%c", num); // Print each number read from the file
+//         num = fgetc(file); // Read the next character from the file
+//     }
 
-    fclose(file); // Close the file after use
-    return 0; // End of main function
-}
+//     fclose(file); // Close the file after use
+//     return 0; // End of main function
+// }
+// ------------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
