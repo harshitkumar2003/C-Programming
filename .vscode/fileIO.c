@@ -181,9 +181,9 @@
 #include <stdio.h>
 int main() {
     FILE *file;
-    char ch;
+    int num;
     file = fopen("data.txt", "r"); // Open the file in read mode
-    ch = fgetc(file); // Read a character from the file
+    num = fgetc(file); // Read a character from the file
     // Check if the file was opened successfully
     if (file == NULL) {
         printf("Error opening file.\n");
@@ -194,9 +194,9 @@ int main() {
         printf("File opened successfully.\n");
     }
     // Read data from the file until EOF is reached
- while (ch != EOF) {
-        printf("%c", ch); // Print each character read from the file
-        ch = fgetc(file); // Read the next character from the file
+ while (num != EOF) {
+        printf("%d", num); // Print each character read from the file
+        num = fgetc(file); // Read the next character from the file
     }
 
     fclose(file); // Close the file after use
