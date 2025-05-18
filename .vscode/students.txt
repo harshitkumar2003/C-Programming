@@ -1,3 +1,24 @@
-Name: Luv
-Roll No: 51
-Marks: 90.00
+Student 1:
+Name: harsh
+Marks: 78.00
+CGPA: 7.70
+Course: mca
+
+Student 2:
+Name: roy
+Marks: 56.00
+CGPA: 5.60
+Course: mca
+
+Student 3:
+Name: harshit
+Marks: 70.00
+CGPA: 7.00
+Course: /3
+
+Student 4:
+Name: wts
+Marks: 70.00
+CGPA: 7.00
+Course: dfsgfgf
+

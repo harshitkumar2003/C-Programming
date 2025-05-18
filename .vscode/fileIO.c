@@ -329,3 +329,42 @@
 //     return 0; // End of main function
 // }
 // ------------------------------------------------------------------------------------------------
+
+
+// ------------------------------------------------------------------------------------------------
+// Homework:
+// 1. Write a program to read a string from a file and print it to the console.
+// 2. Write a program to replace the data in a file with no of vowels in a string.
+// 3. Write a program to format student data of 5 students and (name, marks, cgpa, course) and write it to a file in a table like structure.
+// ------------------------------------------------------------------------------------------------
+// 3>
+// #include <stdio.h>
+// int main() {
+//     FILE *file;
+//     char name[50];;
+//     float marks, cgpa;
+//     char course[50];
+//     int i;
+//     file = fopen("students.txt", "w"); // Open the file in write mode
+//     for (i = 1; i < 5; i++) {
+//         // Input student data
+//         printf("Enter student %d name: ", i);
+//         scanf("%s", name); // Read student name
+//         printf("Enter student %d marks: ", i);
+//         scanf("%f", &marks); // Read marks
+//         printf("Enter student %d cgpa: ", i);
+//         scanf("%f", &cgpa); // Read cgpa
+//         printf("Enter student %d course: ", i);
+//         scanf("%s", course); // Read course
+//         // Write student data to the file in a formatted manner
+//         fprintf(file, "Student %d:\nName: %s\nMarks: %.2f\nCGPA: %.2f\nCourse: %s\n\n", i, name, marks, cgpa, course);
+
+//         // Flush the buffer to ensure the data is written to the file immediately
+//         fflush(file);
+//     }
+//     fclose(file); // Close the file after use
+//     printf("Student data written to file successfully.\n");
+//     return 0;
+// } // End of main function
+        
+    
