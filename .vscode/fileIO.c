@@ -262,7 +262,8 @@ int main() {
     printf("Enter a number: ");
     fscanf(stdin, "%d", &n); // Read the value of n
     // Write odd numbers to the file
-    for (i = 1; i <= n; i += 2) {
+    for (i = 1; i <= n; i++) {
+        if (i % 2 != 0) // Check if the number is odd
         fprintf(file, "%d\n", i); // Write each odd number to the file
     }
     fclose(file); // Close the file after use
