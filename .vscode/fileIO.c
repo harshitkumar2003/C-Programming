@@ -243,5 +243,29 @@
 
 
 // ------------------------------------------------------------------------------------------------
-
+// Example: WAP to write all the odd nubers from 1 to n to a file using fprintf
+#include <stdio.h>
+int main() {
+    FILE *file;
+    int n, i;
+    file = fopen("odd_numbers.txt", "w"); // Open the file in write mode
+    // Check if the file was opened successfully
+    if (file == NULL) {
+        printf("Error opening file.\n");
+        return 1; // Exit if the file cannot be opened
+    }
+    else
+    {
+        printf("File opened successfully.\n");
+    }
+    // Input the value of n
+    printf("Enter a number: ");
+    fscanf(stdin, "%d", &n); // Read the value of n
+    // Write odd numbers to the file
+    for (i = 1; i <= n; i += 2) {
+        fprintf(file, "%d\n", i); // Write each odd number to the file
+    }
+    fclose(file); // Close the file after use
+    return 0; // End of main function
+}
 // ------------------------------------------------------------------------------------------------
