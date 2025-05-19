@@ -158,6 +158,44 @@
 // If realloc fails to allocate memory, it returns NULL and the original memory block remains unchanged.
 // ------------------------------------------------------------------------------------------------
 // Example: WAP to allocate memory 5 using malloc and realloc by increasing the size to 8
+//  #include <stdio.h>
+//  #include <stdlib.h>
+//  int main() {
+//     int *ptr;
+//     ptr = (int*)calloc(5, sizeof(int)); // Allocating memory for an array of 5 integers
+//     if (ptr == NULL) {
+//         printf("Memory allocation failed\n");
+//         return 1; // Exit if memory allocation fails
+//     }
+//    printf("Allocated memory values:\n");
+//    for (int i = 0; i < 5; i++) {
+//        ptr[i] = i + 1; // Assigning values to the allocated memory
+//        printf("%d\t ", ptr[i]);
+//        }
+//     printf("\n");
+//     // Reallocating memory to increase the size to 8 integers
+//     // ptr = (int*)realloc(ptr, 8 * sizeof(int));
+//     // realloc(ptr, 8 * sizeof(int));
+//     realloc(ptr, 8);
+//     // Printing the values stored in the reallocated memory
+//     printf("Reallocated memory values:\n");
+//     for (int i = 0; i < 8; i++) {
+//         if (i < 5) {
+//             ptr[i] = i + 1; // Assigning values to the first 5 elements
+//         } else {
+//             ptr[i] = i + 1; // Initializing new elements 
+//         }
+//          // Printing the values stored in the reallocated memory
+//          // Note: The values for indices 5, 6, and 7 may be uninitialized if not explicitly set
+//          // printf("%d ", ptr[i]);
+//         printf("%d\t ", ptr[i]); // Note: The values for indices 5, 6, and 7 may be uninitialized
+//     }
+//     printf("\n");
+//     return 0;
+//  }
+// ----------------------------------------------------------------------------------------------
+// Example: WAP to allocate memory 5 using malloc and realloc by decreasing the size to 3
+
  #include <stdio.h>
  #include <stdlib.h>
  int main() {
@@ -176,14 +214,14 @@
     // Reallocating memory to increase the size to 8 integers
     // ptr = (int*)realloc(ptr, 8 * sizeof(int));
     // realloc(ptr, 8 * sizeof(int));
-    realloc(ptr, 8);
+    realloc(ptr, 3);
     // Printing the values stored in the reallocated memory
     printf("Reallocated memory values:\n");
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < 3; i++) {
         if (i < 5) {
             ptr[i] = i + 1; // Assigning values to the first 5 elements
         } else {
-            ptr[i] = i + 1; // Initializing new elements 
+            ptr[i] = i + 1; // Initializing same elements 
         }
          // Printing the values stored in the reallocated memory
          // Note: The values for indices 5, 6, and 7 may be uninitialized if not explicitly set
