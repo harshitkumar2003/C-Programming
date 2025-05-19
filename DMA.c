@@ -14,3 +14,20 @@
 // malloc: takes no of bytes to be allocated and returns a pointer to the allocated memory block.
 // syntax:
 // ptr = (void*)malloc(5*sizeof(int));
+// where ptr is a pointer to the allocated memory block and 5*sizeof(int) is the size of the memory block to be allocated.
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    // Example usage of malloc
+    int *arr = (int*)malloc(5 * sizeof(int)); // Allocating memory for an array of 5 integers
+    ptr[0] = 1; // Assigning values to the allocated memory
+    ptr[1] = 2;
+    ptr[2] = 3;
+    ptr[3] = 4;
+    ptr[4] = 5;
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arr[i]); // Printing the values stored in the allocated memory
+    }
+    return 0;
+}
+
