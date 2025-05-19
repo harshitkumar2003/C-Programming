@@ -95,4 +95,43 @@
 // }
 // ----------------------------------------------------------------------------------------------
 
+
+// ----------------------------------------------------------------------------------------------
+// free: takes a pointer to previously allocated memory and deallocates it, making it available for future allocations.
+// syntax:
+// free(ptr);
+// where ptr is a pointer to the previously allocated memory block.
+// -----------------------------------------------------------------------------------------------
+// Example: WAP to allocate memory using malloc and free it
+ #include <stdio.h>
+ #include <stdlib.h>
+ int main() {
+     // Example usage of malloc
+     int *ptr;
+     ptr = (int*)malloc(5 * sizeof(int)); // Allocating memory for an array of 5 integers
+     if (ptr == NULL) {
+         printf("Memory allocation failed\n");
+         return 1; // Exit if memory allocation fails
+     }
+     // Assigning values to the allocated memory
+     for (int i = 0; i < 5; i++) {
+         ptr[i] = i + 1;
+     }
+     // Printing the values stored in the allocated memory
+     printf("Allocated memory values:\n");
+     for (int i = 0; i < 5; i++) {
+         printf("%d ", ptr[i]);
+     }
+     printf("\n");
+     
+     // Freeing the allocated memory
+     free(ptr);
+     printf("Memory freed successfully.\n");
+     
+     return 0; // Exit the program
+ }
+// ----------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------
 // realloc: takes a pointer to previously allocated memory and the new size to be allocated and returns a pointer to the reallocated memory block
