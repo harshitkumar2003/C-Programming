@@ -150,3 +150,37 @@
 // ----------------------------------------------------------------------------------------------
 // realloc: takes a pointer to previously allocated memory and the new size to be allocated and returns a pointer to the reallocated memory block
 // syntax:
+// ptr = (void*)realloc(ptr, new_size);
+// ptr = realloc(ptr, new_size);
+// where ptr is a pointer to the previously allocated memory block and new_size is the new size to be allocated.
+// If the new size is larger than the previous size, realloc will allocate additional memory and copy the existing data to the new memory block.
+// If the new size is smaller than the previous size, realloc will deallocate the excess memory.
+// If realloc fails to allocate memory, it returns NULL and the original memory block remains unchanged.
+// ------------------------------------------------------------------------------------------------
+// Example: WAP to allocate memory 5 using malloc and realloc by increasing the size to 8
+ #include <stdio.h>
+ #include <stdlib.h>
+ int main() {
+    int *ptr;
+    ptr = (int*)malloc(5 * sizeod(int)); // Allocating memory for an array of 5 integers
+    if (ptr == NULL) {
+        printf("Memory allocation failed\n");
+        return 1; // Exit if memory allocation fails
+    }
+   printf("Allocated memory values:\n");
+   for (int i = 0; i < 5; i++) {
+       ptr[i] = i + 1; // Assigning values to the allocated memory
+       printf("%d ", ptr[i]);
+       }
+    printf("\n");
+    // Reallocating memory to increase the size to 8 integers
+    // ptr = (int*)realloc(ptr, 8 * sizeof(int));
+    // realloc(ptr, 8 * sizeof(int));
+    realloc(ptr, 8);
+    // Printing the values stored in the reallocated memory
+    printf("Reallocated memory values:\n");
+    for (int i = 0; i < 8; i++) {
+        printf("%d ", ptr[i]); // Note: The values for indices 5, 6, and 7 may be uninitialized
+    }
+    return 0;
+ }
