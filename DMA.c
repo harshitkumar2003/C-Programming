@@ -276,7 +276,7 @@ int main() {
         return 1; // Exit if memory allocation fails
     }
     //     // Taking input from the user for the allocated memory
-    printf("Allocated memory values:\n");
+    printf("Allocated memory odd values:\n");
     for (int i = 0; i < 5; i++) {
         ptr[i] = 2 * i + 1; // Assigning first 5 odd numbers
         printf("%d\t ", ptr[i]);
@@ -289,10 +289,10 @@ int main() {
         return 1; // Exit if memory reallocation fails
     }
     //     // Taking input from the user for the reallocated memory
-    printf("Reallocated memory values:\n");
-    for (int i = 0; i < 6; i++) {
+    printf("Reallocated memory even values:\n");
+    for (int i = 1; i <= 6; i++) {
         if (i < 5) {
-            ptr[i] = 2 * i + 1; // Assigning first 5 odd numbers
+            ptr[i] = 2 * i; // Assigning first 5 odd numbers
         } else {
             ptr[i] = 2 * i; // Assigning the 6th even number
         }
