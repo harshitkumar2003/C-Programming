@@ -11,3 +11,6 @@
 // c> realloc: Resizes a previously allocated block of memory to a new size and returns a pointer to the reallocated memory.
 // d> free: Deallocates a previously allocated block of memory, making it available for future allocations.
 // ---------------------------------------------------------------------------------------------------------
+// malloc: takes no of bytes to be allocated and returns a pointer to the allocated memory block.
+// syntax:
+// ptr = (void*)malloc(5*sizeof(int));
