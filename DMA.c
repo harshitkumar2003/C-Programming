@@ -265,4 +265,38 @@
 //     return 0; // Exit the program
 // }
 // ----------------------------------------------------------------------------------------------
-// Example: WAP to allocate memory to store first 5 odd numbres anc then reallocate it to store first 6 even numbers
+// Example: WAP to allocate memory to store first 5 odd numbres anc then reallocate it to store first 6 even numbers.
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int *ptr;
+    ptr = (int*)calloc(5, sizeof(int)); // Allocating memory for an array of 5 integers
+    if (ptr == NULL) {
+        printf("Memory allocation failed\n");
+        return 1; // Exit if memory allocation fails
+    }
+    //     // Taking input from the user for the allocated memory
+    printf("Allocated memory values:\n");
+    for (int i = 0; i < 5; i++) {
+        ptr[i] = 2 * i + 1; // Assigning first 5 odd numbers
+        printf("%d\t ", ptr[i]);
+    }
+    printf("\n");
+    //     // Reallocating the memory to store first 6 even numbers
+    realloc(ptr, 6);
+    if (ptr == NULL) {
+        printf("Memory reallocation failed\n");
+        return 1; // Exit if memory reallocation fails
+    }
+    //     // Taking input from the user for the reallocated memory
+    printf("Reallocated memory values:\n");
+    for (int i = 0; i < 6; i++) {
+        if (i < 5) {
+            ptr[i] = 2 * i + 1; // Assigning first 5 odd numbers
+        } else {
+            ptr[i] = 2 * i; // Assigning the 6th even number
+        }
+        printf("%d\t ", ptr[i]);
+    }
+    return 0; // Exit the program
+}
