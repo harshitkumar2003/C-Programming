@@ -10,6 +10,10 @@
 // b> calloc: Allocates a block of memory for an array of elements, initializes all bytes to zero, and returns a pointer to the allocated memory.
 // c> realloc: Resizes a previously allocated block of memory to a new size and returns a pointer to the reallocated memory.
 // d> free: Deallocates a previously allocated block of memory, making it available for future allocations.
+
+// ---------------------------------------------------------------------------------------------------------
+
+
 // ---------------------------------------------------------------------------------------------------------
 // malloc: takes no of bytes to be allocated and returns a pointer to the allocated memory block.
 // syntax:
@@ -54,4 +58,41 @@
 //     }
 //     return 0;
 // }
-// -----------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------------
+// calloc: takes no of elements and size of each element to be allocated and returns a pointer to the allocated memory block.
+// calloc by default initializes all bytes to zero.
+// syntax:
+// ptr = (void*)calloc(5, sizeof(int));
+// ----------------------------------------------------------------------------------------------
+// Example: WAP to allocate memory of size n where n is given by user using calloc
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main() {
+//     int n;
+//     printf("Enter the number of elements: ");
+//     scanf("%d", &n);
+    
+//     // Allocating memory for an array of n integers using calloc
+//     int *ptr;
+//     ptr = (int*)calloc(n, sizeof(int));
+//     if (ptr == NULL) {
+//         printf("Memory allocation failed\n");
+//         return 1; // Exit if memory allocation fails
+//     }
+//        // Assigning values to the allocated memory
+//     for (int i = 0; i < n; i++) {
+//         ptr[i] = i + 1; // Assigning values from 1 to n
+//     }
+//     // Printing the values stored in the allocated memory
+//     printf("Allocated memory values:\n");
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", ptr[i]);
+//     }
+//     return 0; // Exit the program
+// }
+// ----------------------------------------------------------------------------------------------
+
+// realloc: takes a pointer to previously allocated memory and the new size to be allocated and returns a pointer to the reallocated memory block
