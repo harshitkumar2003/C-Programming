@@ -16,12 +16,13 @@
 // ptr = (void*)malloc(5*sizeof(int));
 // where ptr is a pointer to the allocated memory block and 5*sizeof(int) is the size of the memory block to be allocated.
 // ---------------------------------------------------------------------------------------------------------
-// Example: print number in array using malloc
+// Example: print to allocate memory using malloc to store 5 integers
 // #include <stdio.h>
 // #include <stdlib.h>
 // int main() {
 //     // Example usage of malloc
-//     int *ptr = (int*)malloc(5 * sizeof(int)); // Allocating memory for an array of 5 integers
+//     int *ptr;
+//     ptr = (int*)malloc(5 * sizeof(int)); // Allocating memory for an array of 5 integers
 //     ptr[0] = 1; // Assigning values to the allocated memory
 //     ptr[1] = 2;
 //     ptr[2] = 3;
@@ -35,19 +36,22 @@
 // ----------------------------------------------------------------------------------------------
 
 
-#include <stdio.h>
-#include <stdlib.h>
-int main() {
-    // Example usage of malloc
-    int *ptr = (int*)malloc(5 * sizeof(int)); // Allocating memory for an array of 5 integers
-    ptr[0] = 1; // Assigning values to the allocated memory
-    ptr[1] = 2;
-    ptr[2] = 3;
-    ptr[3] = 4;
-    ptr[4] = 5;
-    for (int i = 0; i < 5; i++) {
-        printf("%d ", ptr[i]); // Printing the values stored in the allocated memory
-    }
-    return 0;
-}
-
+// ----------------------------------------------------------------------------------------------
+// Example: print to allocate memory using malloc to store 5 prieces
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main() {
+//     // Example usage of malloc
+//     float *ptr;
+//     ptr = (float*)malloc(5 * sizeof(float)); // Allocating memory for an array of 5 integers
+//     ptr[0] = 34.3; // Assigning values to the allocated memory
+//     ptr[1] = 44.4;
+//     ptr[2] = 2.33;
+//     ptr[3] = 43.3;
+//     ptr[4] = 53.1;
+//     for (int i = 0; i < 5; i++) {
+//         printf("%f\t", ptr[i]); // Printing the values stored in the allocated memory
+//     }
+//     return 0;
+// }
+// -----------------------------------------------------------------------------------------------
