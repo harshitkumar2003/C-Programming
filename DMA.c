@@ -235,32 +235,34 @@
 
 // ----------------------------------------------------------------------------------------------
 // Example: WAP to allocate memory 5 using calloc and enter it's values from the user.
-#include <stdio.h>
-#include <stdlib.h>
-int main() {
-    int n;
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main() {
+//     int n;
+//     printf("Enter the number of elements: ");
+//     scanf("%d", &n);
     
-    // Allocating memory for an array of n integers using calloc
-    int *ptr;
-    ptr = (int*)calloc(n, sizeof(int));
-    if (ptr == NULL) {
-        printf("Memory allocation failed\n");
-        return 1; // Exit if memory allocation fails
-    }
+//     // Allocating memory for an array of n integers using calloc
+//     int *ptr;
+//     ptr = (int*)calloc(n, sizeof(int));
+//     if (ptr == NULL) {
+//         printf("Memory allocation failed\n");
+//         return 1; // Exit if memory allocation fails
+//     }
     
-    // Taking input from the user for the allocated memory
-    printf("Enter %d integers:\n", n);
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &ptr[i]);
-    }
+//     // Taking input from the user for the allocated memory
+//     printf("Enter %d integers:\n", n);
+//     for (int i = 0; i < n; i++) {
+//         scanf("%d", &ptr[i]);
+//     }
     
-    // Printing the values stored in the allocated memory
-    printf("Allocated memory values:\n");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", ptr[i]);
-    }
-    printf("\n");
-    return 0; // Exit the program
-}
+//     // Printing the values stored in the allocated memory
+//     printf("Allocated memory values:\n");
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", ptr[i]);
+//     }
+//     printf("\n");
+//     return 0; // Exit the program
+// }
+// ----------------------------------------------------------------------------------------------
+// Example: WAP to allocate memory to store first 5 odd numbres anc then reallocate it to store first 6 even numbers
